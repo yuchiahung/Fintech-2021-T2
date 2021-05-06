@@ -1,0 +1,14 @@
+streamlit
+wordcloud
+datetime
+pandas
+matplotlib
+summarizer
+transformers
+AutoModel
+gunicorn
+cachetools
+torch
+torchvision
+torchaudio
+nltk

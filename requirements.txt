@@ -1,0 +1,7 @@
+streamlit
+wordcloud
+datetime
+pandas
+matplotlib
+gunicorn
+cachetools
