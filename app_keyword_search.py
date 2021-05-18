@@ -12,30 +12,36 @@ import matplotlib.pyplot as plt
 def app():
 
     # Sidebar
-    st.sidebar.subheader('KEYWORD SEARCH')
+    st.subheader('KEYWORD SEARCH')
 
     # 多選按钮
-    st.sidebar.radio("Which would you choose", ['datetime', 'time','keyword'], key="3")
+    st.radio("Which would you choose", ['datetime', 'time','keyword'], key="3")
 
-    # 單選選框
-    selector = st.sidebar.multiselect("Which would you choose", ['datetime', 'time','keyword'], key="1")
-    st.write(selector)
+    
 
-    start_date = st.sidebar.date_input("Start date", datetime.date(2019, 1, 1))
-    end_date = st.sidebar.date_input("End date", datetime.date(2021, 3, 1))
+    col1,col2,col3,col4 = st.beta_columns(4)
+    #search欄位
+    with col1:
+        def icon(icon_name):
+            st.markdown(f'<i class="material-icons">{icon_name}</i>', unsafe_allow_html=True)
+        selected = st.text_input("", "Search...")
+
+    with col2:
+        start_date = st.date_input("Start date", datetime.date(2019, 1, 1))
+    
+    with col3:
+        end_date = st.date_input("End date", datetime.date(2021, 3, 1))
 
     #時間輸入
-    time_input = st.sidebar.time_input("Insert a time")
+    with col4:
+        time_input = st.time_input("Insert a time")
 
-    #search欄位
-    def icon(icon_name):
-        st.markdown(f'<i class="material-icons">{icon_name}</i>', unsafe_allow_html=True)
-    selected = st.sidebar.text_input("", "Search...")
+    
 
     #按紐
-    button_go = st.sidebar.button('GO')
-    if button_go:
-        st.write(start_date)
+    st.button('GO')
+
+    
 
 
 
