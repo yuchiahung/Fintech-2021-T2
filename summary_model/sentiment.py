@@ -104,6 +104,9 @@ df_pivot.to_json('../streamlit_summary_web/test_positive_rate.json', force_ascii
 
 # having person & org only
 df_sentiment_all_per_org = df_sentiment_all[df_sentiment_all.tags.isin(['org', 'person'])].drop(columns = 'tags').drop_duplicates()
+# having more than 1 letter
+df_sentiment_all_per_org = df_sentiment_all_per_org[df_sentiment_all_per_org.entities.str.len() > 1]
+
 df_sentiment_all_per_org.reset_index(drop=True).to_json('../streamlit_summary_web/test_sentiment_entities_person_org.json', force_ascii=False)
 
 df_pivot_limit = df_sentiment_all_per_org.groupby(by = ['entities', 'sentiment']).count().reset_index().pivot_table(index = 'entities', columns = 'sentiment', values = 'news_id', fill_value = 0).reset_index()
