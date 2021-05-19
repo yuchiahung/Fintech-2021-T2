@@ -1,5 +1,5 @@
 import requests
-from newsapi import NewsApiClient
+from newsapi.newsapi_client import NewsApiClient
 import json
 import pandas as pd
 from GoogleNews import GoogleNews
@@ -7,7 +7,7 @@ from goose3 import Goose
 from goose3.text import StopWordsChinese 
 
 #獲的每日商業新聞頭版20則
-r = requests.get('https://newsapi.org/v2/top-headlines?country=tw&category=business&apiKey=0bd726adde3042e2810aec5171b67fcc')
+r = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0bd726adde3042e2810aec5171b67fcc')
 data = json.loads(r.content)
 print(data)
 pdlist = []
@@ -47,6 +47,8 @@ dataDict["head"] = headerDict
 dataDict["source"] = sourceDict
 dataDict["content"] = contentDict
 dataDict["link"] = linkDict
+
+
 
 
 #獲得該主題的容
