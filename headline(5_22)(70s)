@@ -1,0 +1,495 @@
+{
+    "id":{
+        "0":1,
+        "1":2,
+        "2":3,
+        "3":4,
+        "4":5,
+        "5":6,
+        "6":7,
+        "7":8,
+        "8":9,
+        "9":10,
+        "10":11,
+        "11":12,
+        "12":13,
+        "13":14,
+        "14":15,
+        "15":16,
+        "16":17,
+        "17":18,
+        "18":19,
+        "19":20,
+        "20":21,
+        "21":22,
+        "22":23,
+        "23":24,
+        "24":25,
+        "25":26,
+        "26":27,
+        "27":28,
+        "28":29,
+        "29":30,
+        "30":31,
+        "31":32,
+        "32":33,
+        "33":34,
+        "34":35,
+        "35":36,
+        "36":37,
+        "37":38,
+        "38":39,
+        "39":40,
+        "40":41,
+        "41":42,
+        "42":43,
+        "43":44,
+        "44":45,
+        "45":46,
+        "46":47,
+        "47":48,
+        "48":49,
+        "49":50,
+        "50":51,
+        "51":52,
+        "52":53,
+        "53":54,
+        "54":55,
+        "55":56,
+        "56":57,
+        "57":58,
+        "58":59,
+        "59":60,
+        "60":61,
+        "61":62,
+        "62":63,
+        "63":64,
+        "64":65,
+        "65":66,
+        "66":67,
+        "67":68,
+        "68":69,
+        "69":70,
+        "70":70
+    "head":{
+        "0":Ford’s F-150 Lightning contends with electric trucks from Tesla, Rivian, Lordstown, GMC - Fox Business,
+        "1":Staff at Biggest Dutch Domino’s Pizza Franchise Can Now Be Paid in Bitcoin - Yahoo Finance,
+        "2":China crackdown could be ‘turning point’ in future of bitcoin - South China Morning Post,
+        "3":Green Finance Goes Mainstream, Lining Up Trillions Behind Global Energy Transition - The Wall Street Journal,
+        "4":FBI: Conti Ransomware Gang Behind Ireland Attack Also Hit 16 U.S. Health and Emergency Networks - Gizmodo,
+        "5":Man arrested in two pharmacy robberies in Hillsboro - KATU,
+        "6":Mega Millions $515M jackpot numbers drawn - Fox Business,
+        "7":To prevent wildfires in 2021, Oregon adopts new rules for temporary power shutoffs - KGW.com,
+        "8":Citizen crime app shifts to testing a private security on demand feature - Engadget,
+        "9":AT&T’s Dividend Is Getting Cut but the Stock May Still Be a Buy - Barron's,
+        "10":The Big Boat Is Here - Jalopnik,
+        "11":Texas Billionaire's Supersonic-Jet Dream Dies as Aerion Folds - Bloomberg,
+        "12":Every time Bill Gates engaged in inappropriate conduct - Business Insider,
+        "13":A New Report From JPMorgan Shows Just How Big Tether Has Become - Bloomberg,
+        "14":Dow Jones Futures: Stock Market Rally Survives Wild Week, Bitcoin Remains Active; Follow Google, Nvidia, Tesla - Investor's Business Daily,
+        "15":SAPD responds to shooting call at Loop 410, Highway 281 - KSAT San Antonio,
+        "16":Virgin Galactic Is Now a Buy With 71% Upside, Analyst Says - The Motley Fool,
+        "17":Pope Francis to get all-electric popemobile from EV startup Fisker - NBC News,
+        "18":Southwest traveler captures photo of clipped airplane wing moments before takeoff - Fox News,
+        "19":You'll be able to fly nonstop from Salt Lake City to Germany beginning in 2022 - KSL.com,
+        "20":Shareholders approve sale of Orlando Sentinel parent Tribune Publishing to Alden Global Capital - Orlando Sentinel,
+        "21":Real Water, a premium bottled water, recalled amid death and liver illnesses - The Guardian,
+        "22":Pasco flight bound for Seattle makes emergency landing due to possible sparks in galley - KEPR 19,
+        "23":Stocks could be volatile in week ahead amid turbulence from cryptocurrency - CNBC,
+        "24":Shock at the pump as gas prices are the highest since 2014 & the trend is set to continue - CNYcentral.com,
+        "25":Covid-19 Pandemic: Live Updates and News for May. 22, 2021 - Bloomberg,
+        "26":Existing home sales data: A bad sign for housing market? - HousingWire,
+        "27":Dallas Fed President talks inflation and asset purchase dial back - Fox Business,
+        "28":Delta taps longtime General Electric executive as its new CFO - CNBC,
+        "29":Wanda Group Sells Off Most AMC Entertainment Shares; Ends Pandemic Era With A Miniscule 0.002% Stake - Deadline,
+        "30":Pfizer, BioNTech pledge 2 billion COVID-19 vaccine doses to lower-income countries | TheHill - The Hill,
+        "31":California restaurants, hotels lead job gains - Los Angeles Times,
+        "32":New Airline To Offer Service To T.F. Green Starting July 29 - Patch.com,
+        "33":California will require Uber, Lyft drivers to transition to electric cars | TheHill - The Hill,
+        "34":Away From the Big Crypto Blaze, Another Market Tension Eases - Bloomberg,
+        "35":As GOP-led states end enhanced unemployment benefits, the Biden administration struggles to find a way to get workers funding - CBS News,
+        "36":WeWork said it lost over $2B last quarter as it prepares to go public - New York Post ,
+        "37":The tide is turning for cryptos | Kitco News - Kitco NEWS - Kitco NEWS,
+        "38":7 nooses halt construction at Connecticut Amazon warehouse - ABC St. Louis,
+        "39":Foot Locker To Close Remaining Footaction Stores - Sneaker News,
+        "40":Should I invest in cryptocurrency? What about Bitcoin, Dogecoin, Ethereum? - NJ.com,
+        "41":Biden's budget reportedly won't include the student-debt forgiveness he campaigned on - Business Insider,
+        "42":RYBREVANT™ (amivantamab-vmjw) Receives FDA Approval as the First Targeted Treatment for Patients with Non-Small Cell Lung Cancer with EGFR Exon 20 Insertion Mutations - PRNewswire,
+        "43":Crypto payments above $10,000 would be reported to IRS under Treasury plan - Ars Technica,
+        "44":Massive cyberattack leaks credit card details, passport info of Air India passengers - The Indian Express,
+        "45":Amazon to retire Prime Now, absorb fast-ship experience into bigger brand - Seeking Alpha,
+        "46":Tesla Is Headed for Longest Weekly Losing Streak in Three Years - Yahoo Finance,
+        "47":I tried Burger King's new fried chicken sandwiches and was shocked they came from a fast-food chain - Insider,
+        "48":Trump-Era Rules Made ESG Investing Harder. Biden Is Reversing It. - Barron's,
+        "49":Kansas City Southern to merge with Canadian National, paid Canadian Pacific $700 million breakup fee - MarketWatch,
+        "50":Columbus announces outdoor city pools reopening for the summer, with free admission - NBC4 WCMH-TV,
+        "51":McDonald's sued for $10 billion by Byron Allen-owned networks, alleging racial discrimination in ad spending - USA TODAY,
+        "52":2022 Ford F-150 Lightning electric pickup is a huge deal for EVs - CNET,
+        "53":Deere's Earnings Were Terrific. It's Boom Times on the Farm. - Barron's,
+        "54":Carnival Cruise Line Finalizing Plans for July Return - Cruise Fever,
+        "55":We haven’t seen mortgage rates this low since January | May 21, 2021 - Fox Business,
+        "56":Why Nvidia (NVDA) Might Surprise This Earnings Season - Yahoo Finance,
+        "57":Bursting gas bubble leaves hierarchy of pain - Reuters,
+        "58":Musk Says Russia Is On Tesla's Radar As Potential Production Hub: Report - Benzinga,
+        "59":How the Vanguard ETF VOO could make you a millionaire - USA TODAY,
+        "60":Philadelphia International Airport Experiencing Long Lines, Flight Delays After American Airlines, JetBlue Report Nationwide System Outage - CBS Philly,
+        "61":Hackers target US infrastructure after digitisation on the cheap - Financial Times,
+        "62":Urban One's Southside site proposal wins the city's casino sweepstakes - RichmondBizSense,
+        "63":Fund Manager Bill Miller Unfazed by Falling BTC Price, Says Bitcoin Correction Is 'Pretty Routine' – Markets and Prices Bitcoin News - Bitcoin News,
+        "64":Japan Approves Moderna and AstraZeneca Vaccines - The New York Times,
+        "65":TSMC says 2021 output of key auto chip component up 60% versus last year - CNBC,
+        "66":Cal/OSHA Delays Vote On Dropping Mask, Physical Distancing Guidelines For Workplaces - CBS Los Angeles,
+        "67":California postpones decision to relax COVID-19 restrictions in the workplace - KTLA Los Angeles,
+        "68":Businesses say Oregon’s mask guidance gives them two options, both bad - OregonLive,
+        "69":Shares in alt-milk maker Oatly surge on US stock market debut - The Guardian,
+        "70":Shares in alt-milk maker Oatly surge on US stock market debut - The Guardian
+    "source":{
+        "0":Fox Business,
+        "1":Yahoo Entertainment,
+        "2":Post Magazine,
+        "3":The Wall Street Journal,
+        "4":Gizmodo.com,
+        "5":KATU,
+        "6":Fox Business,
+        "7":KGW.com,
+        "8":Engadget,
+        "9":Barron's,
+        "10":Jalopnik,
+        "11":Bloomberg,
+        "12":Business Insider,
+        "13":Bloomberg,
+        "14":Investor's Business Daily,
+        "15":KSAT San Antonio,
+        "16":Motley Fool,
+        "17":NBC News,
+        "18":Fox News,
+        "19":KSL.com,
+        "20":Orlando Sentinel,
+        "21":The Guardian,
+        "22":KEPR 19,
+        "23":CNBC,
+        "24":CNYcentral.com,
+        "25":Bloomberg,
+        "26":HousingWire,
+        "27":Fox Business,
+        "28":CNBC,
+        "29":Deadline,
+        "30":The Hill,
+        "31":Los Angeles Times,
+        "32":Avon, CT Patch,
+        "33":The Hill,
+        "34":Bloomberg,
+        "35":CBS News,
+        "36":New York Post,
+        "37":Kitco NEWS,
+        "38":ABC St. Louis,
+        "39":Sneaker News,
+        "40":nj.com,
+        "41":Business Insider,
+        "42":PRNewswire,
+        "43":Ars Technica,
+        "44":The Indian Express,
+        "45":Seeking Alpha,
+        "46":Yahoo Entertainment,
+        "47":INSIDER,
+        "48":Barron's,
+        "49":MarketWatch,
+        "50":NBC4 WCMH-TV,
+        "51":USA Today,
+        "52":CNET,
+        "53":Barron's,
+        "54":Cruise Fever,
+        "55":Fox Business,
+        "56":Yahoo Entertainment,
+        "57":Reuters,
+        "58":Benzinga,
+        "59":USA Today,
+        "60":Cbslocal.com,
+        "61":Financial Times,
+        "62":Richmondbizsense.com,
+        "63":Bitcoin.com,
+        "64":New York Times,
+        "65":CNBC,
+        "66":Google News,
+        "67":KTLA Los Angeles,
+        "68":OregonLive,
+        "69":The Guardian,
+        "70":The Guardian
+    "content":{
+        "0":This week, Ford revealed its newest vehicle: an electric truck.
+
+The F-150 Lightning was revealed on Tuesday during an event held by President Biden, one day before it was scheduled to make its official debut.
+
+The full-size, four-door truck has the same body as Ford’s other F-150s, but the Lightnin,
+        "1":A Domino’s Pizza franchisee in the Netherlands is offering to pay its employees in bitcoin – appropriately starting on Bitcoin Pizza Day.
+• None Staff taking up the option will be able to choose how much of their salary above the minimum wage – which must be paid in euros by law – they wish to recei,
+        "2":Beijing will intensify the crackdown on bitcoin mining to protect the country’s financial system, as well as meet its clean energy and reduced carbon emission goals. Photo: Reuters,
+        "3":Some of the world’s biggest companies and deepest-pocketed investors are lining up trillions of dollars to finance a shift away from fossil fuels.
+
+Assets in investment funds focused partly on the environment reached almost $2 trillion globally in the first quarter, more than tripling in three years,
+        "4":The same hackers that took down the Irish health system last week also hit at least 16 U.S. medical and first responder networks in the past year, according to a Federal Bureau of Investigation alert made public Thursday by the American Hospital Association.
+
+As first spotted by the security news si,
+        "5":,
+        "6":The winning numbers have been drawn for Friday’s $515 million Mega Millions jackpot.
+
+Friday’s numbers: 6, 9, 17, 18, 48, with the gold Mega ball is 8
+
+The jackpot climbed because no one hit it in Tuesday’s drawing – although there were winners of smaller prizes.
+
+Two Mega Millions jackpots have bee,
+        "7":After Oregon's catastrophic wildfire season in 2020, the state has already started preparing for the worst.
+
+Portland General Electric (PGE) did this for the first time ever last summer, cutting power to an area near Mt. Hood in response to the extreme fire danger and high winds forecasted for Labor,
+        "8":Once upon a time, the Citizen app was known as Vigilante, a title so provocative that Apple banned it from the App Store and initiated a rebranding. So in 2017 it relaunched as an app built on warning people about nearby emergencies and documenting incidents in the name of transparency.
+
+A report by,
+        "9":AT&T set out to announce a transformative deal this past week, but the company’s shareholders got stuck on the fine print disclosed in the news: AT&T was slashing its dividend.
+
+The spinoff of WarnerMedia—and its subsequent combination with Discovery (ticker: DISCA)—is a vital course correction for ,
+        "10":International shipping is currently a bit of a mess, but thanks to some costly updates in infrastructure, ports on the U.S. East Coast are now able to receive ships like the CMA CGM Marco Polo, which arrived in New York City on Thursday. Almost the size of the Ever Given that got stuck in the Suez C,
+        "11":Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy.,
+        "12":Bill Gates' public image as a nerdy do-gooder has crumbled amid recent allegations of misconduct
+
+In 1998, Bill Gates, then the wealthiest person in America, appeared before Congress to testify about whether Microsoft, then the wealthiest company in America, about accusations it was abusing its mark,
+        "13":Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy.,
+        "14":Access to this page has been denied because we believe you are using automation tools to browse the website.
+
+This may happen as a result of the following:
+• Javascript is disabled or blocked by an extension (ad blockers for example)
+• Your browser does not support cookies
+
+Please make sure that Jav,
+        "15":A driver who was parked on the shoulder near Loop 410 and Highway 281 was taken to a hospital after calling 911 about a shooting.,
+        "16":Just like its upcoming test flight this weekend, Virgin Galactic Holdings (NYSE:SPCE) stock is positioned for a powerful liftoff. One analyst tracking the stock, UBS' (NYSE:UBS) Myles Walton, upgraded his recommendation on the stock Friday to buy from neutral. That was despite the prognosticator's p,
+        "17":Pope Francis, who has frequently spoken out on environmental issues, will trade in his popemobile for a new model running entirely on battery power.
+
+The pontiff met Thursday with Henrik Fisker and Geeta Gupta-Fisker, founders of the California-based electric car startup Fisker, who provided him wit,
+        "18":A passenger on a Birmingham, Ala.,-bound Southwest Airlines flight posted a concerning photo on social media Friday showing the top of a wing ripped off.
+
+The Twitter user who posted the photo said that her airline – Flight 654 departing Chicago's Midway International Airport -- was clipped by anoth,
+        "19":SALT LAKE CITY — You'll soon be able to fly nonstop from Salt Lake City International Airport to one of Germany's largest cities.
+
+Lufthansa Group on Thursday announced a handful of new international flights it'll add next year, including three nonstop flights per week between Salt Lake City and Fra,
+        "20":Alden, which already owned one-third of the company and favors aggressive cost-cutting to boost profits, had drawn opposition for its bid from Tribune Publishing journalists at papers including the Sentinel, the Chicago Tribune, the Baltimore Sun, the Hartford Courant and the New York Daily News. Fo,
+        "21":Federal authorities have ordered a complete recall of the Las Vegas-based bottled water brand Real Water and ordered the company to surrender records in investigations of at least one death and multiple cases of liver illness among people who reported drinking it.
+
+Brent Jones, the company’s preside,
+        "22":,
+        "23":The trading pattern of the past two weeks – particularly alongside cryptocurrency's movements – suggests stocks could continue to be volatile in the week ahead. Investors are watching the wild swings in bitcoin and trying to gauge whether technology shares can gain traction after a rally attempt in ,
+        "24":,
+        "25":Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy.,
+        "26":According to the National Association of Realtors, existing home sales for April’s housing market came in at 5,850,000. This was a miss from estimates and the third straight month of declines in sales.
+
+I have been saying we should expect home sales to moderate since the end of summer 2020, and that,
+        "27":Officials at the Federal Reserve are working to make sure history does not repeat itself.
+
+It has been eight years since the economy witnessed the infamous "Taper Tantrum" when the Federal Reserve hinted that it would reduce its bond purchases and triggered a minor panic in financial markets.
+
+Rober,
+        "28":Delta Air Lines Airbus A330neo or A330-900 aircraft with neo engine option of the European plane manufacturer, as seen departing from Amsterdam Schiphol AMS EHAM International airport.
+
+Delta Air Lines named on Friday longtime General Electric executive Dan Janki as its new CFO. The announcement com,
+        "29":AMC Entertainment’s onetime owner, China’s Dalian Wanda Group, has pretty much cashed out completely from the theater chain, revealing in an SEC filing Friday that it has pared its stake to a barely there 0.002%.
+
+Wanda first acquired AMC’s super-voting Class B stock – with three votes a share – in ,
+        "30":American vaccine maker Pfizer and its German partner BioNTech pledged Friday to provide 1 billion doses of their COVID-19 vaccine to low-and-moderate income countries by the end of 2021.
+
+During an international summit organized by the G-20 Presidency and the European Commission, Pfizer said it woul,
+        "31":California accounted for an outsized portion of the nation’s new jobs last month, although its path to economic recovery from the pandemic remains steep.
+
+“In April, California was the locomotive pulling the U.S. economy forward,” said Sung Won Sohn, a professor of finance and economics at Loyola Ma,
+        "32":Gov. Dan McKee and other state officials were on hand to announce the new travel offering Friday morning. "We are thrilled to welcome Breeze Airways to Rhode Island's skies this summer," McKee said. "Our state's travel and tourism industry has endured much hardship over the past year and we are look,
+        "33":California is requiring ride-sharing companies such as Uber and Lyft to transition from gasoline to electric vehicles (EVs) in their networks by the end of this decade.
+
+The state’s clean-air regulator on Thursday unanimously approved the Clean Miles Standard mandating that EVs account for 90 percen,
+        "34":Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy.,
+        "35":As more than 3.7 million Americans could start seeing enhanced unemployment benefits end next month, the Labor Department is struggling to find a way to keep unemployed workers from being cut off as the clock ticks down. An official told CBS News the federal government paying the benefits to some un,
+        "36":Office-leasing company WeWork lost over $2 billion in the first quarter of 2021, as it prepares to go public through a SPAC deal more than a year after it initially sought to IPO.
+
+The company reported a net loss of $2.06 billion on sales of $598 million. Occupancy rose to 50 percent, up slightly fr,
+        "37":Editor's Note: With so much market volatility, stay on top of daily news! Get caught up in minutes with our speedy summary of today's must-read news and expert opinions. Sign up here!
+
+(Kitco News) - The cryptocurrency market has been the asset class to watch this year as bitcoin prices saw a histor,
+        "38":,
+        "39":Foot Locker, Inc. held its First Quarter Earnings Conference Call on Friday, May 21st. During the briefing, Foot Locker Chairman and Chief Executive Officer, Richard “Dick” Johnson, shared a number of figures that exceeded projections coming into 2021. Alongside news that revenue increased 82% year-,
+        "40":Cryptocurrency is all the rage among some investors, whose portfolios gyrate wildly on a daily basis. The value of this investment type, which is a form of digital payment, frequently rises and falls violently on social media posts, internet chatter and sometimes, for seemingly no reason at all.
+
+Se,
+        "41":
+• Biden's upcoming budget won't include his campaign promise of forgiving student debt, WaPo reports.
+• Biden said he would support canceling $10,000 in debt per person, but none of his proposed spending has that provision.
+• Democrats want Biden to go bigger and cancel $50,000 per person through e,
+        "42":HORSHAM, Pa., May 21, 2021 /PRNewswire/ -- The Janssen Pharmaceutical Companies of Johnson & Johnson announced today the U.S. Food and Drug Administration (FDA) has granted the accelerated approval of RYBREVANTTM (amivantamab-vmjw) for the treatment of adult patients with locally advanced or metasta,
+        "43":The Biden administration wants businesses to report cryptocurrency transactions with values of at least $10,000 to the Internal Revenue Service.
+
+"Cryptocurrency already poses a significant detection problem by facilitating illegal activity broadly including tax evasion," the US Treasury Department ,
+        "44":The airline said it has taken following steps after the data security incident: Secured the compromised servers, engaged external specialists of data security incidents, notified and in talk with the credit card issuers and reset the passwords of Air India frequent flyer programme. (File Photo)
+
+Air,
+        "45":Your current browser configuration
+
+is not compatible with this site.,
+        "46":(Bloomberg) -- Tesla Inc. shares hit a gloomy milestone -- dropping for a fifth straight week -- after several unflattering headlines and the unveiling of a formidable electric pickup truck by Ford Motor Co.
+
+The stock closed down 1.5% for the week, at $580.88. It is the longest weekly losing streak,
+        "47":
+• Burger King announced a new line of fried chicken sandwiches on Wednesday.
+• The chain will offer three flavor varieties starting June 3 for around $4 each depending on the region, with an upcharge for deluxe varieties.
+• I tried all three and was impressed by both the quality and flavor of each.,
+        "48":President Joe Biden, in an executive order, directed the Labor Department to consider suspending Trump-era rules that would make environmental, social, and governance (ESG) investing more difficult for 401(k) plans.
+
+The instruction was part of an overall executive order that instructed federal bodi,
+        "49":Shares of Kansas City Southern KSU, rose 0.6% in Friday morning trading, after the Missouri-based railroad company said it has terminated its merger agreement with Canadian Pacific Railway Ltd. CP, CP, , and will go with it determined was a "superior" bid from Canadian National Railway Co. CN, CNR, ,
+        "50":COLUMBUS (WCMH) — Columbus Recreation and Parks Department announced Friday that outdoor pools will reopen this summer.
+
+Select pools and all spraygrounds will be open Memorial Day Weekend, May 29-31. All pools will begin opening the week of June 7, according to a release from the city.
+
+“Swimming p,
+        "51":A new $10 billion lawsuit alleges McDonalds engaged in racial discrimination by refusing to advertise on the networks of Entertainment Studios and Weather Group, which are owned by Black media entrepreneur Byron Allen and includes networks such as the Weather Channel.
+
+The lawsuit, filed Thursday in,
+        "52":The 2022 Ford F-150 Lightning seen in these photos is a segment-defining all-electric pickup truck. In fact, it's the single most consequential new vehicle in development from the Blue Oval right now. Yes, that includes the reborn Ford Bronco SUV that set the internet on fire when it debuted last ye,
+        "53":Deere has capitalized on high commodity prices, turning in terrific earnings. The only question for investors is how long can it last.
+
+Deere (ticker: DE) reported $5.68 in per- share earnings from $11 billion in equipment sales, while Wall Street was looking for $10.3 billion in sales and $4.48 in ,
+        "54":Carnival Cruise Line announced that they are expecting to resume cruises to Alaska in July on one of their cruise ships. Carnival is also finalizing plans on three other ships so they can return to service within the next two months.
+
+
+
+Carnival Cruise Line has already opened Alaska sailings departi,
+        "55":Based on data compiled by Credible, mortgage rates have remained unchanged since yesterday, still lingering at lows comparable to January.
+
+Rates last updated on May 21, 2021. These rates are based on the assumptions shown here. Actual rates may vary.
+
+What this means: Mortgage rates hung around at ,
+        "56":Investors are always looking for stocks that are poised to beat at earnings season and NVIDIA Corporation NVDA may be one such company. The firm has earnings coming up pretty soon, and events are shaping up quite nicely for their report.
+
+
+
+That is because Nvidia is seeing favorable earnings estimat,
+        "57":A natural gas flare on an oil well pad burns as the sun sets outside Watford City, North Dakota January 21, 2016. REUTERS/Andrew Cullen
+
+Natural gas’ status as the acceptable face of hydrocarbons has suffered a grievous blow. Until recently the biggest players – energy majors like Royal Dutch Shell ,
+        "58":Tesla Inc.'s (NASDAQ: TSLA) global ambitions are getting bigger and the electric vehicle pioneer is contemplating setting up a manufacturing base at a country known for its authoritarian government and not-so-transparent policies.
+
+What Happened: Tesla is close to establishing a presence in Russia, ,
+        "59":Is your goal to retire a millionaire? If so, you're in good company. And in reality, a few million dollars isn't an unreasonable goal for a retirement nest egg. Remember, the savings you carry into your senior years will need to last for several decades, and starting out with a couple of million or ,
+        "60":'Eye On Culture: The Jewish Experience' Comes To CBS News In Recognition Of Jewish American Heritage MonthIn recognition of Jewish American Heritage Month, CBS News is featuring original reporting on the Jewish American experience across all platforms and stations.
+
+WATCH: Robert & Michelle King On ,
+        "61":Become an FT subscriber to read:
+
+Expert insights, analysis and smart data help you cut through the noise to spot trends, risks and opportunities.
+
+Join over 300,000 Finance professionals who already subscribe to the FT.,
+        "62":The city has chosen its preferred casino site.
+
+Urban One’s pitch to develop a $600 million, 300,000-square-foot casino on the Southside at 2001 Walmsley Blvd. has been selected by the city’s Resort Casino Evaluation Panel as the top proposal, Mayor Levar Stoney’s office announced Thursday.
+
+The ult,
+        "63":The founder and chief investment officer of Miller Value Partners, Bill Miller, is not disturbed by the falling price of bitcoin. While acknowledging that the price drop looks extreme when compared to the stock market, he says it is “pretty routine” for the cryptocurrency.
+
+Veteran investor Bill Mil,
+        "64":Japan on Friday approved the Moderna and AstraZeneca coronavirus vaccines for use in adults, giving the country much-needed new options as it tries to speed up an inoculation campaign that has been one of the slowest in the developed world.
+
+Previously, only the Pfizer vaccine had been authorized fo,
+        "65":A logo of Taiwan Semiconductor Manufacturing Co (TSMC) is seen at its headquarters in Hsinchu, Taiwan August 31, 2018.
+
+Taiwan Semiconductor Manufacturing Co (TSMC) said on Friday that it has increased its 2021 output for a key component for automotive semiconductors by 60% compared with last year, ,
+        "66":,
+        "67":An AMC employe sanitize the counter after each customer at the AMC Burbank theatre concession stand on reopening day in Burbank, California, March 15, 2021. (Valerie Macon/AFP via Getty Images)
+
+California workforce regulators will aim for a mid-June easing of workplace mask and social distancing re,
+        "68":Oregon was left scrambling last Thursday after the Centers for Disease Control and Prevention unexpectedly announced that fully vaccinated people no longer needed to wear masks or physically distance in most circumstances.
+
+The Oregon Health Authority responded to the announcement by trying to walk ,
+        "69":Oatly’s chief executive says demand for its oat milk has ‘completely exploded’ during the pandemic. Photograph: Marta Lavandier/AP IPOs Shares in alt-milk maker Oatly surge on US stock market debut Swedish firm valued at $13bn as investors bet on soaring demand for plant-based food alternatives
+
+Oat,
+        "70":Oatly’s chief executive says demand for its oat milk has ‘completely exploded’ during the pandemic. Photograph: Marta Lavandier/AP IPOs Shares in alt-milk maker Oatly surge on US stock market debut Swedish firm valued at $13bn as investors bet on soaring demand for plant-based food alternatives
+
+Oat
+    },
+    "link":{
+        "0":https://www.foxbusiness.com/lifestyle/ford-f-150-lightning-electric-trucks-tesla-rivian,
+        "1":https://finance.yahoo.com/news/staff-biggest-dutch-domino-pizza-070000839.html,
+        "2":https://www.scmp.com/tech/policy/article/3134473/china-escalates-crackdown-bitcoin-mining-trading,
+        "3":https://www.wsj.com/articles/green-finance-goes-mainstream-lining-up-trillions-behind-global-energy-transition-11621656039,
+        "4":https://gizmodo.com/fbi-conti-ransomware-gang-behind-ireland-attack-also-h-1846946291,
+        "5":https://katu.com/news/local/man-arrested-in-two-pharmacy-robberies-in-hillsboro,
+        "6":https://www.foxbusiness.com/features/mega-millions-515m-jackpot-numbers-drawn,
+        "7":https://www.kgw.com/article/news/local/wildfire/to-prevent-wildfires-in-2021-oregon-adopts-new-rules-for-temporary-power-shutoffs/283-14d73f52-055c-4def-8afe-2b6d79a6183a,
+        "8":https://www.engadget.com/citizen-015843746.html,
+        "9":https://www.barrons.com/articles/att-cut-dividend-buy-the-stock-51621647244,
+        "10":https://jalopnik.com/the-big-boat-is-here-1846943411,
+        "11":https://www.bloomberg.com/tosv2.html?vid=&uuid=9e310930-badb-11eb-a795-9b5adb05aab0&url=L25ld3MvYXJ0aWNsZXMvMjAyMS0wNS0yMi90ZXhhcy1iaWxsaW9uYWlyZS1zLXN1cGVyc29uaWMtamV0LWRyZWFtLWRpZXMtYXMtYWVyaW9uLWZvbGRz,
+        "12":https://www.businessinsider.com/bill-gates-harassment-inappropriate-conduct-women-microsoft-jeffrey-epstein-2021-5,
+        "13":https://www.bloomberg.com/tosv2.html?vid=&uuid=a6fe1e80-bab9-11eb-9ded-dbc5e05170a8&url=L25ld3MvYXJ0aWNsZXMvMjAyMS0wNS0yMi9hLW5ldy1yZXBvcnQtZnJvbS1qcG1vcmdhbi1zaG93cy1qdXN0LWhvdy1iaWctdGV0aGVyLWhhcy1iZWNvbWU=,
+        "14":https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-stock-market-rally-survives-bitcoin-price-follow-google-nvidia-tesla/,
+        "15":https://www.ksat.com/video/news/2021/05/21/sapd-responds-to-shooting-call-at-loop-410-highway-281/,
+        "16":https://www.fool.com/investing/2021/05/21/virgin-galactic-is-now-a-buy-with-71-upside-analys/,
+        "17":https://www.nbcnews.com/business/autos/pope-francis-get-all-electric-popemobile-ev-startup-fisker-n1268224,
+        "18":https://www.foxnews.com/us/southwest-damaged-airplane-wing,
+        "19":https://www.ksl.com/article/50171354/youll-be-able-to-fly-nonstop-from-salt-lake-city-to-germany-beginning-in-2022,
+        "20":https://www.orlandosentinel.com/news/orange-county/os-ne-alden-tribune-orlando-sentinel-20210521-7evdmxskabgxzpnpxgdcenmnly-story.html,
+        "21":https://amp.theguardian.com/us-news/2021/may/21/real-water-alkalized-liver-illness-death,
+        "22":https://keprtv.com/news/local/pasco-flight-bound-for-seattle-makes-emergency-landing-due-to-sparks,
+        "23":https://www.cnbc.com/2021/05/21/stocks-could-be-volatile-in-week-ahead-amid-turbulence-from-cryptocurrency.html,
+        "24":https://cnycentral.com/news/local/shock-at-the-pump-as-gas-prices-are-the-highest-since-2014-the-trend-is-set-to-continue,
+        "25":https://www.bloomberg.com/news/articles/2021-05-21/oregon-offers-1-million-u-s-enlists-dating-apps-virus-update,
+        "26":http://www.housingwire.com/articles/existing-home-sales-data-a-bad-sign-for-housing-market/,
+        "27":https://www.foxbusiness.com/markets/dallas-fed-president-talks-inflation-asset-purchase-dial-back,
+        "28":https://www.cnbc.com/2021/05/21/delta-taps-longtime-ge-exec-dan-janki-as-its-new-cfo.html,
+        "29":https://deadline.com/2021/05/dalian-wanda-group-amc-entertainment-adam-aron-reddit-1234762048/,
+        "30":https://thehill.com/policy/healthcare/554818-pfizer-biontech-pledge-2-billion-covid-vaccine-doses-to-lower-income,
+        "31":https://www.latimes.com/business/story/2021-05-21/california-tourism-restaurants-lead-job-gains,
+        "32":https://patch.com/rhode-island/cranston/new-airline-offer-service-t-f-green-starting-july-29,
+        "33":https://thehill.com/changing-america/sustainability/infrastructure/554803-california-will-require-uber-and-lyft-drivers,
+        "34":https://www.bloomberg.com/news/articles/2021-05-21/behind-the-scenes-at-the-crypto-blaze-a-quieter-market-message,
+        "35":https://www.cbsnews.com/news/enhanced-unemployment-benefits-end-worker-funding/,
+        "36":https://nypost.com/2021/05/21/wework-said-it-lost-over-2b-last-quarter-as-it-prepares-to-go-public/,
+        "37":https://www.kitco.com/news/2021-05-21/The-tide-is-turning-for-cryptos.html,
+        "38":https://abcstlouis.com/news/nation-world/7-nooses-halt-construction-at-connecticut-amazon-warehouse,
+        "39":https://sneakernews.com/2021/05/21/foot-locker-footaction-closings/,
+        "40":https://www.nj.com/news/2021/05/should-i-invest-in-cryptocurrency-what-about-bitcoin-dogecoin-ethereum.html,
+        "41":https://www.businessinsider.com/biden-student-loan-debt-forgiveness-white-house-budget-washington-post-2021-5,
+        "42":https://www.prnewswire.com/news-releases/rybrevant-amivantamab-vmjw-receives-fda-approval-as-the-first-targeted-treatment-for-patients-with-non-small-cell-lung-cancer-with-egfr-exon-20-insertion-mutations-301297080.html,
+        "43":https://arstechnica.com/tech-policy/2021/05/crypto-payments-above-10000-would-be-reported-to-irs-under-treasury-plan/,
+        "44":https://indianexpress.com/article/india/massive-cyberattack-leaks-credit-card-details-passport-info-of-air-india-passengers-7324949/,
+        "45":https://seekingalpha.com/news/3699197-amazon-to-retire-prime-now-absorb-fast-ship-experience-into-bigger-brand,
+        "46":https://finance.yahoo.com/news/tesla-headed-longest-weekly-losing-163457064.html,
+        "47":https://www.insider.com/review-of-burger-kings-new-line-of-fried-chicken-sandwiches-2021-5,
+        "48":https://www.barrons.com/articles/trump-era-rules-made-esg-investing-harder-biden-is-reversing-them-51621610809,
+        "49":https://www.marketwatch.com/story/kansas-city-southern-to-merge-with-canadian-national-paid-canadian-pacific-700-million-breakup-fee-2021-05-21,
+        "50":https://www.nbc4i.com/news/local-news/columbus-announces-outdoor-city-pools-reopening-for-the-summer-with-free-admission/,
+        "51":https://www.usatoday.com/story/money/restaurants/2021/05/21/mcdonalds-sued-racial-discrimination-advertising-byron-allen-networks/5198087001/,
+        "52":https://www.cnet.com/roadshow/news/2022-ford-f-150-lightning-electric-pickup-truck-specs-pricing/,
+        "53":https://www.barrons.com/articles/deeres-earnings-were-terrific-its-boom-times-on-the-farm-51621603958,
+        "54":https://cruisefever.net/carnival-cruise-line-finalizing-plans-for-july-return/,
+        "55":https://www.foxbusiness.com/money/todays-mortgage-rates-may-21-2021,
+        "56":https://finance.yahoo.com/news/why-nvidia-nvda-might-surprise-124412369.html,
+        "57":https://www.reuters.com/breakingviews/bursting-gas-bubble-leaves-hierarchy-pain-2021-05-21/,
+        "58":https://www.benzinga.com/news/21/05/21232093/musk-says-russia-is-on-teslas-radar-as-potential-production-hub-report,
+        "59":https://www.usatoday.com/story/money/investing/2021/05/21/how-vanguard-etf-millionaire/116399968/,
+        "60":https://philadelphia.cbslocal.com/2021/05/21/philadelphia-international-airport-flight-delays-american-airlines-jet-blue-system-outage/,
+        "61":https://www.ft.com/content/3a6941ce-8b0f-40b1-84d6-6418d8a84c94,
+        "62":https://richmondbizsense.com/2021/05/21/urban-ones-southside-site-proposal-wins-the-citys-casino-sweepstakes/,
+        "63":https://news.bitcoin.com/bill-miller-falling-btc-price-bitcoin-correction-pretty-routine/,
+        "64":https://www.nytimes.com/2021/05/21/world/asia/japan-moderna-astrazeneca-vaccine.html,
+        "65":https://www.cnbc.com/2021/05/21/tsmc-says-2021-output-of-key-auto-chip-component-up-60percent-versus-last-year.html,
+        "66":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9UzIyRzJKbk5TUXPSAQA?oc=5,
+        "67":https://ktla.com/news/coronavirus/california-postpones-decision-to-relax-covid-19-restrictions-in-the-workplace/,
+        "68":https://www.oregonlive.com/business/2021/05/oregon-pleases-almost-no-one-with-new-mask-guidance-for-businesses.html,
+        "69":https://amp.theguardian.com/business/2021/may/20/shares-alt-milk-maker-oatly-us-stock-market-debut-investors-alternative,
+        "70":https://amp.theguardian.com/business/2021/may/20/shares-alt-milk-maker-oatly-us-stock-market-debut-investors-alternative
+    }
+}
