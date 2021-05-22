@@ -1,4 +1,3 @@
-#每日頭條20則
 import requests
 from newsapi import NewsApiClient
 import json
@@ -8,6 +7,7 @@ from goose3 import Goose
 from goose3.text import StopWordsChinese 
 dataDict = dict()
 def headlineCrawler(dataDict):
+    idDict = dict()
     headerDict = dict()
     sourceDict = dict()
     contentDict = dict()
@@ -17,9 +17,10 @@ def headlineCrawler(dataDict):
     dataDict["source"] = sourceDict
     dataDict["content"] = contentDict
     dataDict["link"] = linkDict
-    r = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=0bd726adde3042e2810aec5171b67fcc')
+    r = requests.get('https://newsapi.org/v2/top-headlines?country=us&category=business&pageSize=70&apiKey=0bd726adde3042e2810aec5171b67fcc')
     data = json.loads(r.content)
-    for i in range(20):
+    for i in range(70):
+        print(i)
         g = Goose({'stopwords_class': StopWordsChinese}) 
         # 文章地址
         url = data['articles'][i]['url']
@@ -28,13 +29,12 @@ def headlineCrawler(dataDict):
         g = Goose()
         article = g.extract(url=url)
         article.title
-        article.cleaned_text[:200]
+        article.cleaned_text[:300]
         idDict[i] = i+1
         headerDict[i] = data['articles'][i]['title']
         sourceDict[i] = data['articles'][i]['source']['name']
         contentDict[i] = article.cleaned_text[:300]
         linkDict[i] = data['articles'][i]['url']
-
 dataDict = dict()
 headlineCrawler(dataDict)
 
