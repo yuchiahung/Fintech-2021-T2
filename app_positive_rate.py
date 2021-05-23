@@ -59,6 +59,7 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
                 col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #f7dcd5" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
 
 def app():
+    st.title('Sentiment of Entities')
     # df_positive = pd.read_json('test_positive_rate.json')
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     df_sentiment_news = pd.read_json('data/data_entities_news.json')
