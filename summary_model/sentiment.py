@@ -1,5 +1,6 @@
 ### ----- Sentiment Analysis ----- ###
 import pandas as pd
+import re
 df = pd.read_json('../streamlit_summary_web/data/data_summary.json')
 df.drop_duplicates(subset=['header', 'source', 'time', 'content', 'link'], inplace = True)
 
@@ -125,6 +126,8 @@ def manipulate_entities(tag = 'org', n = 2, df_sen_ner = all_ner.copy()):
 entities_sen_news = pd.DataFrame(columns = ['entities', 'sentiment', 'news_id'])
 for t in ['org', 'person']:
     entities_sen_news = pd.concat([entities_sen_news, manipulate_entities(tag = t, n = 2, df_sen_ner = all_ner.copy())])
+# remove " Inc" (e.g. Tesla Inc --> Tesla)
+entities_sen_news['entities'] = [re.sub('\sInc$', '', e) for e in entities_sen_news.entities]
 # drop duplicates (in case there's one entity in two tags at the same time)
 entities_sen_news.drop_duplicates(ignore_index = True, inplace = True)
 entities_sen_news.to_json('../streamlit_summary_web/data/data_entities_news.json', force_ascii=False)
