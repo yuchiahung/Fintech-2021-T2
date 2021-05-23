@@ -28,7 +28,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 PAGES = {
-    "Selected News": app_overall_news,
+    "Latest News": app_overall_news,
     "By Categories": app_categories,
     "Keyword Search": app_keyword_search,
     "Positive Rate": app_positive_rate,

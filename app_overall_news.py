@@ -1,6 +1,6 @@
 import streamlit as st
 # import plotly.graph_objs as go
-from datetime import datetime
+from datetime import datetime, timedelta
 # from plotly.subplots import make_subplots
 import json
 import pandas as pd
@@ -8,43 +8,43 @@ import pandas as pd
 
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-# from summarizer import Summarizer
-# from transformers import AutoTokenizer, AutoConfig, AutoModel
+import numpy as np
+from matplotlib import cm
+from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 import webbrowser
 
 
 #利用st.cache()快取沒有改變過的data
-@st.cache()
-def get_data(date):
-    """ Manipulating data as dataframe"""
-    df = pd.read_json('test_data.json')
-    # to lower-cased
-    df['content_lower'] = [text.lower() for text in df['content']]
-    # combine header & content (for wordcloud)
-    df['all_text'] = df['header'] + ' ' + df['content']
-    # convert "time" to datetime data
-    df['time'] = pd.to_datetime(df['time'], format = '%Y/%m/%d %H:%M')
-    return df
+# @st.cache()
 
-def wordcloud(text, n_words=100):
+def wordcloud(data, n_words=100):
+    """ Wordcloud of news of the week """
+    a_week_ago = datetime.today() - timedelta(days=7)
+    data['time'] = pd.to_datetime(data['time'], unit='ms')  
+    data_week = data[data.time > a_week_ago]
+    text = ' '.join(data_week['header'] + ' ' + data_week['content'])
     # read stopwords
     with open('stopwords_en.txt') as f:
         stopwords = [line.rstrip() for line in f]
+    # Generate color map
+    oceanBig = cm.get_cmap('ocean', 512)
+    newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
     # Generate a word cloud image
-    wordcloud = WordCloud(width=800, height=150, background_color='white', colormap='ocean', stopwords=stopwords, max_words=n_words).generate(text)
+    wordcloud = WordCloud(width=800, height=150, background_color='white', 
+                          colormap=newcmp, stopwords=stopwords, max_words=n_words).generate(text)
     # Display the generated image
     fig = plt.figure()
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
     return fig
 
-def select_news(n):
-    """select n most important/lastest summarized news  & calculate time"""
-    # read summarized news
-    data = pd.read_json('test_summary_data.json')
-    ### ----- do something to sort ----- ###
-    df = data[:n]
-    df.reset_index(inplace = True, drop = True)
+def select_news(data, n):
+    """select n most important/latest summarized news  & calculate time"""
+    # sort by time (display latest news)
+    data.sort_values(by = 'time', ignore_index = True, ascending = False, inplace = True)
+    data.content_summary.replace('', float('NaN'), inplace=True)
+    df = data.dropna(subset = ['content_summary'])[:n]
+    df.reset_index(drop=True, inplace = True)
     # calculate news published time from now
     df['time'] = pd.to_datetime(df['time'], unit='ms')
     df['seconds_from_now'] = [(datetime.now() - t).total_seconds() for t in df['time']]
@@ -66,25 +66,6 @@ def select_news(n):
             time_ago = f'{int(seconds//(60*60*24*365))} years ago'
         df.loc[i, 'time_ago'] = time_ago
     return df
-
-
-# @st.cache()
-# def summarize_news(data, n_news = 10, n_sen = 2):
-#     """summarize top n news"""
-#     # select top n news
-#     selected_news_df = select_news(data, n_news)
-#     # selected contents
-#     text = selected_news_df['content_lower'].tolist()
-#     # get model
-#     modelName = "bert-base-uncased" # lower-cased
-#     custom_config = AutoConfig.from_pretrained(modelName)
-#     custom_config.output_hidden_states=True
-#     custom_tokenizer = AutoTokenizer.from_pretrained(modelName)
-#     custom_model = AutoModel.from_pretrained(modelName, config=custom_config)
-#     model = Summarizer(custom_model=custom_model, custom_tokenizer=custom_tokenizer)
-#     # summarized contents
-#     selected_news_df['content_summary'] = [model(t, num_sentences = n_sen) for t in text]
-#     return selected_news_df
 
 def display_news(header, content, source, url, time_ago):
     # clicked = st.button('Original New')
@@ -111,7 +92,7 @@ def display_news(header, content, source, url, time_ago):
     st.markdown(f'<p class="small-font">{time_ago} | {source}</p>', unsafe_allow_html=True)
     # content & link to original new
     # st.markdown(f'\n{content}[...](url)', unsafe_allow_html=True)  
-    st.markdown(f'<p class="news-content">\n{content}</p>', unsafe_allow_html=True)  
+    st.markdown(f'<p class="news-content">{content}</p>', unsafe_allow_html=True)  
     # add something in expander
     # st.beta_expander('More')
     # separate bar
@@ -119,18 +100,18 @@ def display_news(header, content, source, url, time_ago):
 
 def app():
     # st.image('./icon.png')
-    st.title('Selected News')
+    st.title('Latest News')
     today = datetime.today().date()
-    df = get_data(today)
+    # read summarized news
+    data_summary = pd.read_json('data/data_summary.json')
     # st.dataframe(df)
     # st.table(data)
 
     # ----------- wordcloud ----------- #
-    all_text = ' '.join(df['all_text'])
-    st.pyplot(wordcloud(all_text, n_words = 100))
+    st.pyplot(wordcloud(data_summary, n_words = 100))
 
     # ----------- summary ----------- #
-    topn_news_df = select_news(n = 15)
+    topn_news_df = select_news(data_summary, n = 15)
     for i in range(len(topn_news_df)):
         display_news(topn_news_df.loc[i, 'header'], topn_news_df.loc[i, 'content_summary'], 
                     topn_news_df.loc[i, 'source'], topn_news_df.loc[i, 'link'], topn_news_df.loc[i, 'time_ago'])

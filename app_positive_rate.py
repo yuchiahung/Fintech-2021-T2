@@ -52,24 +52,27 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
         if len(en_s_df) > 0:
             header, link = news.loc[news.id == en_s_df.sample(1).news_id.values[0], ['header', 'link']].values[0]
             if s == 1:
-                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #B3D0C2" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
+                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #d8e3de" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
             elif s == 0:
-                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #F6DEB6" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
+                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #faeed9" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
             else:
-                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #F1C7BB" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
+                col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #f7dcd5" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
 
 def app():
     # df_positive = pd.read_json('test_positive_rate.json')
-    df_positive = pd.read_json('test_positive_rate_person_org.json')
-    df_sentiment_news = pd.read_json('test_sentiment_entities_person_org.json')
-    df_news = pd.read_json('test_data.json')
-    for i in range(len(df_positive)):
-        ent = df_positive.loc[i, 'entities']
+    df_positive = pd.read_json('data/data_entities_pos_rate.json')
+    df_sentiment_news = pd.read_json('data/data_entities_news.json')
+    df_news = pd.read_json('data/data_summary.json')
+    # sort df_positive data by total news count 
+    df_positive_sorted = df_positive.sort_values(by = 'sum', ascending = False).reset_index(drop = True)
+    # display top 10 entities
+    for i in range(10):
+        ent = df_positive_sorted.loc[i, 'entities']
         display_rate(entity = ent, 
                     news = df_news,
                     sentiment = df_sentiment_news,
-                    # rate_list = df_positive.loc[i, ['positive_rate', 'neutral_rate', 'negative_rate']].tolist())
-                    rate_list = df_positive.loc[i, ['1', '0', '-1']].tolist())
+                    # rate_list = df_positive_sorted.loc[i, ['positive_rate', 'neutral_rate', 'negative_rate']].tolist())
+                    rate_list = df_positive_sorted.loc[i, ['1', '0', '-1']].tolist())
         df_sentiment_news[df_sentiment_news.entities == ent]
 
     
