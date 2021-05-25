@@ -1,0 +1,679 @@
+{
+    "id":{
+        "0":1,
+        "1":2,
+        "2":3,
+        "3":4,
+        "4":5,
+        "5":6,
+        "6":7,
+        "7":8,
+        "8":9,
+        "9":10,
+        "10":11,
+        "11":12,
+        "12":13,
+        "13":14,
+        "14":15,
+        "15":16,
+        "16":17,
+        "17":18,
+        "18":19,
+        "19":20,
+        "20":21,
+        "21":22,
+        "22":23,
+        "23":24,
+        "24":25,
+        "25":26,
+        "26":27,
+        "27":28,
+        "28":29,
+        "29":30,
+        "30":31,
+        "31":32,
+        "32":33,
+        "33":34,
+        "34":35,
+        "35":36,
+        "36":37,
+        "37":38,
+        "38":39,
+        "39":40,
+        "40":41,
+        "41":42,
+        "42":43,
+        "43":44,
+        "44":45,
+        "45":46,
+        "46":47,
+        "47":48,
+        "48":49,
+        "49":50,
+        "50":51,
+        "51":52,
+        "52":53,
+        "53":54,
+        "54":55,
+        "55":56,
+        "56":57,
+        "57":58,
+        "58":59,
+        "59":60,
+        "60":61,
+        "61":62,
+        "62":63,
+        "63":64,
+        "64":65,
+        "65":66,
+        "66":67,
+        "67":68,
+        "68":69,
+        "69":70,
+        "70":71,
+        "71":72,
+        "72":73,
+        "73":74,
+        "74":75,
+        "75":76,
+        "76":77,
+        "77":78,
+        "78":79,
+        "79":80,
+        "80":81,
+        "81":82,
+        "82":83,
+        "83":84,
+        "84":85,
+        "85":86,
+        "86":87,
+        "87":88,
+        "88":89,
+        "89":90,
+        "90":91,
+        "91":92,
+        "92":93,
+        "93":94,
+        "94":95,
+        "95":96,
+        "96":97,
+        "97":98,
+        "98":99,
+        "99":100,
+        "100":100
+    },
+    "head":{
+        "0":Google is officially releasing its Fuchsia OS, starting with first-gen Nest Hub,
+        "1":Guidehouse Insights Report Predicts Revenue in the Residential Flexible Capacity Market to Exceed $6.5 Billion by 2030,
+        "2":Europe Workforce Management Software Market Report 2021-2025: Growing Need to Optimize and Organize the Use of the Workforce and Regulatory Compliance - ResearchAndMarkets.com,
+        "3":A love letter to British tomatoes,
+        "4":Hotels Are Slowly Recouping Business, But When Will the Corporate Guest Return?,
+        "5":SEMIO OBJECTS (15),
+        "6":Dedicated government team to protect researchers' work from hostile activity,
+        "7":Video of Simone Biles Historic Double Pike on Vault Watched 5 Million Times,
+        "8":128° - Doom Eternal for Xbox, £7.97 at Currys on ebay,
+        "9":Mask Or No Mask? Confusion Persists As Businesses Decide On Policies,
+        "10":Nigeria: Southern Governors' Open Grazing Ban No Solution - Presidency,
+        "11":Assault on the greenbelt: Nearly 400,000 homes will be built on protected rural land,
+        "12":Water Flosser Market Size Worth $1.23 Billion By 2028 | CAGR: 5.3%: Grand View Research, Inc.,
+        "13":A short dictionary of liberal language on policing,
+        "14":Emerging Trends in The Electronics Manufacturing Industry in 2021,
+        "15":Health Insurance Third Party Administrator Market By Application, Global Scenario, Market Size, Consumption Growth Rate, Trends and Forecast (2021-2027),
+        "16":Map Monitoring Market Gaining Mainstream Attention in Diverse End-Use Applications Such as Automotive Industry, Growth Prospects, Technical Advancements, Business Overview 2027,
+        "17":Global Waste Recycling & Circular Economy Market Strategic Analysis, Future Scope, Growth Forecast, Global Outlook 2021-2026,
+        "18":Online Alternative Investments Market To Remain Growth Oriented With End-Use Adoption By HNI Population, Industry Opportunities 2021,
+        "19":What’s Worse Than Climate Catastrophe? Climate Catastrophe Plus Fascism.,
+        "20":Soft X-ray method promises nanocarrier breakthroughs for smart medicine,
+        "21":PelicanCorp and MISS DIG System, Inc. Partner to Strengthen Notification Services,
+        "22":Sunlands Technology Group Announces Unaudited First Quarter 2021 Financial Results,
+        "23":GreenArc Capital Partners With BNP Paribas To Mitigate Impact Washing,
+        "24":How the post-pandemic world will challenge CISOs,
+        "25":Kao Data Becomes NVIDIA DGX-Ready, Establishing the UK Innovation Corridor's Home for HPC and AI,
+        "26":Accessa and Québec owner-pharmacists make their debut in the Patient Support Program sector with Sandoz Canada's Hyrimoz®,
+        "27":Endodontics Market revenue to cross USD 1.3 Bn by 2027: Global Market Insights Inc.,
+        "28":Sunlands Technology Group Announces Unaudited First Quarter 2021 Financial Results,
+        "29":Eurelectric calls for an "Electrification Strategy" to win the Electric Decade,
+        "30":STMicroelectronics:,
+        "31":Allied Resources Group Expands Capabilities to Better Serve Utility Industry With Acquisition of RTR Energy Solutions,
+        "32":Net-Zero Emissions: Winning Strategy or Destined for Failure?,
+        "33":Scientists suggest the key to HAPPINESS is lowering your expectations,
+        "34":Outlook on the Agricultural Robots Global Market to 2026 - Increasing Demand for Satellite Agriculture is Driving Growth,
+        "35":Medivir to present at the ABGSC Life Science Summit,
+        "36":US Workbench/Workstation Market Forecast to 2027 - COVID-19 Impact and Regional Analysis by Type, Material, and End User,
+        "37":38 Novels You Need to Read This Summer,
+        "38":Analysis: In Paradise and beyond, wage hikes lag global recovery - Reuters,
+        "39":Net Asset Value(s),
+        "40":Environmentalists Honoured At the Sustainable Development Awards,
+        "41":What’s the difference between a frog and a modern human?,
+        "42":The Musical Puppetmaster Behind ‘American Idol’ on Claudia Conway and a Close Call With Disaster,
+        "43":Otoy releases OctaneRender 2021.1 in beta,
+        "44":In Paradise and beyond, wage hikes lag global recovery,
+        "45":Ombudsman Gets New Office At Keetmanshoop,
+        "46":Reutilización de elementos prefabricados de hormigón recuperados en edificios nuevos: un importante proyecto internacional coordinado por la Universidad de Tampere (Finlandia),
+        "47":Analysis: In Paradise and beyond, wage hikes lag global recovery,
+        "48":zappa-mathking added to PyPI,
+        "49":ReconAfrica Responds to National Geographic Article,
+        "50":Bollé Safety, the PPE Eyewear Specialists Introduce Go Green: Concrete Actions to Protect the Environment,
+        "51":Report: how cybercriminals abuse API keys to steal millions,
+        "52":Zimpapers Digital Strategy Bears Fruit,
+        "53":Australia to close Afghanistan embassy over security fears,
+        "54":Soil Sampling Recipe for Improved Yields,
+        "55":Global Aircraft Cabin Interiors Market (2021 to 2026) - by Type, Aircraft Type, End-user and Geography,
+        "56":UPDATE 1-European stocks at record high on German property deal, tech rally - Yahoo Finance,
+        "57":The Best Smart Thermostat for Your Home in 2021,
+        "58":Royal Mail, real estate stocks pull FTSE 250 higher; Amigo sinks - Reuters,
+        "59":Bose reports data breach following ransomware attack,
+        "60":First Lady Effect Boosts Tree-Planting,
+        "61":Africa: Africa Day - Continent Must Grow What It Eats,
+        "62":Restaurant Point-of-Sale Terminal Market Size Worth $25.95 Billion By 2028: Grand View Research, Inc.,
+        "63":Restaurant Point-of-Sale Terminal Market Size Worth $25.95 Billion By 2028: Grand View Research, Inc.,
+        "64":Australia to close Kabul embassy as US troops withdraw: PM,
+        "65":Nigeria has the most startups in Africa but falls short on other critical metrics,
+        "66":For some, masks have been a social reprieve. They plan to keep wearing them.,
+        "67":Registration open for Women in Luxury 2021 eConference June 2,
+        "68":GGTech Entertainment continues to expand its presence in new continents with the opening of its headquarters in the Middle East and North Africa (MENA),
+        "69":GGTech Entertainment continues to expand its presence in new continents with the opening of its headquarters in the Middle East and North Africa (MENA),
+        "70":sertipy added to PyPI,
+        "71":QAD Tomorrow Thought Stream Identifies Supplier Management Challenges and Provides Best Practices for Optimizing Supply Chains for Efficiency, Agility, and Resilience,
+        "72":$ 1.92 billion growth expected in Automotive Cybersecurity Market|North America to Notice Maximum Growth|Technavio,
+        "73":Ring Video Doorbell Pro review,
+        "74":UPDATE 1-German business morale improves more than expected to 2-year high - Yahoo Finance,
+        "75":MP Slams 'Unjustified' Tariff Increases By Councils,
+        "76":Software group Aveva shares rise as business bounces back,
+        "77":Trading for Tottenham's Harry Kane: Assessing what Chelsea, Man City and others could offer,
+        "78":Malawi: Standard Bank Offers Hope to Investors in Post-Covid-19 Economic Recovery,
+        "79":Tanzania: Govt Tasks Industries to Control Explosives,
+        "80":$4.0 Billion Modular Chillers Markets, 2028 by Product (Water-cooled, Air-cooled), & End-use (Commercial, Residential, Industrial),
+        "81":Joseph Gordon-Levitt to play Uber CEO Travis Kalanick in new series,
+        "82":Offshore Groovy Grails development,
+        "83":Xinhua Silk Road: Southeast China's Quanzhou targets GDP over RMB2.8 trillion by 2035,
+        "84":VMware by IKOULA: An Introductory Offer to Familiarize Yourself With The VMware Environment, While Controlling Your Budget,
+        "85":Teenagers who use the internet for more than an HOUR daily have lower grades,
+        "86":Boeren- en natuurorganisaties werken samen voor aangepast stikstofbeleid,
+        "87":Hack, disinform, deny: Russia's cybersecurity strategy,
+        "88":CBN host gives a tortured defense of Marjorie Taylor Greene's Holocaust remarks,
+        "89":Cell And Gene Therapy Clinical Trials Market Size Worth $45.4 Billion By 2028: Grand View Research, Inc.,
+        "90":Cell And Gene Therapy Clinical Trials Market Size Worth $45.4 Billion By 2028: Grand View Research, Inc.,
+        "91":django-environ-2 added to PyPI,
+        "92":Agora, Inc. (API) Q1 2021 Earnings Call Transcript,
+        "93":Ipec Bemoans Slow Progress in Resolving Hyperinflationary Era Insurance Losses,
+        "94":Breaking the Body Stereotype w/ Amanda LaCount,
+        "95":Positive in-store experiences can boost online, overall sales,
+        "96":FinVolution Group Reports First Quarter 2021 Unaudited Financial Results,
+        "97":SHAREHOLDER ALERT: Pomerantz Law Firm Reminds Shareholders with Losses on their Investment in Acadia Pharmaceuticals Inc. of Class Action Lawsuit and Upcoming Deadline - ACAD,
+        "98":Don't let the slogans fool you, anti-Blackness still runs deep in sports a year after George Floyd's murder,
+        "99":Simple MicroPython Game is a 30 Minute Game Dev Course,
+        "100":Simple MicroPython Game is a 30 Minute Game Dev Course
+    },
+    "source":{
+        "0":Osnews.com,
+        "1":Business Wire,
+        "2":Business Wire,
+        "3":Independent,
+        "4":Hotstats.com,
+        "5":Hilobrow.com,
+        "6":Www.gov.uk,
+        "7":Newsweek,
+        "8":Hotukdeals.com,
+        "9":NPR,
+        "10":AllAfrica - Top Africa News,
+        "11":Daily Mail,
+        "12":PRNewswire,
+        "13":Al Jazeera English,
+        "14":Thefrisky.com,
+        "15":Yahoo Entertainment,
+        "16":Yahoo Entertainment,
+        "17":Yahoo Entertainment,
+        "18":Yahoo Entertainment,
+        "19":Thenation.com,
+        "20":Phys.Org,
+        "21":PRNewswire,
+        "22":PRNewswire,
+        "23":Yahoo Entertainment,
+        "24":Csoonline.com,
+        "25":PRNewswire,
+        "26":Yahoo Entertainment,
+        "27":Yahoo Entertainment,
+        "28":Yahoo Entertainment,
+        "29":Yahoo Entertainment,
+        "30":Yahoo Entertainment,
+        "31":Yahoo Entertainment,
+        "32":Yale.edu,
+        "33":Daily Mail,
+        "34":Yahoo Entertainment,
+        "35":Yahoo Entertainment,
+        "36":Yahoo Entertainment,
+        "37":Lithub.com,
+        "38":Reuters,
+        "39":Yahoo Entertainment,
+        "40":AllAfrica - Top Africa News,
+        "41":Earlyretirementextreme.com,
+        "42":Daily Beast,
+        "43":Cgchannel.com,
+        "44":The Times of India,
+        "45":AllAfrica - Top Africa News,
+        "46":La Nacion,
+        "47":Yahoo Entertainment,
+        "48":Pypi.org,
+        "49":AllAfrica - Top Africa News,
+        "50":Business Wire,
+        "51":Cybernews.com,
+        "52":AllAfrica - Top Africa News,
+        "53":Al Jazeera English,
+        "54":AllAfrica - Top Africa News,
+        "55":Yahoo Entertainment,
+        "56":Yahoo Entertainment,
+        "57":Addictivetips.com,
+        "58":Reuters,
+        "59":Itsecuritynews.info,
+        "60":AllAfrica - Top Africa News,
+        "61":AllAfrica - Top Africa News,
+        "62":PRNewswire,
+        "63":Yahoo Entertainment,
+        "64":The Times of India,
+        "65":Quartz India,
+        "66":NBC News,
+        "67":Luxurydaily.com,
+        "68":Yahoo Entertainment,
+        "69":PRNewswire,
+        "70":Pypi.org,
+        "71":Yahoo Entertainment,
+        "72":Tmcnet.com,
+        "73":TechRadar,
+        "74":Yahoo Entertainment,
+        "75":AllAfrica - Top Africa News,
+        "76":City A.M.,
+        "77":ESPN,
+        "78":AllAfrica - Top Africa News,
+        "79":AllAfrica - Top Africa News,
+        "80":Yahoo Entertainment,
+        "81":The Hindu,
+        "82":Slashdot.org,
+        "83":PRNewswire,
+        "84":Business Wire,
+        "85":Daily Mail,
+        "86":Www.nrc.nl,
+        "87":The Times of India,
+        "88":Raw Story,
+        "89":PRNewswire,
+        "90":Yahoo Entertainment,
+        "91":Pypi.org,
+        "92":Motley Fool,
+        "93":AllAfrica - Top Africa News,
+        "94":Stephgaudreau.com,
+        "95":Luxurydaily.com,
+        "96":Yahoo Entertainment,
+        "97":Yahoo Entertainment,
+        "98":CBC News,
+        "99":Hackaday,
+        "100":Hackaday
+    },
+    "content":{
+        "0":Google’s long-in-development, from-scratch operating system, Fuchsia, is now running on real Made by Google devices, namely, the first-generation Nest Hub.
+
+Google has told us that as of today, an update is beginning to roll out to owners of the first-generation Nest Hub, first released in 2018. For,
+        "1":BOULDER, Colo.--(BUSINESS WIRE)--A new report from Guidehouse Insights analyzes the global market for residential flexibility solutions such as demand response (DR) and virtual power plant (VPP) applications. The report provides global market forecasts through 2030 for DR and VPP capacity, implement,
+        "2":DUBLIN--(BUSINESS WIRE)--The "Workforce Management Software Market in Europe 2021-2025" report has been added to ResearchAndMarkets.com's offering.
+
+The workforce management software market in Europe is poised to grow by $410.30 million during 2021-2025, progressing at a CAGR of almost 8%
+
+The marke,
+        "3":Did you know we’re eating more tomatoes than ever before? We get through around 500,000 tons of the red fruit every year, and that’s currently up by around 12 per cent. This is largely thanks to lockdown lunches: we’re 30 per cent more likely to add tomatoes to our lunch now than a year ago. Yet onl,
+        "4":Predicting the return of corporate travel would be a cinch if foretelling the future was foolproof. No one, however, has that extraordinary prescience and even if they did, the future is, at best, murky.
+
+The continuing popularity of work-from-home arrangements, the COVID-19 induced reluctance of bo,
+        "5":One in a series of 25 nonfiction narratives about semioticians’ significant objects. Presented to HILOBROW’s readers by Project:Object.
+
+I use my thermos nearly every day — in the morning, to carry my coffee to the park where I go running; later in the day, as I commute to class or various meetings;,
+        "6":A dedicated new team is to be established within government to offer researchers advice on how to protect their work from hostile activity, ensuring international collaboration is done safely and securely.
+
+The new Research Collaboration Advice Team ( ) within the Department for Business, Energy and,
+        "7":Throughout her stellar career, Simone Biles has made a habit of repeatedly pushing what's possible by a female gymnast.
+
+The reigning world and Olympic champion lived up to her reputation on Saturday night, becoming the first woman in history to execute a move that had been considered so dangerous n,
+        "8":,
+        "9":Mask Or No Mask? Confusion Persists As Businesses Decide On Policies
+
+Since the beginning of the coronavirus pandemic, Michigan has been at the center of the mask-wearing debate, and it intensified after hundreds of residents flooded the Michigan State Capitol to protest the governor's stay-at-home ,
+        "10":The Presidency yesterday questioned the propriety of the ban placed on open grazing in Southern Nigeria by governors of the region.
+
+The 17 Southern governors, under the aegis of Southern Governors' Forum, had in what is now described as Asaba Declaration, raised 12 resolutions, one of which was the,
+        "11":Nearly 400,000 homes could be built on greenfield areas in southern England over the next five years to meet revised housebuilding targets, a new analysis found today.
+
+The south will see the bulk of new builds because the government's formula assumes that more housing is needed in areas where price,
+        "12":SAN FRANCISCO, May 25, 2021 /PRNewswire/ -- The global water flosser market size is expected to reach USD 1.23 billion by 2028, according to a new report by Grand View Research, Inc. It is expected to expand at a CAGR of 5.3% from 2021 to 2028. Increasing general public awareness regarding oral heal,
+        "13":To praise the peacefulness of a protest is to assert the right of those resisted to determine the ethics of resistance.,
+        "14":The industry development is leading to huge changes every year, and the companies really need to learn about them faster, so they can keep up with it. Also, the trends are different too, and they change every year, depend on what’s new at the moment, or what’s the thing that worked out better previo,
+        "15":The Report on Global Health Insurance Third Party Administrator Market 2021 provides an insightful data analysis on industry which includes top performing players, Forecast, Forthcoming Trends, and factors hampering the growth in Industry.
+
+Dallas, May 25, 2021 (GLOBE NEWSWIRE) -- Businesses hire th,
+        "16":The Global Map Monitoring Market Thorough Analysis Uses Certain Segments That Include Types, Applications And Key Regions, Opportunities, Restraints, And Trends That Will Help In Serving Marketing Policies.
+
+Dallas, May 25, 2021 (GLOBE NEWSWIRE) -- Technological innovations backed by tremendous end-,
+        "17":The global Waste Recycling & Circular Economy Market in-depth analysis uses certain parameters to track existing opportunities, challenges, and trends that help in serving the outlook, to outline its marketing policies.
+
+Dallas, May 25, 2021 (GLOBE NEWSWIRE) -- Global waste refers to the waste gener,
+        "18":Global Online Alternative Investments Market Provides Clear View Of Regions, Applications, Restraints, Investment Scenario And Lead Manufacturers Also Carries Out Research On Various Data Size (Revenue), Forecast, Share, Market Outlook, Industry Trends And Analysis In Coming Years.
+
+Dallas, May 25, ,
+        "19":Andreas Malm, a historian and scholar of human ecology at Lund University in Sweden, may be the hardest working intellectual on the climate left. The author of 2016’s Fossil Capital, a major contribution to our historical understanding of the climate crisis, and 2018’s The Progress of This Storm, he,
+        "20":Before the huge potential of tiny nanocarriers for highly targeted drug delivery and environmental clean-up can be realized, scientists first need to be able to see them.
+
+Currently researchers have to rely on attaching fluorescent dyes or heavy metals to label parts of organic nanocarrier structure,
+        "21":ORANGE COUNTY, Calif., May 25, 2021 /PRNewswire/ -- PelicanCorp today announced that MISS DIG System, Inc. (MISS DIG 811), the notification center for underground utility safety in Michigan, is partnering with PelicanCorp to expand WorksAccess by installing PelicanCorp's Notification Center solution,
+        "22":BEIJING, May 25, 2021 /PRNewswire/ -- Sunlands Technology Group (NYSE: STG) ("Sunlands" or the "Company"), a leader in China's online post-secondary and professional education, today announced its unaudited financial results for the first quarter ended March 31, 2021.
+
+First Quarter 2021 Financial a,
+        "23":SINGAPORE, May 25, 2021 /PRNewswire/ -- GreenArc Capital, in partnership with BNP Paribas, has been awarded the Financial Sector Technology Innovation Proof of Concept (POC) Grant. The POC grant is part of the Financial Sector Technology and Innovation (FSTI) scheme under the Financial Sector Develo,
+        "24":CISOs will have to manage new security challenges in a post-pandemic world. Reconfigured workplaces and employee health considerations, as well as increased threats, have been foisted on organizations just as many security workers are feeling tired and stressed out, according to experts speaking at ,
+        "25":- NVIDIA DGX-Ready status enables Kao Data to support and host the latest NVIDIA accelerated computing technology
+
+- Provides a dedicated technical environment for start-ups, scale-ups and world-leading organisations utilising GPU-accelerated computing on an industrial-scale
+
+- Architectural require,
+        "26":MONTRÉAL, May 25, 2021 /CNW Telbec/ - Accessa, a wholly owned subsidiary of the Association québécoise des pharmaciens propriétaires du Québec (AQPP), will begin to carry out its mission through patient support program services. The purpose of this program is to offer further services to Quebecers s,
+        "27":APAC endodontics market is predicted to expand at a CAGR of more than 4% through 2027 due to the increasing number of dental care infrastructure, rising dental tourism and R&D activities in the field.
+
+According to latest report “Endodontics Market Product Type (Consumables, Instruments), End-use (D,
+        "28":BEIJING, May 25, 2021 /PRNewswire/ -- Sunlands Technology Group (NYSE: STG) ("Sunlands" or the "Company"), a leader in China's online post-secondary and professional education, today announced its unaudited financial results for the first quarter ended March 31, 2021.
+
+First Quarter 2021 Financial a,
+        "29":BRUSSELS, May 25, 2021 /PRNewswire/ -- The European Commission must urgently develop and implement an integrated "Electrification Strategy" to unlock the full potential of a major uptake of clean electricity. This is the call at the heart of Eurelectric's policy recommendations for an Electric Decad,
+        "30":Disclosure of Transactions in Own Shares – Period from May 17, 2021 to May 21, 2021
+
+AMSTERDAM – May 25, 2021 -- STMicroelectronics N.V. (the “Company” or “STMicroelectronics”), a global semiconductor leader serving customers across the spectrum of electronics applications, announces full details of,
+        "31":EXTON, Pa., May 25, 2021 /PRNewswire/ -- Allied Resources Group (ARG) announced today that it has completed its acquisition of RTR Energy Solutions (RTR), a project management services provider to the power delivery systems industry. With offices in Fairchance and Hellertown, Pennsylvania, the addit,
+        "32":Net-zero emissions — balancing emissions by absorbing equivalent amounts of CO2 from the atmosphere — is the defining approach of international climate efforts. But some scientists are arguing that this strategy simply allows the perpetuation of the status quo and is certain to fail.
+
+Net zero. Thos,
+        "33":Lowering your expectations, but not so far it leaves you miserable, is the key to a happy life, according to scientists searching for the 'equation for happiness'.
+
+Experts from University College London have launched the Happiness Project, a search for a simple equation to explain what makes us hap,
+        "34":Dublin, May 25, 2021 (GLOBE NEWSWIRE) -- The "Agricultural Robots Market by Application, by Product, and Geography - Global Forecast up to 2026" report has been added to ResearchAndMarkets.com's offering. 
+
+
+
+Agriculture robots are the automated machines used in agricultural activities such as seedi,
+        "35":STOCKHOLM, May 25, 2021 /PRNewswire/ -- Medivir AB (Nasdaq Stockholm: MVIR) announces that the company will present at the virtual meeting ABGSC Life Science Summit, today, May 25. The company will be represented by Magnus Christensen, interim CEO, and Fredrik Öberg, Chief Scientific Officer.
+
+The p,
+        "36":The US workbench/workstation market was valued at US$ 5,946. 08 million in 2020 and is projected to reach US$ 10,509. 34 million by 2028; it is expected to grow at a CAGR of 8. 8% from 2021 to 2028.
+
+New York, May 25, 2021 (GLOBE NEWSWIRE) -- Reportlinker.com announces the release of the report "US ,
+        "37":Ah, summer reading—the most fraught seasonal category in literature. Is it bad? Is it good? Is it new? Is it old? Is it lowbrow? Is it highbrow? What are brows anyway, after 14 months of pandemic? The word “unruly” comes to mind. So here’s a slightly unruly list for you: 38 novels that will be hitti,
+        "38":A cycling courier delivers goods, as part of the emerging 'gig economy', in Paris, France, April 4, 2017. Picture taken April 4, 2017. REUTERS/Charles Platiau
+
+Faced with shortages of hospitality staff, Australia's Queensland state wants to lure chefs, bartenders and tour guides to its sun-kissed be,
+        "39":
+• None Boom in China Firms Listing in the U.S. Comes to Sudden Halt (Bloomberg) -- At least three Chinese companies have put their plans to list in the U.S. on hold, heralding a slowdown in what’s been a record start to a year for initial public offerings by mainland and Hong Kong firms.A bike-shar,
+        "40":A total of ten men and women received awards in respective categories that they were nominated in, at the recently held Sustainable Development Awards.
+
+The award ceremony held on Friday 21 May targeted the private sector and SMEs, community level natural resource management and utilization initiati,
+        "41":If you're new here, this blog will give you the tools to become financially independent in 5 years. The wiki page gives a good summary of the principles of the strategy. The key to success is to run your personal finances much like a business, thinking about assets and inventory and focusing on effi,
+        "42":On Sunday’s finale of American Idol, there was a slight snafu. Last season’s runner-up and fan-favorite Arthur Gunn was slated to perform alongside Sheryl Crow, playing a medley of her biggest hits. But at the last minute and with no explanation, he didn’t. Yet the show must always go on.
+
+Instead, ,
+        "43":Otoy has released OctaneRender 2021.1 XB1: the first public beta of the latest version of the GPU renderer.
+
+The release improves performance on current Nvidia Ampere GPUs, adds a new Boolean clipping material, improves volumetric rendering, and refactors the software’s handling of AOVs.
+
+It is also,
+        "44":Faced with shortages of hospitality staff, Australia's Queensland state wants to lure chefs, bartenders and tour guides to its sun-kissed beaches with a "Work In Paradise" scheme of one-off incentives and help with travel costs.Once there, however, new arrivals shouldn't expect big pay rises from lo,
+        "45":The Office of the Ombudsman inaugurated its new regional office at Keetmanshoop in the ||Kharas region last week.
+
+Speaking at the event ombudsman John Walters said the new office is aimed at providing easy access to the Office of the Ombudsman, and to ensure even the most disadvantaged individuals ,
+        "46":La construcción con hormigón es una práctica muy extendida, pero tiene un gran impacto medioambiental. ¿Qué ocurre con el hormigón cuando se derriba un edificio? La Universidad de Tampere (Finlandia) coordina el nuevo proyecto internacional denominado ReCreate, cuyo objetivo es descubrir la manera d,
+        "47":LONDON/SYDNEY/WASHINGTON (Reuters) - Faced with shortages of hospitality staff, Australia's Queensland state wants to lure chefs, bartenders and tour guides to its sun-kissed beaches with a "Work In Paradise" scheme of one-off incentives and help with travel costs.
+
+Once there, however, new arrivals,
+        "48":
+• Basic Usage
+• SSL Certification
+• Deploying to a Domain With Your Own SSL Certs
+
+In a hurry? Click to see (now slightly out-dated) slides from Serverless SF!
+
+Zappa makes it super easy to build and deploy server-less, event-driven Python applications (including, but not limited to, WSGI web apps),
+        "49":Reconnaissance Energy Africa provides a factual response to National Geographic's false and defamatory article May 21, 2021, written by environmental activists.
+
+We are proud that the Namibian Government has selected ReconAfrica as one of over 30 national and international energy companies it trusts,
+        "50":VILLEURBANNE, France--(BUSINESS WIRE)--Bollé Safety wants to do its part to protect the planet. In 2021, the global brand for eye protection is kicking into high gear with their Go Green plan.
+
+Bollé Safety’s products have been packaged in recyclable BPA-free plastic bags since 2005. But as a compan,
+        "51":We’ve all been there: when using a foreign device, we don’t want to leave traces on or journeying into darker...,
+        "52":The country's largest and diversified media group, Zimbabwe Newspapers (1980) Limited, says the adoption of a digitalisation strategy has enhanced revenue growth despite the adverse impact of Covid-19, which has constrained business volumes across the spectrum.
+
+In a trading update for the first qua,
+        "53":We break down the latest figures in nine graphics to show the impact of 20 years of war on the people.,
+        "54":Farmers should start preparing for the 2021/2022 summer cropping season by getting inputs on time and having their soils sampled and analysed for correct pH value to enhance increased yields.
+
+According to Agricultural Rural Development Authority (Arda) board chairperson, Mr Ivan Craig, soil samplin,
+        "55":Dublin, May 25, 2021 (GLOBE NEWSWIRE) -- The "Aircraft Cabin Interiors Market Based on Type, Aircraft Type, End-User and Geography - Global Forecast up to 2026" report has been added to ResearchAndMarkets.com's offering. 
+
+
+
+The aircraft cabin interior is an esthetics and structural form of atmosphe,
+        "56":May 25 (Reuters) - European stocks hit record highs on Tuesday, as a billion-dollar deal combining two of Germany's biggest property developers and a rally in technology shares after soothing comments on inflation lifted investor sentiment.
+
+The pan-European STOXX 600 index rose 0.3% to an all-time ,
+        "57":Our home is our safe haven from the outside, and when we return to it from a hard day of work, we would like for the atmosphere to be just perfect, and one of the biggest factors that can contribute to this is the temperature.
+
+The thermostat has become a staple in every modern-day home, and while t,
+        "58":A man shelters under an umbrella as he walks past the London Stock Exchange in London, Britain, August 24, 2015. REUTERS/Suzanne Plunkett/File Photo
+
+London's FTSE 250 index rose on Tuesday, helped by Royal Mail and real estate stocks, while Amigo Holdings was on track for its worst day on record af,
+        "59":This article has been indexed from IT Security Guru
+
+Bleeping Computer has reported that audio maker Bose disclosed a data breach after ransomware attack that hit the company’s systems in early March. A breach notification letter filed with New Hampshire’s Office of the Attorney General by Bose stat,
+        "60":DURING the tree-planting season which ran from November last year to April this year, Zimbabwe surpassed its target thanks to interventions by the country's environment patron First Lady Auxillia Mnangagwa.
+
+Forestry Commission general manager Mr Abednico Marufu said the country had targeted plantin,
+        "61":As we celebrate the 58th anniversary of the founding of the Organisation of African Unity, now the African Union, it is still very worrying that more than 100 million people in Africa are still facing acute levels of food insecurity.
+
+Latest statistics from the UN Relief agency indicate that more pe,
+        "62":SAN FRANCISCO, May 25, 2021 /PRNewswire/ -- The global restaurant point-of-sale terminal market size is expected to reach USD 25.95 billion by 2028, according to a new report by Grand View Research, Inc. It is anticipated to expand at a CAGR of 6.4% from 2021 to 2028. The need to facilitate multiple,
+        "63":SAN FRANCISCO, May 25, 2021 /PRNewswire/ -- The global restaurant point-of-sale terminal market size is expected to reach USD 25.95 billion by 2028, according to a new report by Grand View Research, Inc. It is anticipated to expand at a CAGR of 6.4% from 2021 to 2028. The need to facilitate multiple,
+        "64":SYDNEY: Australia will shutter its embassy in Afghanistan this week, Prime Minister Scott Morrison announced Tuesday, underscoring deep fears about the "increasingly uncertain security environment" in Kabul as foreign troops withdraw.Morrison said the facility would close as an "interim measure" on ,
+        "65":While it can boast of the largest number of startups in the Africa tech ecosystem, Nigeria lags in other important metrics, a new report ranking the continent’s major tech sectors asserts.
+
+The report, compiled by fDi Intelligence, a specialist division of the Financial Times, in collaboration with ,
+        "66":When federal health officials recently announced that fully vaccinated people no longer have to wear masks in most situations, Jaz Johnson was among those who kept hers on.
+
+Johnson, 46, of Kansas City, Missouri, has received both doses of the Covid-19 vaccine, but she has no desire to go maskless. ,
+        "67":How have women executives in the luxury business adapted to changed work conditions and new consumer shopping behavior during the pandemic? Find out at the Women in Luxury 2021 eConference June 2. Image credit: Getty Images
+
+Please click here to register for the fourth annual Women in Luxury 2021 eC,
+        "68":As of May, GGTech is present on three continents, with different competitions and events
+
+The company will have its own delegation in the area, where it will activate esports competitions in the amateur and professional fields
+
+MADRID, May 25, 2021 /PRNewswire/ -- GGTech Entertainment, the Spanish c,
+        "69":The presence of GGTech in these territories will be carried out under the MTE by GGTech (MENA Tech Entertainment) brand, with an exclusive focus on the region and with the aim of promoting and supporting the development and consolidation in the Gaming Esports field in a geographical area with a grea,
+        "70":To get started, install sertipy and create an account on Sertiva. Add your client ID and client SECRET to your environment:
+
+Sertipy supports all of the features of the Sertiva Web API including access to all end points, and support for user authorization. For details on the capabilities check Serti,
+        "71":Integrated Supplier Management Diagnostic Tool helps manufacturers quickly understand the components that lead to better supply chain outcomes
+
+JAKARTA, Indonesia, May 25, 2021 /PRNewswire/ -- QAD Inc. (Nasdaq: QADA) (Nasdaq: QADB), a leading provider of flexible, cloud-based enterprise software and,
+        "72":Technavio has been monitoring the automotive cybersecurity market and it is poised to grow by USD 1.92 billion during 2021-2025, progressing at a CAGR of almost 17% during the forecast period. The report offers an up-to-date analysis regarding the current market scenario, latest trends and drivers, ,
+        "73":This is the best video doorbell yet from Ring, bringing full-on security features to a doorbell that doubles as an intercom and plays nicely with your smarthome too.
+
+Ring has been been making doorbells for enough generations to have nearly reached perfection. The Ring Video Doorbell Pro isn't just ,
+        "74":BERLIN, May 25 (Reuters) - German business morale brightened more than expected to hit a two-year high in May as companies became more upbeat in the light of falling COVID-19 infections and cautious steps towards re-opening Europe's largest economy, a survey showed on Tuesday.
+
+The Ifo institute sai,
+        "75":Shamva South MP, Bramwell Bushu says continued tariff increases by local authorities across the country were unjustified as the inflationary situation in the country has not been as bad even when service delivery charges were in RTGS or local cash.
+
+Bushu was in charge of Midlands during a Miriam Ch,
+        "76":Shares in Aveva pushed higher this morning after the software group reported strong growth in the second half following an initial pandemic-induced hit to trading.
+
+Aveva, which specialises in industrial software, posted revenue of £820m for the year to the end of March — a decrease of 1.6 per cent ,
+        "77":If it's up to him, the Harry Kane era at Tottenham Hotspur will end this summer. The 27-year-old, who led the Premier League in both goals and assists this season, has informed the club for the second straight summer that he would like to leave.
+
+- Stream ESPN FC Daily on ESPN+ (U.S. only)
+
+ - ESPN ,
+        "78":"As a future-ready bank, we cannot continue to operate as a traditional bank."
+
+Standard Bank Plc says it is poised to play a major role in the post-pandemic economic recovery of the country through various technological banking interventions.
+
+Speaking at an Investor Breakfast convened in Lilongwe ,
+        "79":THE government has instructed steel industries to convene a joint meeting to discuss and agree on a particular common technology to use when filtering scraps and detecting contained explosives to avoid accidents in factories.
+
+The steel industries reprocess the scraps to make various iron products, ,
+        "80":Dublin, May 25, 2021 (GLOBE NEWSWIRE) -- The "Modular Chillers Market Size, Share & Trends Analysis Report by Product (Water-cooled, Air-cooled), by End-use (Commercial, Residential, Industrial), by Region (Middle East & Africa, Asia Pacific) and Segment Forecasts, 2021 - 2028" report has been added,
+        "81":The anthology drama titled ‘Super Pumped’ hails from ‘Billions’ creators Brian Koppelman, David Levien and Beth Schacter
+
+Actor-producer Joseph Gordon-Levitt has been tapped to essay the role of former Uber CEO and co-founder Travis Kalanick in Showtime series “Super Pumped”.
+
+According to Variety, ,
+        "82":The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way.,
+        "83":According to the outline, the city also strives to notch its GDP to around 1.5 trillion yuan and 2.1 trillion yuan by 2025 and 2030, respectively.
+
+The city aims to make its permanent residents and the per capita GDP amount to 10 million and 280,000 yuan, respectively, by 2035.
+
+During the 14th Five,
+        "84":BOULOGNE-BILLANCOURT, France--(BUSINESS WIRE)--Nowadays virtualization and hyperconvergence are among the concerns of many companies, IKOULA – a key player in the European IaaS market – aims to democratize the use of VMware technology by offering a VMware introductory offer, packaged to create and o,
+        "85":If you're a parent to a young teen, it's likely you can usually find them with their smartphone glued to their hand.
+
+But a new study suggests that young teens should only have an hour of screen time a day, or their grades and test scores could suffer.
+
+Researchers from Rutgers University-New Brunsw,
+        "86":Een aantal boeren-, natuur- en ondernemersorganisaties heeft de handen ineengeslagen in een voorstel voor een aangepast Nederlands stikstofbeleid. Natuurmonumenten, Natuur & Milieu, LTO Nederland, VNO-NCW, MKB-Nederland en Bouwend Nederland presenteren dinsdag een „totaalpakket” om de reductie van s,
+        "87":How they can help in wealth creation,
+        "88":But Bitdefender wasn't the first to identify this flaw. Two other researchers, Fabian Wosar and Michael Gillespie, had noticed it the month before and had begun discreetly looking for victims to help. By publicizing its tool, Bitdefender alerted DarkSide to the lapse, which involved reusing the same,
+        "89":SAN FRANCISCO, May 25, 2021 /PRNewswire/ -- The global cell and gene therapy clinical trials market size is expected to reach USD 45.4 billion by 2028, according to a new report by Grand View Research, Inc. It is expected to expand at a CAGR of 22.3% from 2021 to 2028. Increasing funding, investment,
+        "90":SAN FRANCISCO, May 25, 2021 /PRNewswire/ -- The global cell and gene therapy clinical trials market size is expected to reach USD 45.4 billion by 2028, according to a new report by Grand View Research, Inc. It is expected to expand at a CAGR of 22.3% from 2021 to 2028. Increasing funding, investment,
+        "91":is the Python package that allows you to use Twelve-factor methodology to configure your Django application with environment variables.
+
+For that, it gives you an easy way to configure Django application using environment variables obtained from a file or provided by OS:
+
+The idea of this package is,
+        "92":Good day, and thank you for standing by. Welcome to Agora, Inc. first-quarter 2021 financial results. At this time, all participants are in a listen-only mode.
+
+After the speakers' presentation, there will be a question-and-answer session. [Operator instructions] Please be advised that today's confe,
+        "93":The Insurance and Pensions Commission (IPEC) has bemoaned the slow progress in the resolution of losses incurred by pensioners during the country's pre-2009 hyper-inflationary era.
+
+Pensioners lost their investments during the hyperinflationary era after insurance companies claimed that a substantia,
+        "94":Ever since a dance studio director told Amanda LaCount that she could not participate due to her body size, she has been on a mission to break the stereotype and promote body positivity and the belief that any body can be a dancer’s body. So if you are feeling like you are ready to get back out ther,
+        "95":The in-store shopping experience is still very valuable to consumers. Image credit: Neiman Marcus
+
+Brands are actively working to expand their offline presences, even as online shopping sales continue to climb.
+
+Although ecommerce saw momentous growth throughout the COVID-19 pandemic, the in-person ,
+        "96":-Rapid Recovery in total number of new borrowers-
+
+SHANGHAI, May 25, 2021 /PRNewswire/ -- FinVolution Group ("FinVolution," or the "Company") (NYSE: FINV), a leading fintech platform in China, today announced its unaudited financial results for the first quarter ended March 31, 2021.
+
+First Quarter ,
+        "97":NEW YORK, May 25, 2021 /PRNewswire/ -- Pomerantz LLP announces that a class action lawsuit has been filed against Acadia Pharmaceuticals Inc. ("Acadia" or the "Company")(NASDAQ: ACAD) and certain of its officers. The class action, filed in the United States District Court for the Southern District o,
+        "98":This is a column by Morgan Campbell, who writes opinion for CBC Sports. For more information about CBC's Opinion section, please see the FAQ.
+
+A year has passed since former Minneapolis Police officer Derek Chauvin murdered George Floyd. "Murder" here isn't a word choice but a matter of legal fact. ,
+        "99":Sometimes, it’s really useful to watch a project’s parts come together one piece at a time in order to get a complete understanding and mental picture of the whole, and we found that to be the case with this simple, retro-inspired sample game from [ezContents]. (Video, embedded below.) The code is o,
+        "100":Sometimes, it’s really useful to watch a project’s parts come together one piece at a time in order to get a complete understanding and mental picture of the whole, and we found that to be the case with this simple, retro-inspired sample game from [ezContents]. (Video, embedded below.) The code is o
+    },
+    "link":{
+        "0":https://www.osnews.com/story/133459/google-is-officially-releasing-its-fuchsia-os-starting-with-first-gen-nest-hub/,
+        "1":https://www.businesswire.com/news/home/20210525005010/en/Guidehouse-Insights-Report-Predicts-Revenue-in-the-Residential-Flexible-Capacity-Market-to-Exceed-6.5-Billion-by-2030,
+        "2":https://www.businesswire.com/news/home/20210525005454/en/Europe-Workforce-Management-Software-Market-Report-2021-2025-Growing-Need-to-Optimize-and-Organize-the-Use-of-the-Workforce-and-Regulatory-Compliance---ResearchAndMarkets.com,
+        "3":https://www.independent.co.uk/life-style/food-and-drink/british-tomato-fortnight-2021-recipes-b1853323.html,
+        "4":https://www.hotstats.com/blog/hotels-are-slowly-recouping-business-but-when-will-the-corporate-guest-return,
+        "5":https://www.hilobrow.com/2021/05/25/semio-objects-15/,
+        "6":https://www.gov.uk/government/news/dedicated-government-team-to-protect-researchers-work-from-hostile-activity,
+        "7":https://www.newsweek.com/simone-biles-video-goes-viral-yurchenko-double-pike-vault-1594463,
+        "8":https://www.hotukdeals.com/deals/doom-eternal-for-xbox-ps797-at-currys-on-ebay-3730477,
+        "9":https://www.npr.org/2021/05/25/999791732/mask-or-no-mask-confusion-persists-as-businesses-decide-on-policies,
+        "10":https://allafrica.com/stories/202105250554.html,
+        "11":https://www.dailymail.co.uk/news/article-9615673/Assault-greenbelt-Nearly-400-000-homes-built-protected-rural-land.html,
+        "12":https://www.prnewswire.com/news-releases/water-flosser-market-size-worth-1-23-billion-by-2028--cagr-5-3-grand-view-research-inc-301298495.html,
+        "13":https://www.aljazeera.com/opinions/2021/5/25/a-short-dictionary-of-liberal-language-on-policing,
+        "14":https://thefrisky.com/trends-electronics-manufacturing/,
+        "15":https://finance.yahoo.com/news/health-insurance-third-party-administrator-090200135.html,
+        "16":https://finance.yahoo.com/news/map-monitoring-market-gaining-mainstream-090200642.html,
+        "17":https://finance.yahoo.com/news/global-waste-recycling-circular-economy-090200088.html,
+        "18":https://finance.yahoo.com/news/online-alternative-investments-market-remain-090100075.html,
+        "19":https://www.thenation.com/article/environment/andreas-malm-interview/,
+        "20":https://phys.org/news/2021-05-soft-x-ray-method-nanocarrier-breakthroughs.html,
+        "21":https://www.prnewswire.com/news-releases/pelicancorp-and-miss-dig-system-inc-partner-to-strengthen-notification-services-301297322.html,
+        "22":https://www.prnewswire.com/news-releases/sunlands-technology-group-announces-unaudited-first-quarter-2021-financial-results-301298504.html,
+        "23":https://finance.yahoo.com/news/greenarc-capital-partners-bnp-paribas-090000728.html,
+        "24":https://www.csoonline.com/article/3619520/how-the-post-pandemic-world-will-challenge-cisos.html,
+        "25":https://www.prnewswire.com/news-releases/kao-data-becomes-nvidia-dgx-ready-establishing-the-uk-innovation-corridors-home-for-hpc-and-ai-301297947.html,
+        "26":https://finance.yahoo.com/news/accessa-qu-bec-owner-pharmacists-090000502.html,
+        "27":https://finance.yahoo.com/news/endodontics-market-revenue-cross-usd-090000269.html,
+        "28":https://finance.yahoo.com/news/sunlands-technology-group-announces-unaudited-090000971.html,
+        "29":https://finance.yahoo.com/news/eurelectric-calls-electrification-strategy-win-090000546.html,
+        "30":https://finance.yahoo.com/news/stmicroelectronics-090000687.html,
+        "31":https://finance.yahoo.com/news/allied-resources-group-expands-capabilities-090000878.html,
+        "32":https://e360.yale.edu/features/net-zero-emissions-winning-strategy-or-destined-for-failure?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+YaleEnvironment360+%28Yale+Environment+360%29,
+        "33":https://www.dailymail.co.uk/sciencetech/article-9616121/Scientists-suggest-key-HAPPINESS-lowering-expectations.html,
+        "34":https://finance.yahoo.com/news/outlook-agricultural-robots-global-market-085800992.html,
+        "35":https://finance.yahoo.com/news/medivir-present-abgsc-life-science-085800033.html,
+        "36":https://finance.yahoo.com/news/us-workbench-workstation-market-forecast-085800329.html,
+        "37":https://lithub.com/38-novels-you-need-to-read-this-summer/,
+        "38":https://www.reuters.com/world/the-great-reboot/paradise-beyond-wage-hikes-lag-global-recovery-2021-05-25/,
+        "39":https://finance.yahoo.com/news/net-asset-value-085500659.html,
+        "40":https://allafrica.com/stories/202105250519.html,
+        "41":https://earlyretirementextreme.com/whats-the-difference-between-a-frog-and-a-modern-human.html,
+        "42":https://www.thedailybeast.com/the-musical-puppetmaster-behind-american-idol-on-claudia-conway-and-a-close-call-with-disaster,
+        "43":http://www.cgchannel.com/2021/05/otoy-releases-octanerender-2021-1-in-beta/,
+        "44":https://economictimes.indiatimes.com/news/international/world-news/in-paradise-and-beyond-wage-hikes-lag-global-recovery/articleshow/82935771.cms,
+        "45":https://allafrica.com/stories/202105250514.html,
+        "46":https://www.lanacion.com.ar/agencias/reutilizacion-de-elementos-prefabricados-de-hormigon-recuperados-en-edificios-nuevos-un-importante-nid25052021/,
+        "47":https://finance.yahoo.com/news/analysis-paradise-beyond-wage-hikes-085204258.html,
+        "48":https://pypi.org/project/zappa-mathking/,
+        "49":https://allafrica.com/stories/202105250508.html,
+        "50":https://www.businesswire.com/news/home/20210525005026/en/Boll%C3%A9-Safety-the-PPE-Eyewear-Specialists-Introduce-Go-Green-Concrete-Actions-to-Protect-the-Environment,
+        "51":https://cybernews.com/security/report-how-cybercriminals-abuse-api-keys-to-steal-millions/,
+        "52":https://allafrica.com/stories/202105250489.html,
+        "53":https://www.aljazeera.com/news/2021/5/25/australia-to-close-afghanistan-embassy-over-security-fears,
+        "54":https://allafrica.com/stories/202105250478.html,
+        "55":https://finance.yahoo.com/news/global-aircraft-cabin-interiors-market-084300893.html,
+        "56":https://finance.yahoo.com/news/1-european-stocks-record-high-084246737.html,
+        "57":https://www.addictivetips.com/?p=402675,
+        "58":https://www.reuters.com/world/uk/royal-mail-real-estate-stocks-pull-ftse-250-higher-amigo-sinks-2021-05-25/,
+        "59":https://www.itsecuritynews.info/bose-reports-data-breach-following-ransomware-attack/,
+        "60":https://allafrica.com/stories/202105250466.html,
+        "61":https://allafrica.com/stories/202105250458.html,
+        "62":https://www.prnewswire.com/news-releases/restaurant-point-of-sale-terminal-market-size-worth-25-95-billion-by-2028-grand-view-research-inc-301298351.html,
+        "63":https://finance.yahoo.com/news/restaurant-point-sale-terminal-market-083500427.html,
+        "64":https://timesofindia.indiatimes.com/world/south-asia/australia-to-close-kabul-embassy-as-us-troops-withdraw-pm/articleshow/82935802.cms,
+        "65":https://qz.com/africa/2012780/nigeria-ranks-first-in-african-startups-but-faces-challenges/,
+        "66":https://www.nbcnews.com/news/us-news/they-plan-wear-their-masks-indefinitely-their-reasons-extend-beyond-n1268176,
+        "67":https://www.luxurydaily.com/registration-open-for-women-in-luxury-2021-econference-june-2-3-2-2-2-2-2-2-2-2-2-2-2-2-2-2-2/,
+        "68":https://finance.yahoo.com/news/ggtech-entertainment-continues-expand-presence-083000615.html,
+        "69":https://www.prnewswire.com/news-releases/ggtech-entertainment-continues-to-expand-its-presence-in-new-continents-with-the-opening-of-its-headquarters-in-the-middle-east-and-north-africa-mena-301298426.html,
+        "70":https://pypi.org/project/sertipy/,
+        "71":https://finance.yahoo.com/news/qad-tomorrow-thought-stream-identifies-082900487.html,
+        "72":https://www.tmcnet.com/usubmit/2021/05/25/9376494.htm,
+        "73":https://www.techradar.com/reviews/ring-video-doorbell-pro-review,
+        "74":https://finance.yahoo.com/news/1-german-business-morale-improves-082607149.html,
+        "75":https://allafrica.com/stories/202105250408.html,
+        "76":https://www.cityam.com/software-group-aveva-shares-rise-as-business-bounces-back/,
+        "77":https://www.espn.com/soccer/english-premier-league/story/4393690/trading-for-tottenhams-harry-kane-assessing-what-chelseaman-city-and-others-could-offer,
+        "78":https://allafrica.com/stories/202105250394.html,
+        "79":https://allafrica.com/stories/202105250371.html,
+        "80":https://finance.yahoo.com/news/4-0-billion-modular-chillers-081300446.html,
+        "81":https://www.thehindu.com/entertainment/movies/joseph-gordon-levitt-to-play-uber-ceo-travis-kalanick-in-new-series/article34640087.ece,
+        "82":https://slashdot.org/submission/13861464/offshore-groovy-grails-development,
+        "83":https://www.prnewswire.com/news-releases/xinhua-silk-road-southeast-chinas-quanzhou-targets-gdp-over-rmb2-8-trillion-by-2035--301298456.html,
+        "84":https://www.businesswire.com/news/home/20210525005042/en/VMware-by-IKOULA-An-Introductory-Offer-to-Familiarize-Yourself-With-The-VMware-Environment-While-Controlling-Your-Budget,
+        "85":https://www.dailymail.co.uk/sciencetech/article-9615995/Teenagers-use-internet-HOUR-daily-lower-grades.html,
+        "86":https://www.nrc.nl/nieuws/2021/05/25/boeren-en-natuurorganisaties-werken-samen-voor-aangepast-stikstofbeleid-a4044722,
+        "87":https://economictimes.indiatimes.com/news/international/world-news/hack-disinform-deny-russias-cybersecurity-strategy/numerous-allegations-of-cyberattacks/slideshow/82934905.cms,
+        "88":https://www.rawstory.com/david-brody/,
+        "89":https://www.prnewswire.com/news-releases/cell-and-gene-therapy-clinical-trials-market-size-worth-45-4-billion-by-2028-grand-view-research-inc-301298345.html,
+        "90":https://finance.yahoo.com/news/cell-gene-therapy-clinical-trials-080500859.html,
+        "91":https://pypi.org/project/django-environ-2/,
+        "92":https://www.fool.com/earnings/call-transcripts/2021/05/25/agora-inc-api-q1-2021-earnings-call-transcript/,
+        "93":https://allafrica.com/stories/202105250328.html,
+        "94":https://www.stephgaudreau.com/amanda-lacount-breaking-body-stereotype/,
+        "95":https://www.luxurydaily.com/positive-in-store-experiences-can-boost-online-overall-sales/,
+        "96":https://finance.yahoo.com/news/finvolution-group-reports-first-quarter-080000703.html,
+        "97":https://finance.yahoo.com/news/shareholder-alert-pomerantz-law-firm-080000732.html,
+        "98":https://www.cbc.ca/sports/opinion-don-t-let-the-slogans-fool-you-anti-blackness-still-runs-deep-in-big-time-athletics-1.6038831,
+        "99":https://hackaday.com/2021/05/25/simple-micropython-game-is-a-30-minute-game-dev-course/,
+        "100":https://hackaday.com/2021/05/25/simple-micropython-game-is-a-30-minute-game-dev-course/
+    }
+}
