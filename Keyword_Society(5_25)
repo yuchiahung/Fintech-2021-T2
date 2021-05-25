@@ -1,0 +1,670 @@
+{
+    "id":{
+        "0":1,
+        "1":2,
+        "2":3,
+        "3":4,
+        "4":5,
+        "5":6,
+        "6":7,
+        "7":8,
+        "8":9,
+        "9":10,
+        "10":11,
+        "11":12,
+        "12":13,
+        "13":14,
+        "14":15,
+        "15":16,
+        "16":17,
+        "17":18,
+        "18":19,
+        "19":20,
+        "20":21,
+        "21":22,
+        "22":23,
+        "23":24,
+        "24":25,
+        "25":26,
+        "26":27,
+        "27":28,
+        "28":29,
+        "29":30,
+        "30":31,
+        "31":32,
+        "32":33,
+        "33":34,
+        "34":35,
+        "35":36,
+        "36":37,
+        "37":38,
+        "38":39,
+        "39":40,
+        "40":41,
+        "41":42,
+        "42":43,
+        "43":44,
+        "44":45,
+        "45":46,
+        "46":47,
+        "47":48,
+        "48":49,
+        "49":50,
+        "50":51,
+        "51":52,
+        "52":53,
+        "53":54,
+        "54":55,
+        "55":56,
+        "56":57,
+        "57":58,
+        "58":59,
+        "59":60,
+        "60":61,
+        "61":62,
+        "62":63,
+        "63":64,
+        "64":65,
+        "65":66,
+        "66":67,
+        "67":68,
+        "68":69,
+        "69":70,
+        "70":71,
+        "71":72,
+        "72":73,
+        "73":74,
+        "74":75,
+        "75":76,
+        "76":77,
+        "77":78,
+        "78":79,
+        "79":80,
+        "80":81,
+        "81":82,
+        "82":83,
+        "83":84,
+        "84":85,
+        "85":86,
+        "86":87,
+        "87":88,
+        "88":89,
+        "89":90,
+        "90":91,
+        "91":92,
+        "92":93,
+        "93":94,
+        "94":95,
+        "95":96,
+        "96":97,
+        "97":98,
+        "98":99,
+        "99":100,
+        "100":100
+    },
+    "head":{
+        "0":Texans could carry handguns without a permit under bill headed to Gov. Greg Abbott's desk,
+        "1":No matter how angry we are, we must never vandalise water infrastructure during protests,
+        "2":Why these diaspora Palestinians protested for the first time during Gaza war,
+        "3":Deep-Space Human Travel Is a Lose-Lose Proposition,
+        "4":I used to envy gay men who could pass for straight – now I realise it might be a curse,
+        "5":TX GOP's bills targeting transgender kids have exacted mental health toll, even if not law,
+        "6":The Fierce Battle Over What Should Happen to George Floyd Square,
+        "7":Every student at Charedi school opts out of sex education,
+        "8":इस महिला IAS ने थप्पड़बाज DM पर ऐसा क्या कहा कि ट्वीट वायरल हो गया,
+        "9":The Rt Hon Lord Blencathra,
+        "10":The problem with wokeness,
+        "11":The Limits of Free Movement, Criminalising Ransom Payment,
+        "12":Fighting global warming means reshaping finance,
+        "13":The impact of COVID-19 on distance learning universities: The Open University,
+        "14":'It keeps me up at night': Inuit leader Natan Obed presses for climate change action,
+        "15":On anniversary, Minneapolis reflects on how George Floyd's death changed their community forever,
+        "16":Eurelectric calls for an “Electrification Strategy” to win the Electric Decade,
+        "17":Sarah Huckabee Sanders is taking Trumpism for a 'road-test' in Arkansas: report,
+        "18":BMW announces Rs 8 crore aid for coronavirus relief efforts in India,
+        "19":George Floyd’s murder sparked a movement for change – the government isn’t listening,
+        "20":Alabama becomes latest US state to ban vaccine passports, as debate rages over mandating proof of Covid-19 status,
+        "21":MPs deplore government restrictions on international travel,
+        "22":MaaT Pharma Announces Publication of Results from Completed Phase 1/2 ODYSSEE Clinical Trial in Nature Communications,
+        "23":Guernsey to allow Brits back for summer with no need for PCR tests or quarantine,
+        "24":Neither Settler Nor Native,
+        "25":Why We Need to Vaccinate Prisoners Now,
+        "26":Don't let migrants die at sea says Italian church,
+        "27":Can U.S. Aid Make Honduras More Livable? One Group Tries to Slow Out-Migration,
+        "28":Mask Or No Mask? Confusion Persists As Businesses Decide On Policies,
+        "29":Nigeria: Southern Governors' Open Grazing Ban No Solution - Presidency,
+        "30":Murder, Rape Trial Ends in 31-Year Jail Term,
+        "31":Half of Black Britons ‘don’t think UK has progressed on race since George Floyd murder’,
+        "32":A short dictionary of liberal language on policing,
+        "33":0,
+        "34":What’s Worse Than Climate Catastrophe? Climate Catastrophe Plus Fascism.,
+        "35":Gartner Supply Chain Top 25 Reflects Emerging Trends,
+        "36":Kristen Clarke poised to become first woman of color to lead Justice Department's Civil Rights Division,
+        "37":Reimagining Education With Imagination,
+        "38":A Novel Explores Power, Sex, Consent and Identity on a French Commune,
+        "39":Was Richard Nixon a Tragic Hero?,
+        "40":My Grandma Ranks Her Favorite Songs on Olivia Rodrigo's Debut,
+        "41":Is It Time to Abolish Museums?,
+        "42":Corporations Encourage Employee Vaccination but Stop Short of Mandates,
+        "43":Boomers and Millennials Aren't That Different When It Comes to One Thing: Weed,
+        "44":LORO Opens in East Dallas This Summer, Pop-Up This Weekend. It's Franklin BBQ and Uchi's Baby.,
+        "45":A change in direction: coming out of the pandemic,
+        "46":Net-Zero Emissions: Winning Strategy or Destined for Failure?,
+        "47":The Conservatives Out to Stop the New Bipartisan Antitrust Movement,
+        "48":Waiting for O’Rourke: Will Beto Ever Announce He’s Running for Texas Governor?,
+        "49":Texas Mulls a Delta-8 Ban That Smoke Shops Say Would Crush Business,
+        "50":Collective data rights can stop big tech from obliterating privacy,
+        "51":Prince Louis is first royal to lose male succession privilege after rule change,
+        "52":10 great products and ideas to keep your pets happy,
+        "53":How Gregg Bordowitz Revealed the Messy Humanity of AIDS Activism,
+        "54":Employee Wellbeing Should Be Part of Your Organization’s Employment Brand,
+        "55":Astrophysik: Dunkle Materie und kein Schwarzes Loch im Zentrum der Milchstraße?,
+        "56":National Beef Burger Day Is a Shame,
+        "57":38 Novels You Need to Read This Summer,
+        "58":Why do German politicians so often stumble over PhD plagiarism allegations?,
+        "59":Environmentalists Honoured At the Sustainable Development Awards,
+        "60":Biden Had It Right on Crime—in 1993. He's In Trouble Now.,
+        "61":Ombudsman Gets New Office At Keetmanshoop,
+        "62":Churches light a candle for George Floyd on first anniversary of his death,
+        "63":Now that the guns are silent, minds turn to reconstruction,
+        "64":How Daytime Soaps and a PBS Documentary Laid the Groundwork for The Real Housewives,
+        "65":Head teacher: Palestinian flag is call to arms, show of support for antisemitism,
+        "66":Kenyatta Unveils Refurbished Kenya Meat Commission Following Re-Modelling By KDF,
+        "67":Parliament to Host National Prayer Breakfast Thursday,
+        "68":Rinaldo Walcott on Riots, Policing, and Traditions of Black Refusal,
+        "69":Before Nigeria fails [opinion],
+        "70":IBM-onderzoeker onderscheiden met wetenschaps-award,
+        "71":Biden condemns ‘despicable’ surge in US antisemitic attacks,
+        "72":Nehanda Still Talking Point in Statue Form,
+        "73":William Barr's latest attempt to rehab his rep ignores Trump -- and new accusations of his own corruption,
+        "74":Moderna Expands Partnership with Aldevron; Shares Rise 2%,
+        "75":NTT DATA Business Solutions Honored with Two 2021 SAP® Pinnacle Awards and Three Finalist Positions,
+        "76":NTT DATA Business Solutions Honored with Two 2021 SAP® Pinnacle Awards and Three Finalist Positions,
+        "77":Digital Future Society lanza un concurso para combatir las noticias falsas,
+        "78":Jemimah Kariuki: Kenyan Medic Wins WHO Director-General’s Award for Global Health 2021 ▷ Kenya News,
+        "79":Telegram Sued by Investment Firm Over GRAM Token Refunds,
+        "80":Target Hospitality Posts Loss in Q1; Shares Up,
+        "81":Covid-19: Public debate is needed to decide how UK will live with SARS-CoV-2, says ethics collaborative,
+        "82":Renowned international investor Jim Rogers joins Life3 Biotech's Board of Investors,
+        "83":Builders Firstsource to Snap Up Cornerstone Building for $400M, Boost Geographic Presence,
+        "84":Nordson Delivers Strong Q2 Results, Shares Pop 4%,
+        "85":NSS takes exception to V.D. Satheesan’s remarks,
+        "86":L'Allemagne prévoit de mettre en circulation des voitures à conduite autonome, d'ici 2022,
+        "87":Bitcoin’s True Social Cost Is Impossible to Ignore - BloombergQuint,
+        "88":Os perigos de nivelar internet e TV,
+        "89":Remembering George Floyd and the global movement for justice he inspired,
+        "90":How George Floyd murder changed Britain - from toppled statues to racism inquiry,
+        "91":‘Two steps forward, one step back’: How movement sparked by George Floyd’s murder has changed Britain,
+        "92":George Floyd anniversary: Family say Angelo Quinto died after police knelt on his neck but they have no video to prove it,
+        "93":Graham Stoker launches FIA president bid with Tom Kristensen as deputy for sport,
+        "94":Cómo un puñado de veterinarios salvaron millones de vidas humanas y erradicaron una enfermedad de la faz de la Tierra,
+        "95":Honeywell, Denso Partner to Target Electric Aircraft Components Market,
+        "96":Don’t reinvent the customer wheel, warns integration expert,
+        "97":The experience of journalists with the FOI process is often marked by delays, unresponsiveness, or refusals on unverifiable grounds,
+        "98":Don't let the slogans fool you, anti-Blackness still runs deep in sports a year after George Floyd's murder,
+        "99":Ottawa failed to properly implement sexual misconduct report, top Defence civil servant says,
+        "100":Ottawa failed to properly implement sexual misconduct report, top Defence civil servant says
+    },
+    "source":{
+        "0":Raw Story,
+        "1":IOL,
+        "2":Haaretz,
+        "3":Slate Magazine,
+        "4":Independent,
+        "5":KTRK-TV,
+        "6":Slate Magazine,
+        "7":The Times of Israel,
+        "8":Aajtak.in,
+        "9":Www.gov.uk,
+        "10":Christiantoday.com,
+        "11":AllAfrica - Top Africa News,
+        "12":Yahoo Entertainment,
+        "13":Oup.com,
+        "14":CBC News,
+        "15":Los Angeles Times,
+        "16":EURACTIV,
+        "17":Raw Story,
+        "18":Business Standard,
+        "19":Independent,
+        "20":RT,
+        "21":Independent,
+        "22":Business Wire,
+        "23":Mirror Online,
+        "24":AllAfrica - Top Africa News,
+        "25":AllAfrica - Top Africa News,
+        "26":Ansamed.info,
+        "27":NPR,
+        "28":NPR,
+        "29":AllAfrica - Top Africa News,
+        "30":AllAfrica - Top Africa News,
+        "31":Independent,
+        "32":Al Jazeera English,
+        "33":0,
+        "34":Thenation.com,
+        "35":Gartner.com,
+        "36":Los Angeles Times,
+        "37":The Good Men Project,
+        "38":New York Times,
+        "39":New York Times,
+        "40":Dallas Observer,
+        "41":Thenation.com,
+        "42":Kaiser Health News,
+        "43":Dallas Observer,
+        "44":Dallas Observer,
+        "45":The Drum,
+        "46":Yale.edu,
+        "47":Washington Monthly,
+        "48":Dallas Observer,
+        "49":Dallas Observer,
+        "50":MIT Technology Review,
+        "51":Mirror Online,
+        "52":Independent,
+        "53":Daily Beast,
+        "54":Hrbartender.com,
+        "55":heise online,
+        "56":CounterPunch,
+        "57":Lithub.com,
+        "58":DW (English),
+        "59":AllAfrica - Top Africa News,
+        "60":Daily Beast,
+        "61":AllAfrica - Top Africa News,
+        "62":Christiantoday.com,
+        "63":Al Jazeera English,
+        "64":Lithub.com,
+        "65":The Times of Israel,
+        "66":AllAfrica - Top Africa News,
+        "67":AllAfrica - Top Africa News,
+        "68":Lithub.com,
+        "69":Vanguard,
+        "70":Computable.be,
+        "71":The Times of Israel,
+        "72":AllAfrica - Top Africa News,
+        "73":Raw Story,
+        "74":Yahoo Entertainment,
+        "75":PRNewswire,
+        "76":Yahoo Entertainment,
+        "77":Eldiario.es,
+        "78":Breaking NEWS in KENYA for Today Right Now & Kenyan News | TUKO,
+        "79":Yahoo Entertainment,
+        "80":Yahoo Entertainment,
+        "81":The BMJ,
+        "82":Yahoo Entertainment,
+        "83":Yahoo Entertainment,
+        "84":Yahoo Entertainment,
+        "85":The Hindu,
+        "86":Developpez.com,
+        "87":BloombergQuint,
+        "88":Terra.com.br,
+        "89":Christiantoday.com,
+        "90":Mirror Online,
+        "91":Independent,
+        "92":Independent,
+        "93":autosport.com,
+        "94":Naukas.com,
+        "95":Yahoo Entertainment,
+        "96":ITProPortal,
+        "97":Lse.ac.uk,
+        "98":CBC News,
+        "99":CBC News,
+        "100":CBC News
+    },
+    "content":{
+        "0":A measure long sought by conservative activists allowing Texans to carry handguns without a license is on the cusp of becoming law after the Texas Senate approved a compromise on the bill Monday, sending it to Gov. Greg Abbott.
+
+
+
+Abbott has said he would sign the permitless carry proposal into law.,
+        "1":Water infrastructure vandalism is one of the main challenges facing the country in relation to reliable water supply to communities. This negatively affects the socio-economic development of communities.
+
+Access to water is a basic human right and the vandalism of water infrastructure denies some co,
+        "2":The 11-day flare-up between Israel and Islamists militants in Gaza saw numerous pro-Palestinian demonstrations take place worldwide, the biggest such protests since the Israel-Hamas war in the summer of 2014. Many diaspora Palestinians were present, including some who do not regard themselves as pol,
+        "3":If there’s one collective lesson gleaned from the COVID pandemic so far, it may be the shared difficulty of being isolated in one’s own home—whether alone or with family members or roommates. The stresses of quarantine included crushing mundane routines, personal habits hypostatized, and all too fam,
+        "4":“You’re so gay!” Over the years I’ve heard comments like this countless times. Because my gayness is obvious; it’s there in my humour, my taste in music, the way I walk and, in particular, the way I talk. I’ve never had what’s known as “passing privilege” – the ability to pass for straight.
+
+When I ,
+        "5":Houston mother Lisa Stanton says every parent's instinct is to keep their children safe.When she and her young daughter, Maya, earlier this year traveled to the Texas Capitol to testify against two bills restricting transgender children's access to transition-related medical care, including hormone ,
+        "6":MINNEAPOLIS—Last summer, long before the trial of Derek Chauvin, activists at East 38th Street and Chicago Avenue in Minneapolis realized they had some plans to make. It had been months since George Floyd’s murder, on May 25, in plain view of the bustling intersection. Protesters used debris and oth,
+        "7":All pupils at a strictly-Orthodox school in Gateshead opted out of the government’s sexual education scheme according to a recent Ofsted report.
+
+Ateres Girls High School “does not meet all of the independent school standards that were checked”, the inspectorate said, following a visit in April of t,
+        "8":,
+        "9":We use some essential cookies to make this website work.
+
+We’d like to set additional cookies to understand how you use GOV.UK, remember your settings and improve government services.
+
+We also use cookies set by other sites to help us deliver content from their services.,
+        "10":People around the globe are talking about 'wokeness'. There is much discussion surrounding whether people are 'woke' or not. For those who need clarification, to be 'woke' is 'to be alert to racial or social discrimination and injustice' (Oxford English Dictionary). In many ways it's an awakening an,
+        "11":I seize this opportunity to extend my condolences to the families of the Chief of Army Staff, Lt General Ibrahim Attahiru, Brig General Tunji Olayinka, and all the officers who died in the line of duty in the military plane crash near Kaduna Airport last Friday. May their souls rest in peace. Amen.
+,
+        "12":The world's growing efforts to limit climate change will have far-reaching impacts for financial markets, and the groundwork for that push is being laid right now.
+
+Why it matters: As more governments implement climate change regulations, trillions of dollars are going to flow towards clean energy a,
+        "13":The coronavirus pandemic greatly impacted traditional universities, with closures happening globally and students turning to remote learning. But what impact is COVID-19 having on institutions that historically teach mainly online? What have been their biggest challenges? Did they adopt any new stra,
+        "14":The middle of June was still ice fishing season when Natan Obed was a kid growing up in Nain.
+
+Now in his 40s, Obed said fishing now is just a five-minute walk down to the ice-free shore.
+
+"There just isn't ice at all in the middle of June, around Nain. And we're catching fish along the shoreline, j,
+        "15":George Floyd’s death transformed lives around the world, but nowhere as profoundly as in Minneapolis.
+
+Relatives of Black men who died at the hands of Twin Cities police took to the streets, confronting officers in riot gear and demanding accountability. Businesses struggled to stay afloat as others,
+        "16":The European Commission must urgently develop and implement an integrated “Electrification Strategy” to unlock the full potential of a major uptake of clean electricity. This is the call at the heart of Eurelectric’s policy recommendations for an Electric Decade released today, together with an anal,
+        "17":This speech was pure red-meat for the culture war, fed to members of a group that has supported -- among other stances -- imprisonment of LGBTQ people for consensual sex and the forced sterilization of transgender Europeans. That according to the Southern Poverty Law Center, which officially labels ,
+        "18":Group India on Tuesday said it has pledged total Rs 8 crore towards the fight against the COVID-19 pandemic in the country.
+
+An additional contribution of Rs 5 crore has been made on top of the company's earlier commitment of Rs 3 crore, the automaker said in a statement.
+
+The company's efforts are ,
+        "19":It has been a year since the brutal murder of George Floyd, causing a global outpouring of an anger and grief.
+
+His cries of "I can’t breathe" shocked the world. That could have been my brother, my nephew, that could have been me.
+
+His death sparked a powerful movement that spread to workplaces, sch,
+        "20":Alabama has come out against the use of Covid-19 vaccination certificates to grant certain privileges, following in the footsteps of several other US states that have banned health ‘passports’.
+
+Republican Governor Kay Ivey signed a bill on Monday which prevents states and local governments from iss,
+        "21":A week after the “no travel” order was eased, MPs from across the political divide have condemned the government’s continued approach to international travel.
+
+In a Westminster Hall debate on Covid travel restrictions, Conservative and Labour members criticised the lack of transparency on the govern,
+        "22":LYON, France--(BUSINESS WIRE)--MaaT Pharma announced today that final results from its Phase 1/2 ODYSSEE clinical trial have been published in the journal, Nature Communications. The data demonstrated that the company’s initial product candidate, MaaT011, an autologous fecal microbiota transfer trea,
+        "23":Guernsey is preparing to welcome Brits back for summer holidays from July, with no need for visitors to undertake PCR tests or quarantine.
+
+Effective from July 1, anyone travelling to the Channel Island from the Common Travel Area will be able to do so restriction-free, although you will need to pro,
+        "24":Mahmood Mamdani argues that colonialism created the nation-state by defining categories of people, including the so-called 'native' and the settler in South Africa and America.
+
+This is a lightly edited excerpt from Neither Settler Nor Native: The Making and Unmaking of Permanent Minorities (Wits Pr,
+        "25":At last - at long, long last - Covid-19 vaccinations are happening. The pharmacist who gave me the flu jab described her joy and relief at being vaccinated. Every vaccinated healthcare worker not only gets personal protection against Covid - but protects patients from infection by them. In the comin,
+        "26":ROME - Italian Catholic Bishops Conference CEI on Tuesday appealed to the authorities to take action to stop migrant-boat disasters at sea.
+
+ 
+
+CEI President Gualtiero Bassetti said the conference had taken care of the arrival of over 1,000 refugees from the Middle East and Africa, "showing that an ,
+        "27":Can U.S. Aid Make Honduras More Livable? One Group Tries to Slow Out-Migration
+
+In Rivera Hernandez, one of the most violent neighborhoods in one of the most violent countries in the Americas, a young Honduran man explains the circumstances of the cold-blooded murder of his little brother by a stree,
+        "28":Mask Or No Mask? Confusion Persists As Businesses Decide On Policies
+
+Since the beginning of the coronavirus pandemic, Michigan has been at the center of the mask-wearing debate, and it intensified after hundreds of residents flooded the Michigan State Capitol to protest the governor's stay-at-home ,
+        "29":The Presidency yesterday questioned the propriety of the ban placed on open grazing in Southern Nigeria by governors of the region.
+
+The 17 Southern governors, under the aegis of Southern Governors' Forum, had in what is now described as Asaba Declaration, raised 12 resolutions, one of which was the,
+        "30":A YOUNG man convicted of raping and murdering a teenage girl in Windhoek eight years ago has received an effective prison term of 31 years at the end of his trial in the High Court.
+
+Judge Boas Usiku on Thursday sentenced Ruben Fritz (26) to 30 years' imprisonment, of which four years are suspended,,
+        "31":Half of Black people in Britain (49 per cent) think race relations have stayed the same since George Floyd’s murder last year which sparked a resurgence in Black Lives Matter protests, an exclusive YouGov poll suggests.
+
+The survey indicated that some 42 per cent of all ethnic minority groups are of,
+        "32":To praise the peacefulness of a protest is to assert the right of those resisted to determine the ethics of resistance.,
+        "33":0,
+        "34":Andreas Malm, a historian and scholar of human ecology at Lund University in Sweden, may be the hardest working intellectual on the climate left. The author of 2016’s Fossil Capital, a major contribution to our historical understanding of the climate crisis, and 2018’s The Progress of This Storm, he,
+        "35":The past 16 months will be remembered as the time supply chains raised their levels of performance to deal with the global pandemic. Supply chains were asked to adapt to changing demand and supply signals as well as to evolve their operating models. Gartner’s Supply Chain Top 25 for 2021 highlights ,
+        "36":Kristen Clarke was looking for a new athletic challenge during her junior year in high school. Girls’ basketball didn’t interest her because she couldn’t dribble. Girls’ ice hockey? She didn’t skate. Volleyball didn’t seem intense enough.
+
+Then she recalled how hard the boys’ wrestling team worked o,
+        "37":By Yasmine Sherif – Yasmine Sherif, Director of Education Cannot Wait
+
+The month of May marks mental health awareness month or mental health awareness week in several countries around the world. Many people will be reading posts and blogs about the importance of getting more sunshine and exercise to,
+        "38":The difference between a cult and the society from which its members seek refuge can be viewed as a question of scale. Successful cults make exclusive and very particular a recognizable scheme involving rules, systems, norms and, perhaps above all, a wildly confident leader. Though they advertise ul,
+        "39":Let’s bracket Donald Trump until we get a little historical distance on him. For now this much is safe to say: Watergate was the greatest presidential scandal in American history, the direct cause of the only presidential resignation and the most serious constitutional crisis since the Civil War. Ye,
+        "40":If you think Olivia Rodrigo is just the voice of millennials, zillennials, xennials and whatever comes after Gen Z, think again, you ageist jerk. OK, you’re probably not ageist, you just don’t know my grandma.
+
+Ever since Rodrigo’s “Drivers License” dropped and changed this God-forsaken world as we ,
+        "41":It’s been a tumultuous few years for the art world. In the United States, the election of Donald Trump served as a moment of political awakening for many: Well-intentioned artists began to make explicitly political art—some of it quite moving, more of it not—and initiated or joined various organizin,
+        "42":Many of the companies with the largest number of employees say they’ll do almost anything to encourage their employees to get vaccinated. But a survey of some of them found that none would be inclined to mandate shots as a condition for holding a job.
+
+Almost all 15 companies surveyed — among the la,
+        "43":The cultural war, or blame game, between baby boomers and millennials is still going strong. Hundreds of memes and YouTube-aired discussions later, there is not much of anything on which the two generations seem to agree aside from their shared love of avocados. But a new study suggests that both ge,
+        "44":This weekend LORO will host a pop-up at their new spot, which is expected to open this summer in East Dallas.
+
+An Asian smokehouse is set to open soon in East Dallas. It's the culinary mash-up of two renowned Texas chefs, Aaron Franklin of Franklin Barbecue and Tyson Cole of Uchi. In 2019, they comb,
+        "45":Since March insights agency Opinium has tracked attitudes towards the pandemic and the way our government has reacted, and produced over 20 reports exploring the changes that have occurred to society and the impact this has had across a multitude of sectors.
+
+So where are we now? Well, in a less coh,
+        "46":Net-zero emissions — balancing emissions by absorbing equivalent amounts of CO2 from the atmosphere — is the defining approach of international climate efforts. But some scientists are arguing that this strategy simply allows the perpetuation of the status quo and is certain to fail.
+
+Net zero. Thos,
+        "47":Last spring, as the pandemic was taking hold, Ashley Baker, a 27-year-old conservative policy advocate, noticed a trend that alarmed her: A growing number of Republican elected officials were starting to join Democrats in attacking corporate monopolies. Missouri Senator Josh Hawley had introduced se,
+        "48":Back in February, we reported that Democratic darling and 2018 candidate for U.S. Senate Beto O’Rourke was flirting with the idea of running for Texas governor. Now — nearly four months and a disastrous winter storm later — O’Rourke is still making headlines, but he hasn't offered any clarity.
+
+Earl,
+        "49":Mark Mavrikos set up shop in North Texas about three years ago with one main goal: selling CBD. He’s established himself in the area and now has two CBD American Shaman locations. One is in Richardson and the other is in Lake Highlands. Not long after that, he began hearing about Delta-8 THC.
+
+Delta,
+        "50":Individuals should not have to fight for their data privacy rights and be responsible for every consequence of their digital actions. Consider an analogy: people have a right to safe drinking water, but they aren’t urged to exercise that right by checking the quality of the water with a pipette ever,
+        "51":Prince Louis became the first member of the royal family in history to lose his privileged place in the line of succession, after a landmark decision by the Queen to change the rules.
+
+However, the three-year-old is still above his uncle, Prince Harry, who is 36, in the line to the throne.
+
+In the p,
+        "52":Poorly-formulated pet food is common and many owners will see a drastic change in their pet’s health and behaviour when they switch to more nutritious alternatives. Similarly, pet insurance and behavioural training can really transform the wellbeing of pets and owners.
+
+To help with travel, nutritio,
+        "53":I suspect AIDS, for many people under 40 in particular, is like World War II, a historical event in the hazy past, with a few heroes and many more faceless victims.
+
+While the most significant new AIDS-related artwork of the year (and probably the decade) is Sarah Schulman’s monumental 700-page hist,
+        "54":We’ve all seen the articles predicting an “employee turnover tsunami” as the pandemic ends. But this doesn’t mean that organizations are predestined for this situation. As organizations focus on the future, it’s important to think about their employees and employment brand.
+
+Organizations should ask,
+        "55":Wenn sich im Zentrum unserer Milchstraße gar kein Schwarzes Loch, sondern ein Kern aus Dunkler Materie befindet, könnte das die Bewegungen der Himmelskörper dort genauso gut und teilweise sogar besser erklären. Das jedenfalls versichert eine Gruppe von Forschern, die seit Jahren an ihrem Modell arbe,
+        "56":Friday, May 28 is National Beef Burger Day. We’re supposed to use the hashtag #BeefBurgerBrag and tag @BeefItsWhatsForDinner on Facebook when adding our burger photos to this marketing frenzy. “Americans love burgers and there’s no substitute for a real beef burger sizzling on the grill,” says the N,
+        "57":Ah, summer reading—the most fraught seasonal category in literature. Is it bad? Is it good? Is it new? Is it old? Is it lowbrow? Is it highbrow? What are brows anyway, after 14 months of pandemic? The word “unruly” comes to mind. So here’s a slightly unruly list for you: 38 novels that will be hitti,
+        "58":Franziska Giffey, Germany's minister for family, senior citizens, women, and youth, last week joined a long line of German politicians who have resigned over plagiarism in their doctoral thesis.
+
+The 43-year-old, who remains the Social Democrats' candidate for Berlin mayor in this September's electi,
+        "59":A total of ten men and women received awards in respective categories that they were nominated in, at the recently held Sustainable Development Awards.
+
+The award ceremony held on Friday 21 May targeted the private sector and SMEs, community level natural resource management and utilization initiati,
+        "60":On the mournful anniversary of the blatant murder of George Floyd, an inconvenient truth confronts American politics: Violent crime has shot up dramatically in cities over the past year, amid the pandemic, yes, but also amid a wave of policing protests and radical reforms.
+
+Luckily, after a year whe,
+        "61":The Office of the Ombudsman inaugurated its new regional office at Keetmanshoop in the ||Kharas region last week.
+
+Speaking at the event ombudsman John Walters said the new office is aimed at providing easy access to the Office of the Ombudsman, and to ensure even the most disadvantaged individuals ,
+        "62":Churches across the UK are lighting a candle to mark the first anniversary of George Floyd's death.
+
+Churches will be lighting their candles at noon and saying a prayer in his memory, but they are also being asked to commit to taking personal and institutional action against racism in church and soc,
+        "63":The May 20 ceasefire between Israel and Hamas, reached after a concerted effort by Egypt, Qatar and the US, provided a much-needed reprieve for the people of Gaza after 11 days of bloodshed and destruction. As Palestinians displaced by Israeli bombardment started returning to their homes and the sca,
+        "64":The Real Housewives’ mom is quite old, older than Momma Dee and Momma Joyce combined. The first American soap opera, Painted Dreams, aired not on television but on Chicago radio in 1930; a nationally syndicated radio soap, Clara, Lu, ’n’ Em, followed the next year. (No, the Lu of the title is not th,
+        "65":A head teacher has sparked anger after suggesting the Palestinian flag is used by some as a “call to arms” and can be seen “as a message of support for antisemitism.”
+
+Mike Roper – head of the Allerton Grange High School in Leeds – had issued a warning about the possible protests and briefed pupils,,
+        "66":Nairobi — President Uhuru Kenyatta has unveiled the refurbished Meat Commission depot on Landhies Road, Nairobi, as part of KDF remodeling.
+
+The move comes eight months after the head of state transferred the commission to the Ministry of Defence through an Executive Order.
+
+Thereafter, Agriculture ,
+        "67":Nairobi — Parliament is on Thursday scheduled to host the 18th Edition of the National Annual Prayer Breakfast at the Senate Grounds.
+
+President Uhuru Kenyatta is expected to grace the occasion which will be hosted by the two Speakers of the bicameral Parliament - Justin Muturi (National Assembly) a,
+        "68":If you have never participated in a protest where the police are basically at war with the demonstrators then you have not fully experienced the violence that policing represents. Fully decked out in their battle gear and arranged in battalion formation, the police represent, in both form and practi,
+        "69":LET us devote a few minutes to day, for our dear country, Nigeria. This reflection, in the writer’s considered opinion, has become absolutely necessary because patriots believe that Nigeria does not need to fail, even as it is crystal clear that the country is in dire straits. There are a number of ,
+        "70":Voormalig IBM-onderzoeksdirecteur Ralph Gomory ontvangt de Vannevar Bush Award van de National Science Board. De onderscheiding is voor een persoon die door zijn of haar activiteiten op het gebied van wetenschap en technologie een opmerkelijke bijdrage leverde aan het welzijn van de mensheid.
+
+De nu,
+        "71":Joe Biden and Kamala Harris have condemned a recent surge in antisemitic attacks across the United States in the wake of the conflict in Gaza.
+
+The president and vice-president said acts of hate towards Jews had to be stopped and described recent incidents, which included a group of Jewish men being,
+        "72":This Africa Day, which also happens to be our Culture Week, the Government recognises Mbuya Nehanda (Charwe Nyakasikana), when it unveils the statue of the legendary spirit medium and heroine of Zimbabwe's struggle against settler colonialism.
+
+The statue is at the intersection of Samora Machel Aven,
+        "73":Former Attorney General Bill Barr crawled out from under his proverbial rock Friday to give his first speech since departing the Trump Administration two weeks before the Capitol insurrection.
+
+But Barr's remarks to the right-wing Alliance Defending Freedom didn't mention "Trump" among its 2,586 wor,
+        "74":Moderna, Inc. (MRNA) is expanding its partnership with Aldevron, LLC to support the biotech company’s COVID-19 vaccine and other programs in its development pipeline.
+
+Shares of the biotech company rose almost 2% on May 24 to close at $164.17.
+
+Aldevron is a manufacturing partner in the global genet,
+        "75":SAP presents these awards annually to the top partners that have excelled in developing and growing their partnership with SAP and helping customers run better. Winners and finalists in 28 categories were chosen based on recommendations from SAP, customer feedback and performance indicators.
+
+"Our p,
+        "76":- NTT DATA Business Solutions is Global Platinum Reseller of the Year
+
+- NTT DATA Business Solutions is Partner of the Year for SAP® SuccessFactors® Solutions (Midmarket)
+
+BIELEFELD, Germany, May 25, 2021 /PRNewswire/ -- NTT DATA Business Solutions AG, formerly itelligence AG, has been awarded as th,
+        "77":Barcelona, 25 may (EFE).- El programa Digital Future Society, una iniciativa impulsada por el Gobierno y la Mobile World Capital Barcelona, ha lanzado una convocatoria internacional para buscar soluciones tecnológicas que ayuden en el proceso de verificación de noticias y a minimizar la difusión e i,
+        "78":- Jemimah Kariuki realised pregnant women could not easily access health care services during the curfew hours
+
+-The 28-year-old medic decided to use social media to advise all pregnant women who needed emergency services to call on her
+
+- She was named the winner of the World Health Organisation Di,
+        "79":Russian private equity fund Da Vinci Capital is suing messaging app Telegram for issues related to refund of investments in the Telegram Open Network (TON). The case will be heard in London.
+
+Managing partner Oleg Zhelezko, in an interview with the RBC TV station, said that the reason for the lawsui,
+        "80":Target Hospitality Corp. (TH) reported a loss in the first quarter. The company is the largest provider of specialty hospitality accommodations and value-added hospitality services in the U.S. Shares of the company rose almost 2% on May 24.
+
+The company incurred a loss of $0.14 per share in Q1, comp,
+        "81":As the UK eases its covid-19 restrictions, and the initial two-dose vaccination rollout nears its end, more radical forms of public engagement will be essential when resolving the difficult questions about how the country will live with SARS-CoV-2, the UK Pandemic Ethics Accelerator collaborative ha,
+        "82":SINGAPORE, May 25, 2021 /PRNewswire/ -- Renowned international investor Jim Rogers has joined Singapore-based food tech company, Life3 Biotech (Life3) as a member of its Board of Investors.
+
+Rogers, one of the most respected and successful names in international investing, has a more than 50 years r,
+        "83":Builders FirstSource (BLDR) has agreed to acquire Cornerstone Building Alliance SW, LLC. Builders FirstSource is a supplier of building materials and services.
+
+Following the announcement, shares of the company rose 1.9% in Monday’s extended trading session.
+
+The deal, valued at approximately $400 m,
+        "84":Nordson Corp (NDSN) shares rose 4.2% in Monday’s extended trading session after the company announced strong fiscal second quarter results. The company designs and manufactures dispensing equipment for consumer and industrial adhesives, sealants and coatings.
+
+The company’s revenues of $590 million ,
+        "85":Leader of Opposition in the Kerala Assembly had criticised various religious and community organisations
+
+Taking a strong exception to the remarks by the Leader of Opposition V.D. Satheesan criticising the various religious and community organisations in Kerala, the Nair Service Society has urged th,
+        "86":Le projet de loi, adopté par les législateurs du Bundestag lors d'une séance nocturne jeudi, modifie le code de la route afin de permettre l'utilisation régulière de véhicules autonomes en Allemagne. Le projet de loi concerne spécifiquement les véhicules dotés de systèmes entièrement autonomes qui r,
+        "87":This is increasing the pressure on policy makers to do more. The U.S. Federal Reserve’s Lael Brainard nodded to this on Monday, when she warned that a proliferation of alternative payments systems might lead to fragmentation and increased costs for households and businesses, suggesting there was a n,
+        "88":Chamou a atenção na semana passada uma carta aberta da Internet Society (ISOC) ao primeiro-ministro do Canadá alertando sobre sérios riscos à internet e às liberdades individuais, embutidos em legislação que se está discutindo no Canadá. O projeto de lei visa oficialmente a nivelar o tratamento de e,
+        "89":On 25 May 2020, George Floyd lost his life as a white police officer kept his knee on his neck, asphyxiating him, strangulating him, choking the life out of another black body. We owe a debt of gratitude to the teenager, Darnella Frasier, who recorded for all the world to see the treatment of an una,
+        "90":The death of George Floyd at the hands of police in Minneapolis exactly a year ago today sent shockwaves through the US and across the entire world.
+
+Millions globally watched the shocking footage of Derek Chauvin kneeling on the 46-year-old's neck for more than nine minutes after he was held on sus,
+        "91":George Floyd’s murder at the hands of a police officer in Minneapolis sparked a movement not just in the US but around the world, bringing forth a global reckoning around race.
+
+In Britain, demonstrators mobilised and took to the streets not just in solidarity but in protest at frustration with raci,
+        "92":hen the family of Angelo Quinto called the police two days before Christmas, they thought they would be able to help the mentally distressed young man.
+
+As it was, the officers would end up handcuffing him and pinning him to the floor for up to five minutes, as one officer held his legs and another ,
+        "93":Stoker, a British barrister, is a former president of the Motor Sports Association and has been a member of the FIA’s World Motor Sport Council since 2004.
+
+Most recently since the FIA elections in 2012, Stoker has been deputy president for sport and worked closely alongside current FIA president Je,
+        "94":El 25 de mayo del 2011, la Organización Internacional de la Epizootias (OIE), algo así como la OMS de la veterinaria, declaró erradicada del planeta una enfermedad infecciosa que no sólo mató a millones de animales, sino que también acabó con la vida de millones de seres humanos.
+
+Sirva este artícul,
+        "95":Honeywell (HON) and Denso have identified a business opportunity in the electric aircraft components market, and they are pursuing it by teaming up to build electric propulsion systems for aircraft. Their electrified power sources will help provide cleaner, quieter and more environmentally-friendly ,
+        "96":Even Usain Bolt would struggle to keep up with the pace of digital transformation today. That’s why it’s important for IT teams to steer clear of in-house projects that could be reinventing the proverbial wheel - coding complex integrations where off-the-shelf pre-built templates already exist.
+
+All,
+        "97":Mária Žuffová discusses the role of freedom of information (FOI) laws in journalism. By surveying journalists, interviewing activists and civil servants, and submitting FOI requests to government ministries she identifies a number of problems with the process. Journalists reported that their request,
+        "98":This is a column by Morgan Campbell, who writes opinion for CBC Sports. For more information about CBC's Opinion section, please see the FAQ.
+
+A year has passed since former Minneapolis Police officer Derek Chauvin murdered George Floyd. "Murder" here isn't a word choice but a matter of legal fact. ,
+        "99":Canada's deputy minister of National Defence says the military's operation to end sexual misconduct in its ranks "lost its way" because the government failed to properly implement recommendations from a landmark report into the issue six years ago.
+
+Jody Thomas said she wasn't working for the Depart,
+        "100":Canada's deputy minister of National Defence says the military's operation to end sexual misconduct in its ranks "lost its way" because the government failed to properly implement recommendations from a landmark report into the issue six years ago.
+
+Jody Thomas said she wasn't working for the Depart
+    },
+    "link":{
+        "0":https://www.rawstory.com/concealed-handgun-license-texas/,
+        "1":https://www.iol.co.za/the-star/opinion-analysis/no-matter-how-angry-we-are-we-must-never-vandalise-water-infrastructure-during-protests-a30a79a6-5f93-4b19-b9ae-a9b769d55847,
+        "2":https://www.haaretz.com/middle-east-news/palestinians/.premium-why-these-diaspora-palestinians-protested-for-the-first-time-during-gaza-war-1.9839263,
+        "3":https://slate.com/technology/2021/05/spacex-starship-space-travel-paradox.html,
+        "4":https://www.independent.co.uk/voices/gay-men-passing-privilege-homophobia-equal-rights-b1842383.html,
+        "5":https://abc13.com/texas-anti-transgender-bills-restricting-acess-to-medical-care-trtansgender-laws-on-transgenders/10688621/,
+        "6":https://slate.com/news-and-politics/2021/05/george-floyd-square-police-reopening-minneapolis.html,
+        "7":https://jewishnews.timesofisrael.com/every-student-at-charedi-school-opts-out-of-sex-education/,
+        "8":https://www.aajtak.in/trending/story/dm-dumka-jharkhand-rajeshwari-b-viral-tweet-on-ias-ranbir-sharma-tstd-1260733-2021-05-25,
+        "9":https://www.gov.uk/government/people/lord-blencathra,
+        "10":https://christiantoday.com/article/the.problem.with.wokeness/136849.htm,
+        "11":https://allafrica.com/stories/202105250604.html,
+        "12":https://news.yahoo.com/fighting-global-warming-means-reshaping-093049430.html,
+        "13":https://blog.oup.com/2021/05/the-impact-of-covid-19-on-distance-learning-universities-the-open-university/,
+        "14":https://www.cbc.ca/news/canada/newfoundland-labrador/natan-obed-itk-climate-change-1.6030706,
+        "15":https://www.latimes.com/world-nation/story/2021-05-25/george-floyd-death-changed-minneapolis-forever,
+        "16":http://pr.euractiv.com/pr/eurelectric-calls-electrification-strategy-win-electric-decade-217480,
+        "17":https://www.rawstory.com/sarah-huckabee-sanders-2653099855/,
+        "18":https://www.business-standard.com/article/current-affairs/bmw-announces-rs-8-crore-aid-for-coronavirus-relief-efforts-in-india-121052500759_1.html,
+        "19":https://www.independent.co.uk/voices/george-floyd-black-lives-matter-b1853355.html,
+        "20":https://www.rt.com/usa/524724-alabama-covid-passport-ban/,
+        "21":https://www.independent.co.uk/travel/news-and-advice/covid-travel-uk-red-list-b1853332.html,
+        "22":https://www.businesswire.com/news/home/20210525005456/en/MaaT-Pharma-Announces-Publication-of-Results-from-Completed-Phase-12-ODYSSEE-Clinical-Trial-in-Nature-Communications,
+        "23":https://www.mirror.co.uk/travel/uk-ireland/guernsey-welcome-brits-back-summer-24178597,
+        "24":https://allafrica.com/stories/202105250575.html,
+        "25":https://allafrica.com/stories/202105250572.html,
+        "26":https://www.ansamed.info/ansamed/en/news/sections/generalnews/2021/05/25/dont-let-migrants-die-at-sea-says-italian-church_b72ae16d-6853-4dba-95f3-57f5443a346d.html,
+        "27":https://www.npr.org/2021/05/25/999143642/can-u-s-aid-make-honduras-more-livable-one-group-tries-to-slow-out-migration,
+        "28":https://www.npr.org/2021/05/25/999791732/mask-or-no-mask-confusion-persists-as-businesses-decide-on-policies,
+        "29":https://allafrica.com/stories/202105250554.html,
+        "30":https://allafrica.com/stories/202105250551.html,
+        "31":https://www.independent.co.uk/news/uk/home-news/black-britain-racism-yougov-george-floyd-b1853189.html,
+        "32":https://www.aljazeera.com/opinions/2021/5/25/a-short-dictionary-of-liberal-language-on-policing,
+        "33":0,
+        "34":https://www.thenation.com/article/environment/andreas-malm-interview/,
+        "35":https://blogs.gartner.com/power-of-the-profession-blog/gartner-supply-chain-top-25-reflects-emerging-trends-3/,
+        "36":https://www.latimes.com/politics/story/2021-05-25/kristen-clarke-justice-department-civil-rights,
+        "37":https://goodmenproject.com/ethics-values/reimagining-education-with-imagination/,
+        "38":https://www.nytimes.com/2021/05/25/books/review/arcadia-emmanuelle-bayamack-tam.html,
+        "39":https://www.nytimes.com/2021/05/25/books/review/michael-dobbs-king-richard.html,
+        "40":https://www.dallasobserver.com/music/a-florida-grandma-reviews-olivia-rodrigos-new-album-12025776,
+        "41":https://www.thenation.com/article/culture/culture-strike-laura-raicovich/,
+        "42":https://khn.org/news/article/corporations-encourage-employee-vaccination-but-stop-short-of-mandates/,
+        "43":https://www.dallasobserver.com/arts/the-differences-between-boomer-and-millennial-stoners-12025737,
+        "44":https://www.dallasobserver.com/restaurants/loro-dallas-opens-soon-in-dallas-12025523,
+        "45":https://www.thedrum.com/opinion/2021/05/25/change-direction-coming-out-the-pandemic,
+        "46":https://e360.yale.edu/features/net-zero-emissions-winning-strategy-or-destined-for-failure?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+YaleEnvironment360+%28Yale+Environment+360%29,
+        "47":https://washingtonmonthly.com/?p=128537,
+        "48":https://www.dallasobserver.com/news/associated-press-reports-beto-orourke-mulling-over-bid-for-governor-12025656,
+        "49":https://www.dallasobserver.com/news/as-texas-weighs-banning-delta-8-smoke-shops-say-it-would-crush-business-12025763,
+        "50":https://www.technologyreview.com/2021/05/25/1025297/collective-data-rights-big-tech-privacy/,
+        "51":https://www.mirror.co.uk/news/uk-news/prince-louis-first-royal-lose-24178014,
+        "52":https://www.independent.co.uk/life-style/10-great-products-and-ideas-to-keep-your-pets-happy-b1850935.html,
+        "53":https://www.thedailybeast.com/how-gregg-bordowitz-revealed-the-messy-humanity-of-aids-activism,
+        "54":https://www.hrbartender.com/2021/recruiting/employee-wellbeing-employment-brand/,
+        "55":https://www.heise.de/news/Astrophysik-Dunkle-Materie-und-kein-Schwarzes-Loch-im-Zentrum-der-Milchstrasse-6053086.html,
+        "56":https://www.counterpunch.org/2021/05/25/national-beef-burger-day-is-a-shame/,
+        "57":https://lithub.com/38-novels-you-need-to-read-this-summer/,
+        "58":https://www.dw.com/en/why-do-german-politicians-so-often-stumble-over-phd-plagiarism-allegations/a-57651910,
+        "59":https://allafrica.com/stories/202105250519.html,
+        "60":https://www.thedailybeast.com/biden-had-it-right-on-crimein-1993-hes-in-trouble-now,
+        "61":https://allafrica.com/stories/202105250514.html,
+        "62":https://christiantoday.com/article/churches.light.a.candle.for.george.floyd.on.first.anniversary.of.his.death/136848.htm,
+        "63":https://www.aljazeera.com/opinions/2021/5/25/now-that-the-guns-are-silent-minds-turn-to-reconstruction,
+        "64":https://lithub.com/how-daytime-soaps-and-a-pbs-documentary-laid-the-groundwork-for-the-real-housewives/,
+        "65":https://jewishnews.timesofisrael.com/head-teacher-palestinian-flag-is-call-to-arms-show-of-support-for-antisemitism/,
+        "66":https://allafrica.com/stories/202105250497.html,
+        "67":https://allafrica.com/stories/202105250495.html,
+        "68":https://lithub.com/rinaldo-walcott-on-riots-policing-and-traditions-of-black-refusal/,
+        "69":https://www.vanguardngr.com/2021/05/before-nigeria-fails-opinion/,
+        "70":https://www.computable.be/artikel/nieuws/digital-innovation/7186237/250449/ibm-onderzoeker-onderscheiden-met-wetenschaps-award.html,
+        "71":https://jewishnews.timesofisrael.com/biden-condemns-despicable-surge-in-us-antisemitic-attacks/,
+        "72":https://allafrica.com/stories/202105250455.html,
+        "73":https://www.rawstory.com/william-barr-religion/,
+        "74":https://finance.yahoo.com/news/moderna-expands-partnership-aldevron-shares-083533585.html,
+        "75":https://www.prnewswire.com/news-releases/ntt-data-business-solutions-honored-with-two-2021-sap-pinnacle-awards-and-three-finalist-positions-301296968.html,
+        "76":https://finance.yahoo.com/news/ntt-data-business-solutions-honored-083500562.html,
+        "77":https://www.eldiario.es/cultura/digital-future-society-lanza-concurso-combatir-noticias-falsas_1_7967925.html,
+        "78":https://www.tuko.co.ke/413182-jemimah-kariuki-kenyan-medic-wins-who-director-generals-award-global-health-2021.html,
+        "79":https://finance.yahoo.com/news/telegram-sued-investment-firm-over-083216126.html,
+        "80":https://finance.yahoo.com/news/target-hospitality-posts-loss-q1-083146718.html,
+        "81":https://www.bmj.com/content/373/bmj.n1327,
+        "82":https://finance.yahoo.com/news/renowned-international-investor-jim-rogers-083000062.html,
+        "83":https://finance.yahoo.com/news/builders-firstsource-snap-cornerstone-building-082714795.html,
+        "84":https://finance.yahoo.com/news/nordson-delivers-strong-q2-results-082258808.html,
+        "85":https://www.thehindu.com/news/national/kerala/nss-takes-exception-to-vd-satheesans-remarks/article34640217.ece,
+        "86":https://www.developpez.com/actu/315398/L-Allemagne-prevoit-de-mettre-en-circulation-des-voitures-a-conduite-autonome-d-ici-2022/,
+        "87":https://www.bloombergquint.com/gadfly/bitcoin-s-btc-cost-to-society-is-impossible-to-ignore,
+        "88":https://www.terra.com.br/noticias/tecnologia/os-perigos-de-nivelar-internet-e-tv,b7e639eae88236b744936a08d62f3876s3qr1wq1.html,
+        "89":https://christiantoday.com/article/remembering.george.floyd.and.the.global.movement.for.justice.he.inspired/136846.htm,
+        "90":https://www.mirror.co.uk/news/uk-news/how-george-floyd-murder-changed-24156744,
+        "91":https://www.independent.co.uk/news/uk/home-news/george-floyd-death-uk-racism-b1852741.html,
+        "92":https://www.independent.co.uk/news/world/americas/angelo-quinto-george-floyd-anniversary-b1852612.html,
+        "93":https://www.autosport.com/f1/news/graham-stoker-launches-fia-president-bid-with-tom-kristensen-as-deputy-for-sport/6515221/,
+        "94":https://naukas.com/2021/05/25/como-un-punado-de-veterinarios-salvaron-millones-de-vidas-humanas-y-erradicaron-una-enfermedad-de-la-faz-de-la-tierra/,
+        "95":https://finance.yahoo.com/news/honeywell-denso-partner-target-electric-080054296.html,
+        "96":https://www.itproportal.com/features/dont-reinvent-the-customer-wheel-warns-integration-expert/,
+        "97":https://blogs.lse.ac.uk/politicsandpolicy/foia-journalists/,
+        "98":https://www.cbc.ca/sports/opinion-don-t-let-the-slogans-fool-you-anti-blackness-still-runs-deep-in-big-time-athletics-1.6038831,
+        "99":https://www.cbc.ca/news/politics/dnd-deputy-minister-sexual-misconduct-report-1.6037364,
+        "100":https://www.cbc.ca/news/politics/dnd-deputy-minister-sexual-misconduct-report-1.6037364
+    }
+}
