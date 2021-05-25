@@ -1,0 +1,485 @@
+{
+    "id":{
+        "0":1,
+        "1":2,
+        "2":3,
+        "3":4,
+        "4":5,
+        "5":6,
+        "6":7,
+        "7":8,
+        "8":9,
+        "9":10,
+        "10":11,
+        "11":12,
+        "12":13,
+        "13":14,
+        "14":15,
+        "15":16,
+        "16":17,
+        "17":18,
+        "18":19,
+        "19":20,
+        "20":21,
+        "21":22,
+        "22":23,
+        "23":24,
+        "24":25,
+        "25":26,
+        "26":27,
+        "27":28,
+        "28":29,
+        "29":30,
+        "30":31,
+        "31":32,
+        "32":33,
+        "33":34,
+        "34":35,
+        "35":36,
+        "36":37,
+        "37":38,
+        "38":39,
+        "39":40,
+        "40":41,
+        "41":42,
+        "42":43,
+        "43":44,
+        "44":45,
+        "45":46,
+        "46":47,
+        "47":48,
+        "48":49,
+        "49":50,
+        "50":51,
+        "51":52,
+        "52":53,
+        "53":54,
+        "54":55,
+        "55":56,
+        "56":57,
+        "57":58,
+        "58":59,
+        "59":60,
+        "60":61,
+        "61":62,
+        "62":63,
+        "63":64,
+        "64":65,
+        "65":66,
+        "66":67,
+        "67":68,
+        "68":69,
+        "69":70,
+        "70":70
+    },
+    "head":{
+        "0":Billionaire Ray Dalio is bullish on bitcoin, plus what rising inflation could mean for crypto - Yahoo Finance,
+        "1":Southwest Airlines flight attendant loses two teeth after passenger assault; inflight incidents at 'intolerable level,' union says - USA TODAY,
+        "2":Sale of AMC cinemas closes curtain on Dalian Wanda's global dream - Nikkei Asia,
+        "3":What is the outlook for Bitcoin and Ethereum for the rest of 2021? - Forkast News,
+        "4":Health Department Shuts Down Kahului Restaurant for “Imminent Health Hazard” - Maui Now,
+        "5":Jim Cramer on why stocks could rally for 'foreseeable future' - CNBC Television,
+        "6":Singapore's economy grows at its fastest pace in more than a year - CNBC,
+        "7":Convenience store worker finds trashed $1M lottery ticket, gives it back to customer - New York Post ,
+        "8":S.F.'s largest hotel checked in its first guests in 14 months. They were greeted like celebrities - San Francisco Chronicle,
+        "9":The Cryptocurrencies That Outperformed During Bitcoin's Crash - Barron's,
+        "10":The Stock Market Is No Longer Afraid of Inflation. Now It's Scared of the Fed. - Barron's,
+        "11":Manufacturing could return to China, as Covid cases spike in India and Vietnam - CNBC,
+        "12":Tesla Stock Had a Great Day. Explaining Why Isn't Easy. - Barron's,
+        "13":LAX unveils West Gates expansion with new checked-bag system - Los Angeles Times,
+        "14":President Biden signs Alaska tourism act to allow cruise ships to visit the state this year - USA TODAY,
+        "15":Apple and Epic Games spar in closing arguments over Fortnite - CNN ,
+        "16":Hyundai is launching in-car payments in the all-electric Ioniq 5 - TechCrunch,
+        "17":Solar power story of rapidly declining costs 'thrown into reverse' - Bloomberg - Seeking Alpha,
+        "18":Shell to sell interest in Deer Park refinery to partner Pemex - Reuters,
+        "19":LVMH's Bernard Arnault Briefly Surpasses Jeff Bezos As Forbes' Richest Person in the World - HYPEBEAST,
+        "20":Multnomah County expected to move to lower risk category Thursday and continue reopening - OregonLive,
+        "21":Disney CEO Bob Chapek Talks ‘Black Widow’ Release Strategy, State Of Windows: “We’re Really Celebrating That Flexibility” - Deadline,
+        "22":Walmart faces backlash after customers receive email containing racial slur - WGHP FOX 8 Greensboro,
+        "23":Cryptocurrency Exchange Operator Coinbase Could Skyrocket by 36%, Analyst Says - The Motley Fool,
+        "24":$516 Million Winning Mega Millions Ticket Sold At 7-Eleven In Bucks County - CBS Philly,
+        "25":Should Investors Load Up on Nvidia Stock Before Earnings? Analyst Weighs In - Yahoo Finance,
+        "26":Lordstown Motors slashes production forecast for its electric pickup - TechCrunch,
+        "27":Amazon deal to acquire MGM movie studio could come Tuesday - Aljazeera.com,
+        "28":Meet the Hedge Fund Boss Who Just Bought Tribune’s Newspapers - The Wall Street Journal,
+        "29":The Global Ambassador: A first look at Arizona restaurateur Sam Fox's new hotel concept in Phoenix - ABC15 Arizona,
+        "30":Economists predict highest growth in 37 years as coronavirus pandemic recedes - Fox Business,
+        "31":Austin airport tower resumes operations after closing due to COVID-19 case - KXAN.com,
+        "32":Shale Oil Stocks To Keep Getting Bigger After $17 Billion Deal - Investor's Business Daily,
+        "33":Asian stocks follow Wall St higher as inflation fears ease - The Associated Press,
+        "34":Airbnb adds more flexible search options - Engadget,
+        "35":Can Ford's F-150 Lightning electric truck persuade the heartland to go all-electric? - NBC News,
+        "36":Virgin Galactic Short-Sellers Primed for Squeeze After Rally - Yahoo Finance,
+        "37":Vitalik Buterin Criticizes Elon Musk's Idealistic Take on Cryptocurrency, Details Limits on Blockchain Scalability – Bitcoin News - Bitcoin News,
+        "38":Exxon Stock Rises Ahead Of Investor Showdown At Annual Meeting - Investor's Business Daily,
+        "39":How to Prepare for Amazon Prime Day 2021 - The New York Times,
+        "40":How to refinance a mortgage after forbearance ends - Fox Business,
+        "41":Bitcoin Mining Council emerges following meeting with Michael Saylor and Elon Musk - Cointelegraph,
+        "42":Dow Jones Rallies; Bitcoin Up As Fed Governor Touts Digital Dollar; Apple Stock Nears Key Level - Investor's Business Daily,
+        "43":Bank of America’s Merrill Lynch to ban trainee brokers from making cold calls - Fox Business,
+        "44":United Airlines joins Uber, Lyft, and Shake Shack in COVID-19 vaccine push - Yahoo Finance,
+        "45":Memorial Day Weekend 2021: Here's the Travel Outlook - NBC4 Washington,
+        "46":PG&E to sell its S.F. HQ for $800 million, wants half of the money returned to customers - San Francisco Chronicle,
+        "47":Republican Governors Cutting Federal Unemployment Benefits For 4 Million - HuffPost,
+        "48":Why Verastem's Stock Is Trading Higher Today - Benzinga,
+        "49":COVID vaccine in California: Where to get shots, common questions answered - KCRA Sacramento,
+        "50":Russia's Sputnik V vaccine highly effective against Brazil virus variant - Reuters,
+        "51":Federal Reserve is likely to create a digital currency: Goldman Sachs - Yahoo Finance,
+        "52":Pennsylvania inches near Gov. Wolf's 70% vaccination target for lifting mask mandate - TribLIVE,
+        "53":Tesla speeds up timeline for Model S Plaid deliveries - Seeking Alpha,
+        "54":Dalio says 'I have some bitcoin,' at crypto conference: 'Personally, I'd rather have bitcoin than a bond' - MarketWatch,
+        "55":EXCLUSIVE Huawei founder urges shift to software to counter U.S. sanctions - Reuters,
+        "56":Goldman Sees $80 Oil This Year Despite Pending Iran Deal - OilPrice.com,
+        "57":AT&T CEO: WarnerMedia spinoff is good for investors - Yahoo Finance,
+        "58":China announces 'zero tolerance' crackdown on commodity-market speculators - MarketWatch,
+        "59":If You Got Moderna, This Is When You'll Need a Booster, CEO Says - Best Life,
+        "60":Gold edges back towards multi-month peak as dollar holds near lows - Kitco NEWS,
+        "61":Zeta becomes a unicorn with $250 million SoftBank-led funding - TechCrunch,
+        "62":Premarket Movers Monday - Virgin Galactic, Beyond Meat, Coinbase - TheStreet,
+        "63":G7 is close to deal on taxation of world’s largest companies - Financial Times,
+        "64":Judge rules jurors can hear testimony about Elizabeth Holmes' wealth - CNBC Television,
+        "65":How can I enter Maryland’s COVID vaccine lottery? What are the odds of winning cash? - Baltimore Sun,
+        "66":FBI identifies 16 Conti ransomware attacks striking US healthcare, first responders - ZDNet,
+        "67":Biden's solar ambitions collide with China labor complaints - CNBC,
+        "68":‘This won’t go away’: Why one doctor thinks COVID-19 will never disappear - WOODTV.com,
+        "69":Virgin Galactic spaceplane makes it to boundary of space on third test flight - Digital Trends,
+        "70":Virgin Galactic spaceplane makes it to boundary of space on third test flight - Digital Trends
+    },
+    "source":{
+        "0":Google News,
+        "1":USA Today,
+        "2":Nikkei.com,
+        "3":Forkast.news,
+        "4":Maui Now,
+        "5":Google News,
+        "6":CNBC,
+        "7":New York Post,
+        "8":San Francisco Chronicle,
+        "9":Barron's,
+        "10":Barron's,
+        "11":CNBC,
+        "12":Barron's,
+        "13":Los Angeles Times,
+        "14":USA Today,
+        "15":CNN,
+        "16":TechCrunch,
+        "17":Seeking Alpha,
+        "18":Reuters,
+        "19":HYPEBEAST,
+        "20":OregonLive,
+        "21":Deadline,
+        "22":WGHP FOX 8 Greensboro,
+        "23":Motley Fool,
+        "24":Cbslocal.com,
+        "25":Yahoo Entertainment,
+        "26":TechCrunch,
+        "27":Al Jazeera English,
+        "28":The Wall Street Journal,
+        "29":ABC15 Arizona,
+        "30":Fox Business,
+        "31":KXAN.com,
+        "32":Investor's Business Daily,
+        "33":Associated Press,
+        "34":Engadget,
+        "35":NBC News,
+        "36":Yahoo Entertainment,
+        "37":Bitcoin.com,
+        "38":Investor's Business Daily,
+        "39":New York Times,
+        "40":Fox Business,
+        "41":Google News,
+        "42":Investor's Business Daily,
+        "43":Fox Business,
+        "44":Yahoo Entertainment,
+        "45":NBC4 Washington,
+        "46":San Francisco Chronicle,
+        "47":HuffPost,
+        "48":Benzinga,
+        "49":KCRA Sacramento,
+        "50":Reuters,
+        "51":Yahoo Entertainment,
+        "52":TribLIVE,
+        "53":Seeking Alpha,
+        "54":MarketWatch,
+        "55":Reuters,
+        "56":OilPrice.com,
+        "57":Yahoo Entertainment,
+        "58":MarketWatch,
+        "59":Best Life,
+        "60":Kitco NEWS,
+        "61":TechCrunch,
+        "62":TheStreet,
+        "63":Financial Times,
+        "64":Google News,
+        "65":Baltimore Sun,
+        "66":ZDNet,
+        "67":CNBC,
+        "68":WOODTV.com,
+        "69":Digital Trends,
+        "70":Digital Trends
+    },
+    "content":{
+        "0":,
+        "1":A Southwest Airlines flight attendant was assaulted by a passenger over the weekend and lost two teeth, according to a letter the flight attendants union sent to the airline's CEO Monday in an appeal for more safeguards as travel rebounds.
+
+"This past weekend, one of our flight attendants was seriou,
+        "2":HONG KONG -- Dalian Wanda Group's $2.6 billion acquisition of U.S.-based AMC Entertainment Holdings in 2012 was historic not only for the Chinese buyer, but also for corporate China overall.
+
+The purchase of the second-largest cinema operator globally drew parallels with Sony's takeover of Columbia ,
+        "3":Following a strong 2020, crypto is predicted to continue to surge in 2021. Notwithstanding the current dip, Bitcoin and Ethereum had both been hitting all-time highs in what seemed like every other week. As the market undergoes a correction, what will the rest of 2021 hold for Bitcoin, Ethereum and ,
+        "4":The Hawai‘i Department of Health temporarily shut down Pizza in Paradise in Kahului, Maui, calling the conditions an “imminent health hazard.”
+
+The food service outlet, operated by Pacific Restaurant Management, LLC, received a red placard on Thursday, May 20, and must remain closed until all of the,
+        "5":,
+        "6":SINGAPORE — Singapore's economy grew at its fastest pace in more than a year in the first quarter of 2021, helped by a stronger-than-expected manufacturing sector, official data showed Tuesday. But the government warned of "heightened uncertainties" arising from the Covid-19 pandemic in the months a,
+        "7":A Massachusetts woman tried to throw out a lottery ticket worth $1 million – but an honest convenience store owner made sure she got her payday.
+
+Lea Rose Fiega bought a Diamond Millions scratch-off in March at a store called Lucky Stop in Southwick, where she was a regular.
+
+Her loyalty and the fac,
+        "8":Applause echoed around the lobby of the Hilton Union Square in San Francisco on Monday morning as staff, from cooks to janitors to managers, lined up to welcome the first batch of guests the hotel has seen since the pandemic forced it to close 14 months ago. A group of four from Arizona entered from,
+        "9":Just about the entire cryptocurrency ecosystem has gotten washed out in the past week, as news of government crackdowns and other negative headlines have dominated the discussion.
+
+Not every coin has been plunging, however. One of the generally positive things about the decline in cryptocurrency val,
+        "10":Investors have digested the idea that inflation is currently running above previous expectations. Now, the focus shifts to the Federal Reserve—and how quickly it will respond to the rise in prices.
+
+There have been plenty of reasons for concern. Measures of inflation in the prices consumers pay have,
+        "11":The Covid-19 resurgence in some parts of Asia could lead to a change in fortunes for China, according to an economist. Previously, the U.S.-China trade war caused companies to move their supply chains out of China, shifting their production and distribution networks for products and services. As a r,
+        "12":Shares of Tesla gained big on Monday. There wasn’t much good news to pin the gains on. A report Tesla is testing a technology recently panned by CEO Elon Musk seems to be the biggest news item. But investor reaction to that technology’s adoption would not necessarily send shares higher.
+
+Tesla (tick,
+        "13":A $1.7-billion expansion project at Los Angeles International Airport was officially unveiled Monday by local officials who expressed optimism that the facility will soon help serve a resurgence of travel demand after the yearlong pandemic slump.
+
+The new facility, named West Gates and billed as an ,
+        "14":President Joe Biden signed the Alaska Tourism Restoration Act into law, which allows cruise ships to visit Alaska.
+
+"Today, I signed the Alaska Tourism Restoration Act into law. Tourism is vital to the state of Alaska — and this law will help revitalize the industry and support Alaskans by allowing ,
+        "15":(CNN Business) A weeks-long blockbuster antitrust trial between Apple and Epic Games culminated on Monday with the maker of the hit video game Fortnite calling Apple an "overlord" and the iPhone maker suggesting Epic is paving the way for a "scary" future for iOS customers.
+
+After spending days pres,
+        "16":Hyundai developed an in-car payment system that will debut in its upcoming all-electric Ioniq 5 crossover that will offer drivers the ability to find and pay for EV charging, food and parking — the latest example of automakers finding new ways to generate revenue and offer customers features that ar,
+        "17":Your current browser configuration
+
+is not compatible with this site.,
+        "18":A logo of Mexican state oil firm Pemex is pictured during a visit by Mexico's president, Andres Manuel Lopez Obrador, at Cadereyta refinery, in Cadereyta, on the outskirts of Monterrey, Mexico August 27, 2020. REUTERS/Daniel Becerril/File Photo
+
+Royal Dutch Shell (RDSa.L) agreed on Monday to sell it,
+        "19":Chairman and CEO of Bernard Arnault briefly surpassed Amazon‘s Jeff Bezos as the wealthiest person in the world on Monday, according to Forbes.
+
+The French fashion titan jumped from the third spot on Forbes’ real-time billionaire tracker to the first spot in the early hours of Monday morning. Accord,
+        "20":Multnomah County is expected to enter the state’s lower risk category for COVID-19 on Thursday, just in time to allow fans to return to the Moda Center en masse for the Portland Trail Blazers’ first home playoff game in its first-round series against the Denver Nuggets.
+
+The state’s most populous co,
+        "21":Disney CEO Bob Chapek said the company made “the right call” by planning to release Black Widow in theaters this summer at the same time it hits Disney+ as a Premier Access title.
+
+“One of the things we learned is that flexibility is good,” he said of the coronavirus pandemic. “We’re really celebrat,
+        "22":BENTONVILLE, Ark. (KNWA/KFTA) – Walmart customers took to social media to speak out about an email they received containing a racial slur, prompting the big box store to issue a statement Monday blaming an “external bad actor.”
+
+The email the retail giant sent to Nexstar’s KNWA/FOX24 reportedly cont,
+        "23":Although the cryptocurrency market has cooled somewhat in recent days, the stock of Coinbase Global (NASDAQ:COIN) remains a very compelling buy. That's the opinion of Goldman Sachs (NYSE:GS) analyst Will Nance. On Monday he launched the investment bank's coverage of Coinbase with an unhesitant buy r,
+        "24":WATCH: Andrew Rannells On Season 3 Of Showtime's 'Black Monday' & Playing Blair PfaffThe star of "Black Monday" discusses season three and discusses what it is like to work with Don Cheadle. 💸💸💸
+
+'The Late Show With Stephen Colbert' Returns To Ed Sullivan Theater With Fully Vaccinated Audience June ,
+        "25":Wednesday will see Nvidia (NVDA) step up to the earnings plate, when the chip giant will release its April quarter’s (F1Q) financials. Ahead of the anticipated print, Oppenheimer’s Rick Schafer has made a list of what to look out for.
+
+Led by gaming, Schafer sees “broad upside vs. original $5.3B out,
+        "26":Lordstown Motors slashes production forecast for its electric pickup And it already needs more cash
+
+Lordstown Motors’ cash-rich SPAC dreams have turned out to be nothin’ more than wishes. The automaker reported Monday a disappointing first-quarter earnings that was a pile-up of red-ink-stained nega,
+        "27":The reopening comes after the cinema chain’s toughest year ever, in which AMC came close to filing for bankruptcy.,
+        "28":Six weeks ago, it seemed as if hedge fund boss Heath Freeman was losing his grip on Tribune Publishing Co. TPCO 0.41% But he never let go—and now he has his prize.
+
+Mr. Freeman, the president of Alden Global Capital LLC, is poised to become the leader of the second-largest U.S. newspaper company, fo,
+        "29":Called The Global Ambassador, the 141-room, internationally-inspired hotel "will inspire and draw travelers from all over the world to explore Phoenix in a new way," Fox said in a statement Monday announcing the news.
+
+It will be located within "The Grove," a new development under construction near ,
+        "30":A group of business economists sounded an optimistic note about the state of the U.S. economy this year, with a majority predicting that growth will hit its fastest pace in close to four decades.
+
+A survey released Monday by the National Association for Business Economics shows that its members expe,
+        "31":AUSTIN (KXAN) — Austin-Bergstrom International Airport says normal operations are restarting after its tower was closed temporarily Monday afternoon due to a COVID-19 case.
+
+The airport says to still expect flight delays into the afternoon and evening.
+
+Earlier in the day, the airport wrote on Twitt,
+        "32":Access to this page has been denied because we believe you are using automation tools to browse the website.
+
+This may happen as a result of the following:
+• Javascript is disabled or blocked by an extension (ad blockers for example)
+• Your browser does not support cookies
+
+Please make sure that Jav,
+        "33":,
+        "34":As people think about traveling again, Airbnb has released a major revamp of its website and app. At the center of the redesign is a focus on flexibility. Building on a feature the company started rolling out in February, the next time you look for a place to stay, you don't have to specify an exact,
+        "35":"This sucker's quick." That was the assessment of President Joe Biden as he took a new Ford F-150 Lightning for a drive last week during a visit to Detroit.
+
+The all-electric pickup is one in a growing array of battery-electric vehicles coming to market. From the strong reception it has received so ,
+        "36":(Bloomberg) -- A burst of bets against Virgin Galactic Holdings Inc., the company founded by billionaire Richard Branson, over the past month has ratcheted up the temperature for short-sellers after the company delivered a successful test flight over the weekend.
+
+Nearly 14 million shares of the Las,
+        "37":Vitalik Buterin, one of the most renowned Ethereum founders, has rebuffed Elon Musk’s take on fixing cryptocurrencies in a new paper where he details the limits of blockchain scalability. Buterin touches on three subjects: storage, bandwidth, and computing power, commenting on their limits with toda,
+        "38":Access to this page has been denied because we believe you are using automation tools to browse the website.
+
+This may happen as a result of the following:
+• Javascript is disabled or blocked by an extension (ad blockers for example)
+• Your browser does not support cookies
+
+Please make sure that Jav,
+        "39":How to Prepare for Amazon Prime Day 2021 A lot has changed since the first Amazon Prime Day was held in 2015. The event has gone from being a relatively small, one-day sale for Prime members to a deal holiday spanning a few days, offering thousands of items on sale—not only from Amazon but also from,
+        "40":The COVID-19 pandemic caused millions of Americans to experience financial hardship. As a result, some homeowners haven’t been able to keep up with their mortgage payments. To provide some relief, the federal government included a mortgage forbearance plan in the CARES Act for federally backed mortg,
+        "41":This website is using a security service to protect itself from online attacks.,
+        "42":Access to this page has been denied because we believe you are using automation tools to browse the website.
+
+This may happen as a result of the following:
+• Javascript is disabled or blocked by an extension (ad blockers for example)
+• Your browser does not support cookies
+
+Please make sure that Jav,
+        "43":Bank of America Corp.'s Merrill Lynch Wealth Management unit is banning trainee brokers from making cold calls, a vestige of an era when the industry pushed hot stocks on anyone who would pick up the phone.
+
+Merrill plans to roll out a revamped adviser-training program on Monday that prohibits parti,
+        "44":Yahoo Finance's Brooke DiPalma reports the latest incentives companies are providing to aid the push in COVID-19 vaccinations.
+
+KRISTIN MYERS: United Airlines is giving vaccinated MileagePlus members a chance to win a year's worth of free flights. We have Yahoo Finance's Brooke DiPalma here with all,
+        "45":Whether you call it revenge travel or cabin fever, many people are ready to travel for Memorial Day weekend after more than a year of COVID-19 lockdowns.
+
+An estimated 2.8 million people in the D.C. area will travel over the holiday weekend, AAA Mid-Atlantic says. About 2.6 million in this group wil,
+        "46":PG&E has agreed to sell its San Francisco headquarters for $800 million, a mega-deal that shows investors remain interested in downtown properties despite the coronavirus pandemic.
+
+The developer Hines agreed to buy office buildings including 77 Beale St. and 245 Market St., Pacific Gas and Electric,
+        "47":Florida announced Monday it would drop the extra $300 that the federal government has been adding to weekly benefits so that workers would be more willing to accept lower-wage jobs.
+
+“Transitioning away from this benefit will help meet the demands of small and large businesses who are ready to hire ,
+        "48":Gainers Scopus BioPharma Inc. (NASDAQ: SCPS) shares climbed 72% to close at $10.25 on Monday after the company reported the FDA approval of IND application for CpG-STAT3siRNA, its distinctive immuno-oncology RNA therapy for the treatment of multiple cancers.,
+        "49":WHAT THEY’RE DOING. I DON’T LIKE NEEDLES. I DON’T LIKE THEM. I DON’T LIKE HOW THEY FEEL JOANNE ALLISON IS NERVOUS TO GET A COVID VACCINE, BUT SHE’S LOOKING FORWARD TO TELLING HER SISTER. SHE GOT THE SHOT. I CAN’T WAIT TO CALL HER AND SAY I DID IT NOW WHETHER I COME BACK A SECOND TIME DEPENDS ON HOW ,
+        "50":A medical specialist holds a vial of Sputnik V vaccine against the coronavirus in a department store in Moscow, Russia, January 18, 2021 REUTERS/Shamil Zhumatov/File Photo/File Photo
+
+Russia's Sputnik V COVID-19 vaccine is highly effective in fighting off and neutralizing the aggressive coronavirus ,
+        "51":Goldman Sachs Chief Economist Jan Hatzius thinks it will be some time before the Federal Reserve creates a digital currency to compete with the dollar, but it's likely to happen.
+
+"The Fed I think partly because of the pre-eminent international role of the dollar is going to be slower than other cen,
+        "52":TribLIVE's Daily and Weekly email newsletters deliver the news you want and information you need, right to your inbox.
+
+Gov. Tom Wolf’s goal of having 70% of adult Pennsylvanians fully vaccinated against covid-19 may well be within reach in a month’s time.
+
+According to data from the Centers for Dis,
+        "53":Your current browser configuration
+
+is not compatible with this site.,
+        "54":Billionaire hedge-fund manager Ray Dalio has revealed that he owns some bitcoin, making the prominent investor one of the latest traditional investors to declare ownership in the world’s most popular digital asset.
+
+“I have some bitcoin,” Dalio told CoinDesk’s Michael Casey, in an interview aired Mo,
+        "55":Founder of Chinese tech giant Huawei Technologies (HWT.UL) Ren Zhengfei has called on the company’s staff to “dare to lead the world” in software as the company seeks growth beyond the hardware operations that U.S. sanctions have crippled.
+
+The internal memo seen by Reuters is the clearest evidence ,
+        "56":Goldman Sachs still expects crude oil to rise to $80 per barrel by the end of the year despite reports about progress on U.S.- Iranian talks about the lifting of sanctions.
+
+According to a note released by the bank's analysts, the recovery in demand made possible by mass vaccinations will offset the,
+        "57":John Stankey, AT&T CEO, joins Yahoo Finance’s Andy Serwer, Myles Udland, Julie Hyman, and Brian Sozzi, to discuss the AT&T-Discovery deal and what it means for the future.,
+        "58":Chinese authorities issued a “zero tolerance” warning to commodity speculators on Monday, sending the prices of some assets tumbling.
+
+Fresh guidelines were posted by China’s National Development and Reform Commission in a notice on its website. That followed a meeting between the body and industry ,
+        "59":Now that masks are no longer required for fully vaccinated people in most spaces, it's more important than ever to make sure the vaccine is protecting you as best it can. Experts predict that over time, the vaccine's efficacy will wane, causing you to need a booster shot at some point down the line.,
+        "60":* Gold likely to challenge $1,900 level in coming days - analyst
+
+ * Dollar stuck near 3-month lows
+
+ * Markets await U.S. data, further policy clues from Fed
+
+May 24 (Reuters) - Gold firmed on Monday, edging back towards last week's 4-1/2-month peak as the dollar held near its weakest since late Fe,
+        "61":Zeta, a startup that helps banks and fintech firms launch products, is the newest to attain the coveted unicorn status after closing a financing round.
+
+The banking tech firm, co-founded by veteran Indian entrepreneur Bhavin Turakhia, said on Monday it has raised $250 million in a Series C round led,
+        "62":Stocks moving in premarket trading Monday include Virgin Galactic, Beyond Meat, Coinbase, Moderna and BioNTech.
+
+Stock futures pointed to gains for Wall Street Monday after equities closed mixed last week amid renewed bouts of volatility.
+
+Here are some of the top movers during premarket trading on ,
+        "63":Keep abreast of significant corporate, financial and political developments around the world. Stay informed and spot emerging risks and opportunities with independent global reporting, expert commentary and analysis you can trust.,
+        "64":,
+        "65":Assuming that roughly 3.3 million people have received at least one vaccine dose by Tuesday, the first day of the contest, and that the state adds about 20,000 administrations of first doses of Pfizer-BioNTech and Moderna’s vaccines and Johnson & Johnson’s single-shot immunization every day (its cur,
+        "66":The Federal Bureau of Investigation (FBI) has linked the Conti ransomware group to at least 16 attacks aimed at disrupting healthcare and first responder networks in the United States.
+
+The targets identified include 911 dispatch carriers, law enforcement agencies, and emergency medical services -- ,
+        "67":The Biden administration's solar power ambitions are colliding with complaints the global industry depends on Chinese raw materials that might be produced by forced labor. A big hurdle is polysilicon, used to make photovoltaic cells for solar panels. The global industry gets 45% of its supply from X,
+        "68":Peter Chin-Hong, MD, professor of Medicine and infectious disease specialist, is studying the effects of the emergency use authorization (EUA) drug remdesivir as a therapy for severely ill patients infected with SARS-CoV-2, in his lab at UCSF Medical Center, at the Parnassus Heights campus. (Courtes,
+        "69":After a few stumbles, Virgin Galactic has succeeded in its third test flight of its new spaceplane, which will be available for space tourism flights in the future.
+
+The VSS Unity, one of Virgin Galactic’s SpaceShipTwo models, launched from Spaceport American in New Mexico on Saturday, May 22. VSS U,
+        "70":After a few stumbles, Virgin Galactic has succeeded in its third test flight of its new spaceplane, which will be available for space tourism flights in the future.
+
+The VSS Unity, one of Virgin Galactic’s SpaceShipTwo models, launched from Spaceport American in New Mexico on Saturday, May 22. VSS U
+    },
+    "link":{
+        "0":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9SkgwbjFJbS1ZaEHSAQA?oc=5,
+        "1":https://www.usatoday.com/story/travel/airline-news/2021/05/25/southwest-airlines-flight-attendant-loses-two-teeth-passenger-assault/7425193002/,
+        "2":https://asia.nikkei.com/Business/Markets/China-debt-crunch/Sale-of-AMC-cinemas-closes-curtain-on-Dalian-Wanda-s-global-dream,
+        "3":https://forkast.news/bitcoin-ethereum-outlook-cryptocurrency-price/,
+        "4":https://mauinow.com/2021/05/24/health-department-shuts-down-kahului-restaurant-for-imminent-health-hazard/,
+        "5":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9S2dkdzdvbDFFT2vSAQA?oc=5,
+        "6":https://www.cnbc.com/2021/05/25/singapore-updates-q1-gdp-full-year-2021-economic-forecasts.html,
+        "7":https://nypost.com/2021/05/24/woman-gets-back-1m-lottery-ticket-she-tried-to-throw-away/,
+        "8":https://www.sfchronicle.com/local/article/S-F-s-largest-hotel-checked-in-its-first-16200230.php,
+        "9":https://www.barrons.com/articles/cryptocurrencies-bitcoin-51621889072,
+        "10":https://www.barrons.com/articles/stock-market-fears-inflation-fed-51621882707,
+        "11":https://www.cnbc.com/2021/05/25/supply-chains-may-return-to-china-amid-covid-resurgence-in-india-vietnam.html,
+        "12":https://www.barrons.com/articles/tesla-stock-51621892762,
+        "13":https://www.latimes.com/business/story/2021-05-24/lax-new-west-gate-terminal,
+        "14":https://www.usatoday.com/story/travel/cruises/2021/05/24/cruise-ships-bill-biden-alaska/7417266002/,
+        "15":https://www.cnn.com/2021/05/24/tech/apple-epic-closing-arguments/index.html,
+        "16":http://techcrunch.com/2021/05/24/hyundai-is-launching-in-car-payments-in-the-all-electric-ioniq-5/,
+        "17":https://seekingalpha.com/news/3699676-solar-power-story-of-rapidly-declining-costs-thrown-into-reverse-bloomberg,
+        "18":https://www.reuters.com/business/energy/shell-sell-interest-deer-park-refinery-partner-pemex-2021-05-24/,
+        "19":https://hypebeast.com/2021/5/bernard-arnault-worlds-richest-person-forbes,
+        "20":https://www.oregonlive.com/coronavirus/2021/05/multnomah-county-expected-to-move-to-lower-risk-category-thursday-and-continue-reopening.html,
+        "21":https://deadline.com/2021/05/disney-bob-chapek-black-widow-movie-theaters-covid-19-1234763346/,
+        "22":https://myfox8.com/news/walmart-faces-backlash-after-customers-receive-email-containing-racial-slur/,
+        "23":https://www.fool.com/investing/2021/05/24/cryptocurrency-exchange-operator-coinbase-could-sk/,
+        "24":https://philadelphia.cbslocal.com/2021/05/24/516-million-winning-mega-millions-ticket-sold-bucks-county/,
+        "25":https://finance.yahoo.com/news/investors-load-nvidia-stock-earnings-214952620.html,
+        "26":http://techcrunch.com/2021/05/24/lordstown-motors-slashes-production-forecast-for-its-electric-pickup/,
+        "27":https://www.aljazeera.com/economy/2021/5/24/amazon-deal-to-acquire-mgm-movie-studio-could-come-tuesday,
+        "28":https://www.wsj.com/articles/meet-the-hedge-fund-boss-who-just-bought-tribunes-newspapers-11621890733,
+        "29":https://www.abc15.com/entertainment/events/the-global-ambassador-a-first-look-at-arizona-restauranteur-sam-foxs-new-hotel-concept-in-phoenix,
+        "30":https://www.foxbusiness.com/economy/economists-strongest-growth-coronavirus-pandemic-recedes,
+        "31":https://www.kxan.com/news/local/austin/austin-airport-tower-closed-temporarily-both-arrivals-and-departures-delayed/,
+        "32":https://www.investors.com/news/oil-stocks-keep-getting-bigger-after-17-billion-cabot-cimarex-shale-deal/,
+        "33":https://apnews.com/article/asia-health-coronavirus-pandemic-business-57a7199bbbb30cb27af6e6d76aa4356e,
+        "34":https://www.engadget.com/airbnb-flexible-search-201420144.html,
+        "35":https://www.nbcnews.com/business/autos/can-ford-s-f-150-lightning-electric-truck-persuade-heartland-n1268400,
+        "36":https://finance.yahoo.com/news/virgin-galactic-short-sellers-primed-182058184.html,
+        "37":https://news.bitcoin.com/vitalik-buterin-criticizes-elon-musks-idealistic-take-on-cryptocurrency-details-limits-on-blockchain-scalability/,
+        "38":https://www.investors.com/news/exxon-stock-investor-showdown-annual-meeting-climate-change-board-vote/,
+        "39":https://www.nytimes.com/wirecutter/money/how-to-prepare-prime-day/,
+        "40":https://www.foxbusiness.com/money/how-to-refinance-mortgage-after-forbearance-ends,
+        "41":https://news.google.com/__i/rss/rd/articles/CBMicWh0dHBzOi8vY29pbnRlbGVncmFwaC5jb20vbmV3cy9iaXRjb2luLW1pbmluZy1jb3VuY2lsLWVtZXJnZXMtZm9sbG93aW5nLW1lZXRpbmctd2l0aC1taWNoYWVsLXNheWxvci1hbmQtZWxvbi1tdXNr0gF1aHR0cHM6Ly9jb2ludGVsZWdyYXBoLmNvbS9uZXdzL2JpdGNvaW4tbWluaW5nLWNvdW5jaWwtZW1lcmdlcy1mb2xsb3dpbmctbWVldGluZy13aXRoLW1pY2hhZWwtc2F5bG9yLWFuZC1lbG9uLW11c2svYW1w?oc=5,
+        "42":https://www.investors.com/market-trend/stock-market-today/dow-jones-rallies-bitcoin-up-as-fed-governor-touts-digital-dollar-apple-stock-nears-key-level/,
+        "43":https://www.foxbusiness.com/markets/bank-of-america-merrill-lynch-trainees-cold-calling,
+        "44":https://finance.yahoo.com/video/united-airlines-joins-uber-lyft-182858424.html,
+        "45":https://www.nbcwashington.com/news/local/memorial-day-weekend-2021-heres-the-travel-outlook/2681247/,
+        "46":https://www.sfchronicle.com/business/article/PG-E-agrees-to-sell-S-F-HQ-for-800-million-16199033.php,
+        "47":https://www.huffpost.com/entry/300-unemployment-benefit_n_60abdc30e4b019ef10dd6178,
+        "48":https://www.benzinga.com/trading-ideas/movers/21/05/21263081/why-verastems-stock-is-trading-higher-today,
+        "49":https://www.kcra.com/article/covid-19-vaccines-california-appointments-tracker-answers-week-may-24/36520015,
+        "50":https://www.reuters.com/business/healthcare-pharmaceuticals/russias-sputnik-v-vaccine-highly-effective-against-brazil-virus-variant-2021-05-24/,
+        "51":https://finance.yahoo.com/news/federal-reserve-is-likely-to-create-a-digital-currency-goldman-sachs-164256832.html,
+        "52":https://triblive.com/local/westmoreland/pennsylvania-inches-near-gov-wolfs-70-vaccination-target-for-lifting-mask-mandate/,
+        "53":https://seekingalpha.com/news/3699524-tesla-speeds-up-timeline-for-model-s-plaid-deliveries,
+        "54":https://www.marketwatch.com/story/i-have-some-bitcoin-says-dalio-at-crypto-conference-personally-id-rather-have-bitcoin-than-a-bond-11621870562,
+        "55":https://www.reuters.com/technology/huawei-founder-urges-software-push-counter-us-sanctions-2021-05-24/,
+        "56":https://oilprice.com/Energy/Oil-Prices/Goldman-Sees-80-Oil-This-Year-Despite-Pending-Iran-Deal.html,
+        "57":https://finance.yahoo.com/video/t-ceo-warnermedia-spinoff-good-145340826.html,
+        "58":https://www.marketwatch.com/story/china-announces-zero-tolerance-crackdown-on-commodities-trading-11621867957,
+        "59":http://bestlifeonline.com/moderna-booster-news/,
+        "60":https://www.kitco.com/news/2021-05-24/Gold-edges-back-towards-multi-month-peak-as-dollar-holds-near-lows.html,
+        "61":http://techcrunch.com/2021/05/24/zeta-unicorn-softbank/,
+        "62":https://www.thestreet.com/investing/virgin-galactic-spce-beyond-meat-coinbase-premarket-monday,
+        "63":https://www.ft.com/content/577253ce-dd30-4de2-8e4b-d3c1277a9463,
+        "64":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9NkVHeVVJQVQzX2_SAQA?oc=5,
+        "65":https://www.baltimoresun.com/coronavirus/bs-prem-md-vaccine-lottery-odds-20210524-t4ut57i7kzbhlep3t2joojjjdi-story.html,
+        "66":https://www.zdnet.com/article/fbi-identifies-16-conti-ransomware-attacks-striking-us-healthcare-first-responders/,
+        "67":https://www.cnbc.com/2021/05/24/bidens-solar-ambitions-collide-with-china-labor-complaints.html,
+        "68":https://www.woodtv.com/health/coronavirus/this-wont-go-away-why-one-doctor-thinks-covid-19-will-never-disappear/,
+        "69":https://www.digitaltrends.com/news/virgin-galactic-third-test-flight/,
+        "70":https://www.digitaltrends.com/news/virgin-galactic-third-test-flight/
+    }
+}
