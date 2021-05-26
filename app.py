@@ -35,7 +35,7 @@ PAGES = {
     "Keyword Search": app_keyword_search,
     "Sentiment of Entities": app_positive_rate,
     "Sentiment of News Sources": app_source_sen,
-    "ESG Media Trend": app_ES
+    "ESG Media Trend": app_ES, 
     "PPT Generator": app_ppt    
 }
 st.sidebar.title('Navigation')
