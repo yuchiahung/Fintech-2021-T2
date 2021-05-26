@@ -1,12 +1,12 @@
-#每日頭條20則
+#每日 business 頭條 max 100 則
 import requests
 # from newsapi.newsapi_client import NewsApiClient
-from newsapi import NewsApiClient
+# from newsapi import NewsApiClient
 import json
-import pandas as pd
-from GoogleNews import GoogleNews
+# import pandas as pd
+# from GoogleNews import GoogleNews
 from goose3 import Goose
-from goose3.text import StopWordsChinese 
+# from goose3.text import StopWordsChinese 
 
 
 def headlineCrawler(old_dataDict = dict()):
@@ -56,12 +56,12 @@ def headlineCrawler(old_dataDict = dict()):
     return dataDict
 
 # if already had data file: read file
-with open('data_headlines.json', 'r') as fp:
+with open('data/data_headlines.json', 'r') as fp:
     old_data = json.load(fp)
 
 # add news 
 dataDict_headlines = headlineCrawler(old_data)
 
 # save as json file 
-with open('data_headlines.json', 'w') as fp:
+with open('data/data_headlines.json', 'w') as fp:
     json.dump(dataDict_headlines, fp)

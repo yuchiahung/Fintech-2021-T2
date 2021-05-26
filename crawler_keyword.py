@@ -49,9 +49,9 @@ def topicCrawler(point = 'Apple', from_time = a_month_ago):
 
 
 keyword = 'Apple'
-from_date = '2021-05-01' 
+from_date = '2021-05-01'
 dataDict = topicCrawler(point = keyword, from_time = from_date)
 
 # save as json file
-with open('data_{}_{}.json'.format(keyword, from_date), 'w') as fp:
+with open('data/data_{}_{}.json'.format(keyword, from_date), 'w') as fp:
     json.dump(dataDict, fp)
