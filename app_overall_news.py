@@ -100,7 +100,7 @@ def display_news(header, content, source, url, time_ago):
 
 def app():
     # st.image('./icon.png')
-    st.title('Latest News')
+    st.title('Latest "Business" News')
     today = datetime.today().date()
     # read summarized news
     data_summary = pd.read_json('data/data_summary.json')
