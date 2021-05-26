@@ -26,7 +26,7 @@ def page_dashboard(s):
         show = show + i + ' | '
     st.write(show) if show != '| ' else st.write('Please Select Your Favorite Categories')
 
-    df = pd.read_json('test_summary_data.json')
+    df = pd.read_json('data/data_summary.json')
     display_df = df.loc[df.category.isin(s.multiselect)]
     display_df = select_news(15,display_df)
     for i in range(len(display_df)):
