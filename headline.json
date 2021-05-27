@@ -1,0 +1,580 @@
+{
+    "id":{
+        "0":1,
+        "1":2,
+        "2":3,
+        "3":4,
+        "4":5,
+        "5":6,
+        "6":7,
+        "7":8,
+        "8":9,
+        "9":10,
+        "10":11,
+        "11":12,
+        "12":13,
+        "13":14,
+        "14":15,
+        "15":16,
+        "16":17,
+        "17":18,
+        "18":19,
+        "19":20,
+        "20":21,
+        "21":22,
+        "22":23,
+        "23":24,
+        "24":25,
+        "25":26,
+        "26":27,
+        "27":28,
+        "28":29,
+        "29":30,
+        "30":31,
+        "31":32,
+        "32":33,
+        "33":34,
+        "34":35,
+        "35":36,
+        "36":37,
+        "37":38,
+        "38":39,
+        "39":40,
+        "40":41,
+        "41":42,
+        "42":43,
+        "43":44,
+        "44":45,
+        "45":46,
+        "46":47,
+        "47":48,
+        "48":49,
+        "49":50,
+        "50":51,
+        "51":52,
+        "52":53,
+        "53":54,
+        "54":55,
+        "55":56,
+        "56":57,
+        "57":58,
+        "58":59,
+        "59":60,
+        "60":61,
+        "61":62,
+        "62":63,
+        "63":64,
+        "64":65,
+        "65":66,
+        "66":67,
+        "67":68,
+        "68":69,
+        "69":70
+    },
+    "head":{
+        "0":Ocugen On Track to Submit Emergency Use Authorization - GlobeNewswire,
+        "1":Snowflake CEO urges investors to be patient with stock during multiyear cloud transition - CNBC,
+        "2":Cramer says short-sellers need to stop betting against GameStop and AMC - CNBC Television,
+        "3":Amazon closes Connecticut construction site after 8th 'noose' found - New York Post ,
+        "4":Gov. Tom Wolf: 70% of Pennsylvania adults have received at least one dose of COVID-19 vaccine - WGAL Susquehanna Valley Pa.,
+        "5":Republic of Korea Joins List of Nations to Sign Artemis Accords - NASA,
+        "6":Dow Jones Futures: Nvidia Leads Six Key Earnings Late; Ford Jumps, Meme Stocks AMC, GME Soar As Tesla Lags - Investor's Business Daily,
+        "7":Walmart and Gap are coming together to create an exclusive home decor brand - CNBC,
+        "8":Amazon shareholder meeting: the key takeaways Yahoo Finance Video - Yahoo Finance,
+        "9":Is MGM Film Chief Mike De Luca Primed for Big Amazon Gig? - Variety,
+        "10":Coronavirus (COVID-19) Update: FDA Authorizes Additional Monoclonal Antibody for Treatment of COVID-19 | FDA - FDA.gov,
+        "11":Prominent local businessman John Stafford cited following incident at Sugarcreek Twp. golf course - WHIO Radio,
+        "12":Tesla's Removing Radar For Semi-Automated Driving On Models 3 And Y And I Don't Understand Why - Jalopnik,
+        "13":Commission, AstraZeneca fire shots in court - POLITICO Europe,
+        "14":Exxon Mobil shareholder vote a ‘watershed’ moment for climate change - Yahoo Finance,
+        "15":American Eagle is the latest apparel retailer to crush estimates as teens head back to the mall - CNBC,
+        "16":I compared Burger King's and McDonald's fried chicken sandwiches - Insider,
+        "17":Elizabeth Warren Slams JPMorgan Chase CEO Jamie Dimon on Overdraft Fees - Rolling Stone,
+        "18":Nvidia revenue jumps 84% from last year as gamers demand graphics chips - CNBC,
+        "19":Altcoins soar while Bitcoin and Ethereum price stall near key levels - Cointelegraph,
+        "20":Biden-Putin summit tensions: Feds say Russia a hacker 'safe haven' - CNBC,
+        "21":Snowflake reports widening losses but raises full-year guidance - CNBC,
+        "22":Here's How to Get the 'BTS Meal' at McDonald's - Billboard,
+        "23":54% of Americans support states' decision to end $300 unemployment benefit, Quinnipiac poll finds - CNBC,
+        "24":Ford vs. GM: Why two traders prefer Ford as it doubles down on electric vehicles - CNBC,
+        "25":San Jose approves Google’s gigantic and controversial new downtown campus - The Verge,
+        "26":Need a job? Have no experience? That’s OK! Companies are relaxing job requirements to cope with worker shortages - USA TODAY,
+        "27":3 major cruise lines just made it clear their ships won’t all be back for a long time - The Points Guy,
+        "28":Influencers Say They Were Urged to Criticize Pfizer Vaccine - The New York Times,
+        "29":New FOMO ETF debuts on the market - Yahoo Finance,
+        "30":A Southwest flight attendant loses two teeth after an altercation with a passenger. Union calls for more safeguards - CNN ,
+        "31":SEC Chair Gary Gensler Warns There Are Non-Compliant Crypto - U.Today,
+        "32":‘For those who ever doubted Baltimore could be cool’: Two city spots among Esquire’s 50th ‘Best Bars in America’ - Baltimore Sun,
+        "33":Amazon’s Jeff Bezos to officially step down in July, Andy Jassy to become CEO - Fox Business,
+        "34":Indian American Convenience Store Owners Praised for Returning $1 Million Lottery Ticket - Yahoo News,
+        "35":Shell ordered to deepen carbon emissions cuts in 'historic' climate case - NBC News,
+        "36":11 best mineral sunscreens of 2021, according to dermatologists - NBC News,
+        "37":Canadian National to Sell Rail Asset to Defuse Kansas City Southern Antitrust Concerns - The Wall Street Journal,
+        "38":Iran bans crypto mining after summer power cuts strike early - Al Jazeera English,
+        "39":Google to use patient data to develop healthcare algorithms for hospital chain - The Verge,
+        "40":Apple seeking business manager with cryptocurrency, alternative payment experience - AppleInsider,
+        "41":Russia bans three 'undesirable' German NGOs - TASS - Yahoo Finance,
+        "42":Older Americans are not delaying their retirement despite Covid-19, research shows - CNBC,
+        "43":AAA says Memorial Day gas prices expected to hit highest in 7 years - Fox Business,
+        "44":3 convincing signs the Bitcoin bears have stopped selling - Cointelegraph,
+        "45":Airbnb’s CEO thinks the platform can replace your landlord - The Verge,
+        "46":Amazon to make presence in physical pharmacy space (updated) - Seeking Alpha,
+        "47":Cathie Wood’s space exploration ETF sells its last few shares of Virgin Galactic - CNBC,
+        "48":Wall Street Bank CEOs to Mention Crypto Before Congressional Banking Panels This Week - CoinDesk - CoinDesk,
+        "49":DC sues Amazon over antitrust marketplace practices - Business Insider,
+        "50":Today's average mortgage refinance rate holds steady below 2.4% | May 26, 2021 - Fox Business,
+        "51":William Shakespeare, first man in the U.K. to receive COVID-19 vaccine, has died of a stroke at 81 - CBS News,
+        "52":Discovery CEO David Zaslav “Happy” About Amazon-MGM Deal In Light Of WarnerMedia Merger Plan - Deadline,
+        "53":The New 2022 Volkswagen Taos Brings The Pain To The Honda HR-V And Toyota C-HR! - The Fast Lane Car,
+        "54":What to watch today: Dow set to bounce after breaking three-day winning streak - CNBC,
+        "55":Dick's Sporting Goods earnings crush estimates as kids head back to team sports, retailer raises forecast - CNBC,
+        "56":Brussels to open formal antitrust probe into Facebook - Financial Times,
+        "57":Robert Shiller: Home prices will fall and 'cause some pain' - Yahoo Finance,
+        "58":Latest on COVID-19 in MN: New cases trending at lowest point since July - Minnesota Public Radio News,
+        "59":6 Things You Should Know About Traveling to Europe This Summer - The New York Times,
+        "60":Despite License Denials, Nursing Homes Can Keep Operating In California : Shots - Health News - NPR,
+        "61":Home builders near 'breaking point' due to skyrocketing lumber prices - KARE11.com,
+        "62":Treasury yields are flat as Fed calms inflation concerns - CNBC,
+        "63":4 Stocks to Watch Amid Rising Adoption of IoT - Yahoo Finance,
+        "64":Los Angeles airport cargo handlers accused of stealing gold bars - NBC News,
+        "65":China's Crypto Mining Crackdown Followed Deadly Coal Accidents - Bloomberg,
+        "66":GameStop (GME) NFT website revealed, powered by Ethereum - Shacknews,
+        "67":OREGON Half of Oregon's 36 counties now at COVID-19 Lower Risk level, including Multnomah KTVZ - KTVZ,
+        "68":Oil Rises On Bullish API Inventory Report - OilPrice.com,
+        "69":Number of Bitcoin Holders Shoots to Record High, Data Shows - CoinDesk - CoinDesk
+    },
+    "source":{
+        "0":GlobeNewswire,
+        "1":CNBC,
+        "2":Google News,
+        "3":New York Post,
+        "4":WGAL Susquehanna Valley Pa.,
+        "5":NASA,
+        "6":Investor's Business Daily,
+        "7":CNBC,
+        "8":Yahoo Entertainment,
+        "9":Variety,
+        "10":FDA.gov,
+        "11":WHIO,
+        "12":Jalopnik,
+        "13":POLITICO.eu,
+        "14":Yahoo Entertainment,
+        "15":CNBC,
+        "16":INSIDER,
+        "17":Rolling Stone,
+        "18":CNBC,
+        "19":Cointelegraph,
+        "20":CNBC,
+        "21":CNBC,
+        "22":Billboard,
+        "23":CNBC,
+        "24":CNBC,
+        "25":The Verge,
+        "26":USA Today,
+        "27":The Points Guy,
+        "28":New York Times,
+        "29":Yahoo Entertainment,
+        "30":CNN,
+        "31":U.Today,
+        "32":Baltimore Sun,
+        "33":Fox Business,
+        "34":Yahoo Entertainment,
+        "35":NBC News,
+        "36":NBC News,
+        "37":The Wall Street Journal,
+        "38":Al Jazeera English,
+        "39":The Verge,
+        "40":AppleInsider,
+        "41":Yahoo Entertainment,
+        "42":CNBC,
+        "43":Fox Business,
+        "44":Cointelegraph,
+        "45":The Verge,
+        "46":Seeking Alpha,
+        "47":CNBC,
+        "48":CoinDesk,
+        "49":Business Insider,
+        "50":Fox Business,
+        "51":CBS News,
+        "52":Deadline,
+        "53":Google News,
+        "54":CNBC,
+        "55":CNBC,
+        "56":Financial Times,
+        "57":Yahoo Entertainment,
+        "58":Minnesota Public Radio News,
+        "59":New York Times,
+        "60":NPR,
+        "61":KARE11.com,
+        "62":CNBC,
+        "63":Yahoo Entertainment,
+        "64":NBC News,
+        "65":Bloomberg,
+        "66":Shacknews,
+        "67":KTVZ,
+        "68":OilPrice.com,
+        "69":CoinDesk
+    },
+    "content":{
+        "0":
+• Active discussions with FDA related to COVAXIN initiated late last year
+• Master file submitted to FDA on March 26, 2021; awaiting feedback from FDA
+
+
+
+MALVERN, Pa., May 26, 2021 (GLOBE NEWSWIRE) -- Ocugen, Inc. (NASDAQ: OCGN), a biopharmaceutical company focused on discovering, developing, and c,
+        "1":Snowflake CEO Frank Slootman said Wednesday that shareholders need to be patient with the company's stock because the cloud transition is not happening overnight.
+
+"Our business is really going to conduct itself really over considerable, long periods of time," Slootman said in an interview with CNBC,
+        "2":,
+        "3":Amazon halted construction at a facility in Windsor, Connecticut for the second time in as many weeks on Wednesday — after an apparent noose was found in the building for the eighth time in recent weeks.
+
+Workers found a red rope “with a noose tied at the end” entangled in yellow electrical cables o,
+        "4":RESIGNED, BUT WOULD NOT SAY IF HE LEFT IN CONNECTION WITH THE REPORT. DANIELLE: 70% OF ADULTS AND PETS OF ANY HAVE GOTTEN AT LEAST ONE DOSE OF THE COVID VACCINE. A SIGNIFICANT MILESTONE IN OUR FIGHT, AND FULLY VACCINATED BEFORE THE MASK MANDATES.
+
+Gov. Tom Wolf announced Wednesday that 70% of adults,
+        "5":,
+        "6":Access to this page has been denied because we believe you are using automation tools to browse the website.
+
+This may happen as a result of the following:
+• Javascript is disabled or blocked by an extension (ad blockers for example)
+• Your browser does not support cookies
+
+Please make sure that Jav,
+        "7":Walmart has inked a multiyear deal with Gap to create a home goods brand, as the discounter looks to drive more online sales and the apparel retailer hopes to strengthen its brand among shoppers. The brand, Gap Home, will launch on Walmart's website on June 24, and eventually bring the most popular ,
+        "8":Bruce Goldfarb, Okapi Partners President and Chief Executive Officer, joined Yahoo Finance to discuss the key takeaways from Amazon's shareholder meeting.,
+        "9":Michael De Luca may be the big winner from Wednesday’s blockbuster news that Amazon will purchase Metro-Goldwyn-Mayer for $8.45 billion.
+
+Though insiders caution that no decisions have been made, there is speculation around Hollywood that De Luca will play a major role in helping the e-commerce gian,
+        "10":Today, the U.S. Food and Drug Administration issued an emergency use authorization (EUA) for the investigational monoclonal antibody therapy sotrovimab for the treatment of mild-to-moderate COVID-19 in adults and pediatric patients (12 years of age and older weighing at least 40 kilograms [about 88 ,
+        "11":SUGARCREEK TWP., Greene County — John Stafford received a citation for a misdemeanor charge of aggravated menacing after he was accused of pulling a gun out and pointing it at golfers playing at Sugar Valley Country Club Monday, police records show.
+
+Stafford, 63, was arrested at his home on Indian ,
+        "12":If you’re paying any attention at all to the the world of Tesla or the ongoing quest for self-driving cars (not something I’m recommending for healthy, well-adjusted people, necessarily) you’ve probably been hearing a lot about something called Tesla Vision, which is not Tesla’s new Netflix competit,
+        "13":The EU's case centered on convincing a judge that the bloc needs the vaccine doses immediately | Kenzo Tribouillard/AFP via Getty Images
+
+How did it end up like this?
+
+Wednesday saw the first public airing of bitter dispute between AstraZeneca and the European Commission — backed by the 27 EU member,
+        "14":Shareholders of Exxon Mobil (XOM) handed America’s largest oil company its first defeat, electing two of four candidates activist investors nominated to its board.
+
+For climate activists who have long championed changes at the world’s largest fossil fuels companies, the vote marked a dramatic leap f,
+        "15":A shopper wearing a protective mask walks past a sale sign at an American Eagle Outfitters Inc. clothing store at Westfield San Francisco Centre in San Francisco, California, U.S., on Thursday, June 18, 2020.
+
+American Eagle Outfitters reported Wednesday fiscal first-quarter earnings and sales that ,
+        "16":Burger King and McDonald's each released a new line of fried chicken sandwiches this year. Burger King's Ch'King sandwiches will be available for customers on June 3 for around $4 each, depending on your region (the chain sent me all three sandwiches as part of a press preview). The line includes a ,
+        "17":Last April, as the Earth hurtled face-first into a combination pandemic and global recession, the Federal Reserve Board announced it would generously waive overdraft fees for big banks while giving them increased access to credit. The board explained its magnanimity as a way “to support the flow of ,
+        "18":Nvidia reported first-quarter results for its fiscal 2022 on Wednesday, with sales growing 84% compared with last year.
+
+Earnings and sales both beat Wall Street expectations, but the shares were basically unchanged in extended trading.
+
+Here's how the chipmaker did, versus Refinitiv consensus estim,
+        "19":On May 26 the the bullish momentum that had propelled Bitcoin and altcoins into a relief rally was somewhat subdued as traders remain unsure of what may happen next.
+
+After an early morning attempt by Bitcoin bulls to drive (BTC) price above $40,000 was met with stiff resistance, the digital asset l,
+        "20":In the wake of the Colonial Pipeline hack, the group behind it, DarkSide, went dark, disappearing from the world along with the websites attributable to them. No one seems to know what happened to DarkSide, but federal officials focused on cybersecurity and counterintelligence say the group could be,
+        "21":Snowflake banners decorate the New York Stock Exchange to market the debut of the software company's shares in New York on Sept. 16, 2020.
+
+Snowflake shares fell as much as 8% in extended trading on Wednesday after the data-analytics software company barely met analysts' expectations for product rev,
+        "22":If you purchase an independently reviewed product or service through a link on our website, we may receive an affiliate commission.
+
+The ARMY can now officially order BTS' go-to meal at McDonald's.
+
+The company unveiled its limited-edition merch line on Wednesday (May 26), inspired by the superstar ,
+        "23":More than half of Americans support the move of some states to end a $300 weekly supplement to unemployment benefits months before it officially expires, according to a Quinnipiac University poll issued Wednesday.
+
+At least 23 states have announced an early end to federal unemployment programs in re,
+        "24":Investors may once again be asking themselves that question after Ford's announcement Wednesday that it plans to boost its electric vehicle investments to $30 billion and target 40% EV sales by 2030.
+
+Earlier this year, GM said it hoped to go all-electric by 2035. Its stock is underperforming Ford's,
+        "25":After first proposing it in 2017, Google has received unanimous approval from the San Jose City Council to move forward with its Downtown West development plan, CNBC reports. The company and city have reached an agreement to develop around 80 acres of land in downtown San Jose, California that will ,
+        "26":This content is only available to USA TODAY subscribers.
+
+Subscribe for as low as $4.99 per month.
+
+Our most popular newsletter, Daily Briefing, to keep you updated on the day's top stories Full access on your desktop, tablet and mobile device The eNewspaper, a digital replica of the print edition O,
+        "27":It’s official: It’s going to take many, many months for Norwegian Cruise Line to get all of its ships back into operation.
+
+Ditto for Norwegian’s two sister lines, Oceania Cruises and Regent Seven Seas Cruises.
+
+The three cruise brands on Wednesday announced restart plans for more than half of their,
+        "28":An injection of Pfizer's coronavirus vaccine near Paris in March. So far, 15 percent of the French population has been fully vaccinated.
+
+PARIS — The mysterious London public relations agency sent its pitch simultaneously to social media influencers in France and Germany: Claim that Pfizer’s Covid-1,
+        "29":Matthew Tuttle, Tuttle Capital Management CEO, joins Yahoo Finance Live to discuss the new FOMO ETF and outlook on meme stocks.
+
+KRISTIN MYERS: All right, let's pivot now. It's time for our ETF report brought to you by Invesco QQQ. We're joined now by Matthew Tuttle, Tuttle Capital Management CEO. M,
+        "30":Following a series of incidents aboard aircraft, including an assault that left a flight attendant with facial injuries and two missing teeth, the union representing Southwest Airlines' flight attendants is urging the company to take stronger steps to protect its members from an "epidemic of aggress,
+        "31":During an oversight hearing held by the House Committee on Appropriations, Gary Gensler, the chairman of the U.S. Securities and Exchange Commission, told Democratic Congressman Mike Quigley that there are many cryptocurrencies that fall under the federal securities laws:
+
+You are right to say that ,
+        "32":Two popular but relatively new Baltimore establishments — Fadensonnen in Old Goucher and Ministry of Brewing in Upper Fells Point — made Esquire’s 50th annual “Best Bars in America” list, the magazine announced Tuesday.
+
+As more people become vaccinated against COVID-19, the bars are among “the plac,
+        "33":Hours after inking an $8.45 billion purchase of MGM Studios, Amazon CEO Jeff Bezos has confirmed the date he will step aside.
+
+Andy Jassy, the incoming CEO, will take the helm on July 5, while Bezos will become Amazon’s executive chairman. The date was confirmed at the company's annual meeting.
+
+Jas,
+        "34":People are praising the Indian American owners of Lucky Stop, a convenience store in Southwick, Mass., for returning a $1 million lottery ticket to a customer.
+
+
+
+What happened: Lea Rose Fiega purchased a $30 Diamond Millions scratch-off ticket in March, according to CBS News.
+• None Thinking she di,
+        "35":THE HAGUE — A Dutch court on Wednesday ordered Royal Dutch Shell to significantly deepen its planned greenhouse gas emission cuts, in a judgement that could pave the way for legal action against energy firms around the world.
+
+The climate lawsuit, which was filed by seven groups including Greenpeace,
+        "36":By now, you’ve likely heard skin care experts say sunscreen is essential in helping reduce the potential of sunburns, skin cancer and wrinkles. And as the return to normal continues and the weather warms up, you might be looking to incorporate sunblock into your daily routine to help protect yoursel,
+        "37":Canadian National Railway Co. is offering to sell a 70-mile stretch of a Louisiana rail network to defuse antitrust concerns as it seeks regulatory approval for its roughly $30 billion agreement to merge with Kansas City Southern .
+
+The two railroads jointly filed a motion with the U.S. Surface Tran,
+        "38":Iran is facing another widespread wave of power outages, and the government is blaming Bitcoin miners again.
+
+Tehran, Iran – Iran has banned all cryptocurrency mining for the next four months as widespread power outages stir public dissatisfaction across the country.
+
+President Hassan Rouhani said o,
+        "39":Google has made a deal for access to patient records from HCA, which which operates 181 hospitals and more than 2,000 healthcare sites in 21 states, so the tech company can develop healthcare algorithms, The Wall Street Journal reports.
+
+Google will store anonymized data from patient health records ,
+        "40":Apple is seeking a business development manager focused on "alternative payment" platforms, such as digital wallets or cryptocurrency, to lead partnerships for its financial services.
+
+According to a job listing posted Wednesday, Apple is looking to hire a person to join its Apple Wallets, Payments,,
+        "41":MOSCOW, May 26 (Reuters) - The Russian state prosecutor's office banned three German non-governmental organisations on Wednesday after labelling them "undesirable", the TASS news agency reported.
+
+The groups were identified as the Forum Russischsprachiger Europäer, the Zentrum für die Liberale Moder,
+        "42":The Covid-19 pandemic was an unprecedented shock for many older workers. Even so, most do not plan to delay their retirement dates as a result, according to a report from Pew Charitable Trusts. In April 2020, the unemployment rate for workers ages 65 and up climbed to 15.6%, the highest rate on reco,
+        "43":Drivers hitting the road over the Memorial Day holiday weekend are expected to face the highest gas prices since 2014, according to AAA.
+
+GasBuddy analyst Patrick DeHaan pointed out on Wednesday that demand for gas "has come roaring back," which he argued has pushed gas prices up to the highest leve,
+        "44":The price of Bitcoin surged higher on May 26, breaching the $40,000 level for the first time in five days as traders brushed aside concerns about China's crypto ban and the United States' crypto tax proposal.
+
+The benchmark cryptocurrency reached an intraday high of $40,855 before turning lower owin,
+        "45":Airbnb doesn’t want you to forget about Airbnb, especially when you’re planning post-pandemic vacations. So on Monday, the company made multiple announcements all seemingly designed to get people renting, traveling, and, crucially, choosing Airbnb to do so. It announced flexible booking, which lets ,
+        "46":Your current browser configuration
+
+is not compatible with this site.,
+        "47":VSS Unity floats in microgravity at the edge of space during its third spaceflight on May 22, 2021.
+
+Ark Invest's space exploration ETF has sold its last remaining shares of Virgin Galactic, completing its move away from one of the few publicly traded pure-play space stocks.
+
+Cathie Wood's firm on T,
+        "48":CEOs from three major Wall Street banks plan to discuss cryptocurrencies before the U.S. Congress this week.
+
+Executives from CitiGroup, JPMorgan Chase, Wells Fargo, Goldman Sachs, Morgan Stanley and Bank of America are set to appear before the Senate Banking committee today and the House Financial ,
+        "49":Hello! This story is from today's edition of Morning Brew, an awesome daily email publication read by 2.5 million next-generation leaders like you. Sign up here to get it!
+
+Do Amazon's marketplace policies make shopping on the internet more expensive?
+
+Karl Racine, the attorney general for Washingto,
+        "50":Based on data compiled by Credible, current mortgage refinance rates have not budged from record lows compared to yesterday.
+
+Rates last updated on May 26, 2021. These rates are based on the assumptions shown here. Actual rates may vary.
+
+Mortgage refinance rates for 10-year fixed loans continue to ,
+        "51":William Shakespeare – the 81-year-old man who became the second person in the U.K. to receive a COVID-19 vaccine – has died.
+
+Shakespeare, who goes by Bill, died of a stroke, University Hospitals Coventry and Warwickshire NHS Trust said, according to BBC News.
+
+In December, Shakespeare became the fi,
+        "52":Discovery CEO David Zaslav, a week after announcing a $43 billion deal to merge with WarnerMedia in a spinoff from AT&T, sees validation in today’s news that Amazon is swallowing MGM.
+
+“I don’t think Amazon got the idea for Amazon from us, but we’re happy about that deal,” he said at a virtual confe,
+        "53":,
+        "54":Dick's Sporting Goods (DKS) earned $3.41 per share for the first quarter, more than tripling the $1.12 consensus estimate. Revenue also beat forecasts amid comparable sales that more than doubled. Dick's also gave a full-year outlook that exceeds current Wall Street consensus. Shares surged 7% in pr,
+        "55":Mannequins stand next to merchandise displayed for sale at a Dick's Sporting Goods store in West Nyack, New York.
+
+Dick's Sporting Goods reported Wednesday fiscal first-quarter earnings and revenue that topped analyst estimates, saying kids returning to team sports boosted sales.
+
+Dick's also raised,
+        "56":Keep abreast of significant corporate, financial and political developments around the world. Stay informed and spot emerging risks and opportunities with independent global reporting, expert commentary and analysis you can trust.,
+        "57":The housing market is hot as home prices continue to rise, but Nobel Prize winning economist Robert Shiller predicts prices will eventually drop. "They'll come back down, not overnight, but enough to cause some pain," Shiller told Yahoo Finance Live.
+
+The latest S&P CoreLogic Case-Shiller national h,
+        "58":
+• None 63.7 percent of Minnesotans 16 and older with at least one vaccine dose; 57.2 percent — more than 2.5 million people — now completely vaccinated
+
+With Minnesota poised to top 600,000 total COVID-19 cases in the pandemic, Gov. Tim Walz on Thursday will roll out incentives designed to nudge un,
+        "59":Shifting flight schedules, varying hotel flexibility and new tech: A lot has changed since the last time you packed that passport.
+
+After the announcement on May 19 by the European Union that vaccinated Americans can soon travel to Europe, the masterpieces of the Louvre and the beaches of Sicily onc,
+        "60":In California, Nursing Home Owners Can Operate After They're Denied A License
+
+The pandemic has highlighted poor care in America's nursing homes, where nearly 175,000 people have died of COVID-19 — a third of all deaths in the country.
+
+Even before the pandemic, advocates pointed to dangerous condit,
+        "61":A local builder said a combination of factors, including reduced capacity at lumber mills and more people starting projects could be driving costs up.
+
+MOUND, Minn. — It's no secret that the housing market is hot in the Twin Cities.
+
+There's just one problem for those soon-to-be homeowners who would,
+        "62":The yield on the benchmark 10-year Treasury note ticked 1.3 basis points higher to 1.577% by 4:00 p.m. ET. The yield on the 30-year Treasury bond were flat at 2.26%. Yields move inversely to prices. One basis point is equal to 0.01%.
+
+U.S. Treasury yields are flat on Wednesday, as Federal Reserve of,
+        "63":Internet of Things (“IoT”) is becoming increasingly popular, thanks to the rapid wave of digitization that is leading to IoT being adopted across various sectors. What allows IoT to be beneficial is the fact that users have the ability to collect data from various connected devices and study them wi,
+        "64":Two Los Angeles-area cargo handlers accused of stealing gold bars from an air shipment were arrested Tuesday.
+
+The gold bars, which are each worth about $56,000 and weigh about 2 pounds — were taken last year at Los Angeles International Airport and later recovered, according to federal officials.
+
+,
+        "65":Why did this happen?
+
+Please make sure your browser supports JavaScript and cookies and that you are not blocking them from loading. For more information you can review our Terms of Service and Cookie Policy.,
+        "66":If there are two things that we know Shackers love, it is cryptocurrencies and meme stocks. But one thing that you folks love even more than those things is NFT. Non-fungible tokens (NFTs) are all the rage these days, and ichiban meme stock extraordinaire GameStop is bringing gamers to the scene wit,
+        "67":SALEM, Ore. (KTVZ) -- Improving COVID-19 vaccination numbers have put five more counties in the Lower Risk category for business restrictions, including the most populous Multnomah, meaning half of Oregon's 36 counties are at that less restrictive category, Gov. Kate Brown announced Tuesday.
+
+Brown ,
+        "68":The American Petroleum Institute (API) on Tuesday reported a draw in crude oil inventories of 439,000 barrels for the week ending May 21.
+
+Analysts had predicted a draw of 1.050 million barrels for the week.
+
+In the previous week, the API reported a modest build in oil inventories of 620,000 barrels,
+        "69":The number of bitcoin addresses in accumulation has risen to a record high as investors with long-term horizons take advantage of the recent price drop to boost their coin stashes.
+
+By signing up, you will receive emails about CoinDesk products and you agree to our terms & conditions and privacy pol
+    },
+    "link":{
+        "0":https://www.globenewswire.com/news-release/2021/05/27/2236939/0/en/Ocugen-On-Track-to-Submit-Emergency-Use-Authorization-Application-to-U-S-FDA-for-its-COVID-19-Vaccine-Candidate-COVAXIN.html,
+        "1":https://www.cnbc.com/2021/05/26/snowflake-ceo-urges-investors-to-be-patient-with-stock-during-cloud-transition.html,
+        "2":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9bzhkaEZRS0hSc2vSAQA?oc=5,
+        "3":https://nypost.com/2021/05/26/amazon-closes-conn-construction-site-after-noose-found/,
+        "4":https://www.wgal.com/article/gov-tom-wolf-says-70-percent-of-pennsylvania-adults-have-received-at-least-one-dose-of-covid-19-vaccine/36549112,
+        "5":https://www.nasa.gov/feature/republic-of-korea-joins-list-of-nations-to-sign-artemis-accords/,
+        "6":https://www.investors.com/market-trend/stock-market-today/dow-jones-futures-nvidia-williams-sonoma-snowflake-earnings-late-ford-jumps-tesla-lags-amc-gme-soar/,
+        "7":https://www.cnbc.com/2021/05/26/walmart-and-gap-are-coming-together-to-create-a-new-home-decor-brand.html,
+        "8":https://finance.yahoo.com/video/amazon-shareholder-meeting-key-takeaways-215025500.html,
+        "9":https://variety.com/2021/film/news/amazon-mgm-mike-deluca-jennifer-salke-1234982264/,
+        "10":https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-fda-authorizes-additional-monoclonal-antibody-treatment-covid-19,
+        "11":https://www.whio.com/news/local/prominent-local-businessman-john-stafford-charged-following-incident-sugarcreek-twp-golf-course/PYM7PKQHPRCHLAXHIRB6FZWSYM/,
+        "12":https://jalopnik.com/teslas-removing-radar-for-semi-automated-driving-on-mod-1846976679,
+        "13":http://www.politico.eu/article/european-commission-astrazeneca-court-coronavirus-vaccines/,
+        "14":https://finance.yahoo.com/news/exxon-mobil-shareholder-vote-a-watershed-moment-for-climate-change-205909507.html,
+        "15":https://www.cnbc.com/2021/05/26/american-eagle-aeo-q1-2021-earnings.html,
+        "16":https://www.insider.com/review-comparison-burger-king-crispy-fried-chicken-sandwich-mcdonalds-2021-5,
+        "17":https://www.rollingstone.com/politics/politics-news/jamie-dimon-elizabeth-warren-overdraft-fees-1172610/,
+        "18":https://www.cnbc.com/2021/05/26/nvidia-nvda-earnings-q1-2022.html,
+        "19":https://cointelegraph.com/news/altcoins-soar-while-bitcoin-and-ethereum-price-stall-near-key-levels,
+        "20":https://www.cnbc.com/2021/05/26/darkside-will-be-back-as-russia-creates-safe-haven-for-hackers-feds.html,
+        "21":https://www.cnbc.com/2021/05/26/snowflake-snow-earnings-q1-2022.html,
+        "22":https://www.billboard.com/articles/news/lifestyle/9578678/bts-meal-mcdonalds-where-to-buy/,
+        "23":https://www.cnbc.com/2021/05/26/54percent-of-americans-support-state-cuts-to-300-unemployment-quinnipiac.html,
+        "24":https://www.cnbc.com/2021/05/26/ford-vs-gm-traders-back-ford-as-it-doubles-down-on-electric-vehicles.html,
+        "25":https://www.theverge.com/2021/5/26/22454939/google-san-jose-campus-dwontown-west-wfh,
+        "26":https://www.usatoday.com/restricted/?return=https:%2F%2Fwww.usatoday.com%2Fstory%2Fmoney%2F2021%2F05%2F26%2Fjob-qualifications-relaxed-employers-struggle-find-hire-workers%2F7438428002%2F,
+        "27":http://thepointsguy.com/news/norwegian-cruise-line-ship-restart-plans/,
+        "28":https://www.nytimes.com/2021/05/26/business/pfizer-vaccine-disinformation-influeners.html,
+        "29":https://finance.yahoo.com/video/fomo-etf-debuts-market-190812431.html,
+        "30":https://www.cnn.com/travel/article/southwest-flight-attendant-assault-trnd/index.html,
+        "31":https://u.today/sec-chair-gary-gensler-warns-there-are-non-compliant-crypto-tokens,
+        "32":https://www.baltimoresun.com/food-drink/bs-fo-esquire-best-bars-20210526-otv7bsi6jnbvppwitpz6oh7pk4-story.html,
+        "33":https://www.foxbusiness.com/markets/amazons-andy-jassy-to-replace-jeff-bezos-in-july,
+        "34":https://news.yahoo.com/indian-american-convenience-store-owners-170241975.html,
+        "35":https://www.nbcnews.com/news/world/shell-ordered-deepen-carbon-emissions-cuts-historic-climate-case-n1268618,
+        "36":https://www.nbcnews.com/shopping/skin-care/best-mineral-sunscreens-n1267839,
+        "37":https://www.wsj.com/articles/canadian-national-to-sell-rail-line-section-to-defuse-kansas-city-southern-antitrust-concerns-11622028411,
+        "38":https://www.aljazeera.com/economy/2021/5/26/iran-bans-all-crypto-mining-after-summer-power-cuts-strike,
+        "39":https://www.theverge.com/2021/5/26/22454817/google-hca-patient-data-healthcare-algorithms,
+        "40":https://appleinsider.com/articles/21/05/26/apple-seeking-business-manager-with-cryptocurrency-alternative-payment-experience,
+        "41":https://finance.yahoo.com/news/russia-bans-three-undesirable-german-150621154.html,
+        "42":https://www.cnbc.com/2021/05/26/covid-19-did-not-prompt-most-older-americans-to-delay-retirement.html,
+        "43":https://www.foxbusiness.com/energy/aaa-says-memorial-day-gas-prices-expected-to-hit-highest-in-7-years,
+        "44":https://cointelegraph.com/news/3-convincing-signs-the-bitcoin-bears-have-stopped-selling,
+        "45":https://www.theverge.com/2021/5/26/22453150/airbnb-ceo-brian-chesky-interview-host-rentals-long-term,
+        "46":https://seekingalpha.com/news/3700326-amazon-to-make-presence-in-physical-pharmacy-space-business-insider,
+        "47":https://www.cnbc.com/2021/05/26/cathie-woods-ark-space-etf-sells-last-few-shares-of-virgin-galactic.html,
+        "48":https://www.coindesk.com/wall-street-bank-ceos-to-mention-crypto-before-congressional-banking-committees,
+        "49":https://www.businessinsider.com/dc-sues-amazon-over-antitrust-marketplace-practices-2021-5,
+        "50":https://www.foxbusiness.com/money/todays-mortgage-refinance-rates-may-26-2021,
+        "51":https://www.cbsnews.com/news/william-shakespeare-covid-vaccine-first-man-uk-died/,
+        "52":https://deadline.com/2021/05/david-zaslav-discovery-amazon-mgm-warnermedia-merger-1234764302/,
+        "53":https://news.google.com/__i/rss/rd/articles/CBMiK2h0dHBzOi8vd3d3LnlvdXR1YmUuY29tL3dhdGNoP3Y9LXJQUTg5Q0JxcEnSAQA?oc=5,
+        "54":https://www.cnbc.com/2021/05/26/what-to-watch-dow-set-to-bounce-after-breaking-three-day-winning-streak.html,
+        "55":https://www.cnbc.com/2021/05/26/dicks-sporting-goods-dks-q1-2021-earnings.html,
+        "56":https://www.ft.com/content/3750ad46-04c3-4010-9fc1-fe2427c8520c,
+        "57":https://finance.yahoo.com/news/robert-shiller-home-prices-to-fall-and-cause-some-pain-103750858.html,
+        "58":https://www.mprnews.org/story/2021/05/26/latest-on-covid19-in-mn,
+        "59":https://www.nytimes.com/2021/05/26/travel/travel-to-europe-restrictions-covid.html,
+        "60":https://www.npr.org/sections/health-shots/2021/05/26/996544725/in-california-nursing-home-owners-can-operate-after-theyre-denied-a-license,
+        "61":https://www.kare11.com/article/news/local/kare11-sunrise/lumber-prices-city-builders-mills/89-63194e6d-fbb1-4e94-a70e-da954777276f,
+        "62":https://www.cnbc.com/2021/05/26/treasury-yields-mixed-as-fed-calms-inflation-concerns.html,
+        "63":https://finance.yahoo.com/news/4-stocks-watch-amid-rising-062606613.html,
+        "64":https://www.nbcnews.com/news/us-news/los-angeles-airport-cargo-handlers-accused-stealing-gold-bars-n1268589,
+        "65":https://www.bloomberg.com/tosv2.html?vid=&uuid=32c01a60-be00-11eb-be06-3d60669c77ee&url=L25ld3MvYXJ0aWNsZXMvMjAyMS0wNS0yNi9jaGluYS1zLWNyeXB0by1taW5pbmctY3JhY2tkb3duLWZvbGxvd2VkLWRlYWRseS1jb2FsLWFjY2lkZW50cw==,
+        "66":https://www.shacknews.com/article/124562/gamestop-gme-nft-website-revealed-powered-by-ethereum,
+        "67":https://ktvz.com/news/oregon-northwest/2021/05/25/half-of-oregons-36-counties-now-at-covid-19-lower-risk-level-including-multnomah/,
+        "68":https://oilprice.com/Latest-Energy-News/World-News/Oil-Rises-On-Bullish-API-Inventory-Report.html,
+        "69":https://www.coindesk.com/number-of-bitcoin-accumulation-addresses-hit-record-high
+    },
+    "time":{
+        "0":2021-05-27T00:06:00Z,
+        "1":2021-05-26T23:44:56Z,
+        "2":2021-05-26T23:15:37Z,
+        "3":2021-05-26T22:57:00Z,
+        "4":2021-05-26T22:43:00Z,
+        "5":2021-05-26T22:36:41Z,
+        "6":2021-05-26T22:21:00Z,
+        "7":2021-05-26T21:53:09Z,
+        "8":2021-05-26T21:50:25Z,
+        "9":2021-05-26T21:40:00Z,
+        "10":2021-05-26T21:30:00Z,
+        "11":2021-05-26T21:16:00Z,
+        "12":2021-05-26T21:12:00Z,
+        "13":2021-05-26T21:05:12Z,
+        "14":2021-05-26T20:59:09Z,
+        "15":2021-05-26T20:45:34Z,
+        "16":2021-05-26T20:42:58Z,
+        "17":2021-05-26T20:39:53Z,
+        "18":2021-05-26T20:36:25Z,
+        "19":2021-05-26T20:35:00Z,
+        "20":2021-05-26T20:25:51Z,
+        "21":2021-05-26T20:16:12Z,
+        "22":2021-05-26T20:12:43Z,
+        "23":2021-05-26T20:09:51Z,
+        "24":2021-05-26T20:06:06Z,
+        "25":2021-05-26T19:59:59Z,
+        "26":2021-05-26T19:32:51Z,
+        "27":2021-05-26T19:30:35Z,
+        "28":2021-05-26T19:19:45Z,
+        "29":2021-05-26T19:08:12Z,
+        "30":2021-05-26T19:07:39Z,
+        "31":2021-05-26T18:51:02Z,
+        "32":2021-05-26T18:22:30Z,
+        "33":2021-05-26T17:46:03Z,
+        "34":2021-05-26T17:02:41Z,
+        "35":2021-05-26T16:53:00Z,
+        "36":2021-05-26T16:31:05Z,
+        "37":2021-05-26T16:28:00Z,
+        "38":2021-05-26T15:46:51Z,
+        "39":2021-05-26T15:46:35Z,
+        "40":2021-05-26T15:24:06Z,
+        "41":2021-05-26T15:06:21Z,
+        "42":2021-05-26T15:01:01Z,
+        "43":2021-05-26T14:57:04Z,
+        "44":2021-05-26T14:03:36Z,
+        "45":2021-05-26T14:00:00Z,
+        "46":2021-05-26T13:53:00Z,
+        "47":2021-05-26T13:49:55Z,
+        "48":2021-05-26T13:49:19Z,
+        "49":2021-05-26T13:26:48Z,
+        "50":2021-05-26T13:17:16Z,
+        "51":2021-05-26T13:08:00Z,
+        "52":2021-05-26T13:03:00Z,
+        "53":2021-05-26T13:00:00Z,
+        "54":2021-05-26T12:31:08Z,
+        "55":2021-05-26T11:31:30Z,
+        "56":2021-05-26T11:19:44Z,
+        "57":2021-05-26T10:37:50Z,
+        "58":2021-05-26T10:09:00Z,
+        "59":2021-05-26T09:00:09Z,
+        "60":2021-05-26T09:00:00Z,
+        "61":2021-05-26T08:36:00Z,
+        "62":2021-05-26T08:30:37Z,
+        "63":2021-05-26T07:02:17Z,
+        "64":2021-05-26T05:37:00Z,
+        "65":2021-05-26T03:31:00Z,
+        "66":2021-05-26T00:05:00Z,
+        "67":2021-05-25T23:35:56Z,
+        "68":2021-05-25T20:37:00Z,
+        "69":2021-05-25T10:28:30Z
+    }
+}
