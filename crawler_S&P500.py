@@ -19,9 +19,8 @@ a_month_ago = (datetime.datetime.now().date() - relativedelta(months=1)).strftim
 
 def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
     """ get news by keyword (at most 100 news)"""
-    api2 = '6d303029151845f8925f24908a6ff268'
-    # api1 = '0bd726adde3042e2810aec5171b67fcc'
-    r = requests.get('https://newsapi.org/v2/everything?q='+point+'&from='+from_time+'+&pageSize=100&sortBy=relevancy&language=en&apiKey='+api2)
+    api1 = '0bd726adde3042e2810aec5171b67fcc'
+    r = requests.get('https://newsapi.org/v2/everything?q='+point+'&from='+from_time+'+&pageSize=100&sortBy=relevancy&language=en&apiKey='+api1)
     data = json.loads(r.content)
     dataDict = dict()
     idDict = dict()
@@ -31,7 +30,7 @@ def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
     contentDict = dict()
     linkDict = dict()
     for i in range(len(data['articles'])):
-        print(i)
+        # print(i)
         try:
             g = Goose() # {'stopwords_class': StopWordsChinese}
             # 文章地址
@@ -47,7 +46,7 @@ def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
             contentDict[i] = article.cleaned_text
             linkDict[i] = data['articles'][i]['url']
         except:
-            pass
+            print(f'cannot extract {i}th article')
     dataDict["id"] = idDict
     dataDict["head"] = headerDict
     dataDict["source"] = sourceDict
@@ -62,13 +61,14 @@ def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
 # dataDict = topicCrawler(point = keyword, from_time = from_date)
 
 
-df_all = pd.DataFrame()
+# df_all = pd.DataFrame()
 
-# df_all = pd.read_json('data/data_sp500.json', force_ascii=False)
+df_all = pd.read_json('data/data_sp500.json')
+
 # for j in range(len(sp500)):
-
-for j in range(40, 50):
-    print(j, 'th company...')
+%%time 
+for j in range(263, 300):
+    print(f'{j}th company...')
     name_clean, symbol = sp500.loc[j, ['name_clean', 'Symbol']]
     df = pd.DataFrame(topicCrawler(point = name_clean, idname = symbol, from_time = a_month_ago))
     df['company'] = name_clean
