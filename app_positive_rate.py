@@ -20,7 +20,7 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
                 .entity-name {
                     font-size: 24px;
                     color: #5791a1;
-                    fontWeight: "bold";
+                    font-weight: bold;
                 }
                 </style>
                 """, unsafe_allow_html=True)
@@ -44,6 +44,7 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=False
                     )
+    fig.update_traces(textposition='inside', textinfo='percent+label', insidetextorientation='radial')
     col1.plotly_chart(fig)
     # header & link
     s_all = [1, 0, -1]

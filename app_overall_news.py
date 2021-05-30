@@ -11,7 +11,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import cm
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
-import webbrowser
+from PIL import Image
+# import webbrowser
 
 
 #利用st.cache()快取沒有改變過的data
@@ -43,7 +44,8 @@ def select_news(data, n):
     # sort by time (display latest news)
     data.sort_values(by = 'time', ignore_index = True, ascending = False, inplace = True)
     data.content_summary.replace('', float('NaN'), inplace=True)
-    df = data.dropna(subset = ['content_summary'])[:n]
+    data.dropna(subset = ['content_summary'], inplace = True)
+    df = data[data.company_len > 0][:n]
     df.reset_index(drop=True, inplace = True)
     # calculate news published time from now
     df['time'] = pd.to_datetime(df['time'], unit='ms')
@@ -67,7 +69,7 @@ def select_news(data, n):
         df.loc[i, 'time_ago'] = time_ago
     return df
 
-def display_news(header, content, source, url, time_ago):
+def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, content):
     # clicked = st.button('Original New')
     # if st.button('Original New'):
         # webbrowser.open_new_tab(url)
@@ -84,37 +86,80 @@ def display_news(header, content, source, url, time_ago):
                 .news-content {
                     font-size: 16px;
                 }
+                .company-name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    line-height: 2.5;
+                    text-align: center;
+                    border: 3px solid #5791a1;
+                    color: #5791a1;
+                }
                 </style>
                 """, unsafe_allow_html=True)
     # header & link
     st.markdown(f'<a style="font-size: 20px; color: #5791a1;" href="{url}" target="_blank">{header}</a>', unsafe_allow_html=True)
+
+    # 2 columns
+    col1, col2 = st.beta_columns((4,1))
     # time & source
-    st.markdown(f'<p class="small-font">{time_ago} | {source}</p>', unsafe_allow_html=True)
+    col1.markdown(f'<p class="small-font">{time_ago} | {source}</p>', unsafe_allow_html=True)
     # content & link to original new
     # st.markdown(f'\n{content}[...](url)', unsafe_allow_html=True)  
-    st.markdown(f'<p class="news-content">{content}</p>', unsafe_allow_html=True)  
+    col1.markdown(f'<p class="news-content">{content_summary}</p>', unsafe_allow_html=True)  
+    
+    # S&P500 company name (if there is)
+    for i in range(len(company_list)):
+        col2.markdown(f'<p class="company-name">{"  "+company_list[i]}</p>', unsafe_allow_html=True)  
+        # if col2.button(company_list[i]):
+            # pass
+    if sentiment == 1:
+        img = Image.open('img/positive.png')
+    elif sentiment == 0:
+        img = Image.open('img/neutral.png')
+    else:
+        img = Image.open('img/negative.png')
+    
+    col2.image(img, width=70)
     # add something in expander
-    # st.beta_expander('More')
+    my_expander = st.beta_expander('Word Cloud')
+    with my_expander:
+        # read stopwords
+        with open('stopwords_en.txt') as f:
+            stopwords = [line.rstrip() for line in f]
+        # Generate color map
+        oceanBig = cm.get_cmap('ocean', 512)
+        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
+        # Generate a word cloud image
+        wordcloud = WordCloud(width=800, height=150, background_color='white', 
+                            colormap=newcmp, stopwords=stopwords, max_words=100).generate(content)
+        # Display the generated image
+        fig = plt.figure()
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis("off")
+        st.pyplot(fig)
+
     # separate bar
-    st.markdown('---')
+    # st.markdown('---')
 
 def app():
     # st.image('./icon.png')
-    st.title('Latest "Business" News')
+    st.title('Latest News')
     today = datetime.today().date()
     # read summarized news
-    data_summary = pd.read_json('data/data_summary.json')
+    data_ner = pd.read_json('data/data_ner.json')
     # st.dataframe(df)
     # st.table(data)
 
     # ----------- wordcloud ----------- #
-    st.pyplot(wordcloud(data_summary, n_words = 100))
+    st.pyplot(wordcloud(data_ner, n_words = 100))
 
     # ----------- summary ----------- #
-    topn_news_df = select_news(data_summary, n = 15)
+    topn_news_df = select_news(data_ner, n = 15)
     for i in range(len(topn_news_df)):
         display_news(topn_news_df.loc[i, 'header'], topn_news_df.loc[i, 'content_summary'], 
-                    topn_news_df.loc[i, 'source'], topn_news_df.loc[i, 'link'], topn_news_df.loc[i, 'time_ago'])
+                    topn_news_df.loc[i, 'source'], topn_news_df.loc[i, 'link'], topn_news_df.loc[i, 'time_ago'],
+                    topn_news_df.loc[i, 'company_all'], topn_news_df.loc[i, 'sentiment'],
+                    topn_news_df.loc[i, 'content'])
 
 # # st.beta_container()
 # # st.beta_columns(spec)
