@@ -18,7 +18,7 @@ df_new.reset_index(inplace = True, drop = True)
 # use "Loughran-McDonald Sentiment Word Lists"
 import pysentiment2 as ps
 lm = ps.LM()
-df_new[['compound', 'pos', 'neg', 'sentiment']] = 0
+df_new.loc[:, ['compound', 'pos', 'neg', 'sentiment']] = 0
 for i, header in enumerate(df_new['header']):
     tokens = lm.tokenize(header)
     score = lm.get_score(tokens)
@@ -32,6 +32,7 @@ for i, header in enumerate(df_new['header']):
     else:
         df_new.loc[i, 'sentiment'] = 0 # neutral
 all_sentiment = pd.concat([old_sentiment, df_new], axis = 0)
+all_sentiment.reset_index(drop=True, inplace=True)
 all_sentiment.to_json('../streamlit_summary_web/data/data_sentiment.json', force_ascii=False)
 
 # use nltk: SentimentIntensityAnalyzer
@@ -67,7 +68,7 @@ all_sentiment.to_json('../streamlit_summary_web/data/data_sentiment.json', force
 
 from mitie import *
 from collections import Counter
-from itertools import chain, islice
+from itertools import chain, islice, compress
 # df = pd.read_json('../streamlit_summary_web/test_sentiment.json')
 # Loading NER model
 ner = named_entity_extractor('ner_model.dat')
@@ -82,7 +83,7 @@ except:
     df_ner_new = all_sentiment.copy()
     print("There's no old NER data.")
 
-df_ner_new[['org', 'person', 'loc', 'misc']] = '0'
+df_ner_new.loc[:, ['org', 'person', 'loc', 'misc']] = '0'
 df_ner_new.reset_index(drop = True, inplace = True)
 # Find top3 entities (by tf) for each tag (threshold: score > 0.1)
 for i in range(len(df_ner_new)):
@@ -107,7 +108,20 @@ for i in range(len(df_ner_new)):
     df_ner_new.at[i, 'loc'] = tuple([c[0] for c in Counter(loc).most_common(3)])
     df_ner_new.at[i, 'misc'] = tuple([c[0] for c in Counter(misc).most_common(3)])
 
+# read S&P500 company list
+sp500 = pd.read_csv('../streamlit_summary_web/data/constituents_csv.csv')
+sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
+company_list = sp500.Symbol.tolist() + sp500.Name.tolist() + sp500.name_clean.tolist()
+
+
+df_ner_new['ner_all'] = df_ner_new[['org', 'person']].values.tolist()
+df_ner_new['ner_all'] = [list(chain.from_iterable(n)) for n in df_ner_new.ner_all]
+df_ner_new['company_all'] = [list(compress(ner_list, [c in company_list for c in ner_list])) for ner_list in df_ner_new.ner_all]
+df_ner_new['company_len'] = [len(c) for c in df_ner_new.company_all]
+
+
 all_ner = pd.concat([old_ner, df_ner_new], axis = 0)
+all_ner.reset_index(drop = True, inplace = True)
 all_ner.to_json('../streamlit_summary_web/data/data_ner.json')
 
 
