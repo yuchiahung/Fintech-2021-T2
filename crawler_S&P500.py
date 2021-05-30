@@ -19,8 +19,12 @@ a_month_ago = (datetime.datetime.now().date() - relativedelta(months=1)).strftim
 
 def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
     """ get news by keyword (at most 100 news)"""
-    api1 = '0bd726adde3042e2810aec5171b67fcc'
-    r = requests.get('https://newsapi.org/v2/everything?q='+point+'&from='+from_time+'+&pageSize=100&sortBy=relevancy&language=en&apiKey='+api1)
+    api2 = '6d303029151845f8925f24908a6ff268'
+    api3 = '2fe4a31f23ce40d694fe7136c75d23fb'
+    api4 = 'e65f4dce1f574854ba4fe0241cb75b46'
+    api5 = '67f14d94b2b6487e9d625b93de96fffc'
+    # api1 = '0bd726adde3042e2810aec5171b67fcc'
+    r = requests.get('https://newsapi.org/v2/everything?q='+point+'&from='+from_time+'+&pageSize=100&sortBy=relevancy&language=en&apiKey='+api5)
     data = json.loads(r.content)
     dataDict = dict()
     idDict = dict()
@@ -48,7 +52,7 @@ def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
         except:
             print(f'cannot extract {i}th article')
     dataDict["id"] = idDict
-    dataDict["head"] = headerDict
+    dataDict["header"] = headerDict
     dataDict["source"] = sourceDict
     dataDict["time"] = timeDict
     dataDict["content"] = contentDict
@@ -62,12 +66,10 @@ def topicCrawler(point = 'Adobe', idname = 'ADBE', from_time = a_month_ago):
 
 
 # df_all = pd.DataFrame()
-
 df_all = pd.read_json('data/data_sp500.json')
 
-# for j in range(len(sp500)):
-%%time 
-for j in range(263, 300):
+for j in range(len(sp500)):
+# for j in range(415, 420):
     print(f'{j}th company...')
     name_clean, symbol = sp500.loc[j, ['name_clean', 'Symbol']]
     df = pd.DataFrame(topicCrawler(point = name_clean, idname = symbol, from_time = a_month_ago))
@@ -76,6 +78,6 @@ for j in range(263, 300):
     df_all.to_json('data/data_sp500.json', force_ascii=False)
 
 
-# # save as json file
+# # save as json file 
 # with open('data/data_{}_{}.json'.format(keyword, from_date), 'w') as fp:
 #     json.dump(dataDict, fp)
