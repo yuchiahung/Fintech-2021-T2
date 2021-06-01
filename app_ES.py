@@ -25,10 +25,10 @@ def app():
 def page_dashboard(company, topic):
     if company != 'Search...':
         st.header(company.upper())
-    df = pd.read_json('test_summary_data.json')
+    df = pd.read_json('Environment_new.json')
 
     #select company
-    display_df = df.loc[df.content_summary.str.contains(company)]
+    display_df = df.loc[df['head'].str.contains(company)]
 
     #select topic
     topic_1 = topic[0]
