@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 from plotly.subplots import make_subplots
+import re
 
 def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
     st.markdown("""
@@ -22,6 +23,24 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
                     color: #5791a1;
                     font-weight: bold;
                 }
+                .header-positive {
+                    font-size: 26px;
+                    color: #64917d;
+                    font-weight: bold;
+                    text-align: center;
+                    border: 1px solid #64917d;
+                    line-height: 2.5;
+                    background-color: #d8e3de; 
+                }       
+                .header-negative {
+                    font-size: 26px;
+                    color: #c96d55;
+                    font-weight: bold;
+                    text-align: center;
+                    border: 1px solid #c96d55;
+                    line-height: 2.5;
+                    background-color: #f7dcd5; 
+                }            
                 </style>
                 """, unsafe_allow_html=True)
     # entity
@@ -60,21 +79,72 @@ def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
                 col2.markdown(f'<a style="font-size: 14px; color: #495057;background-color: #f7dcd5" href="{link}" target="_blank">{header}</a>', unsafe_allow_html=True)
 
 def app():
-    st.title('Sentiment of Entities')
+    st.title('Sentiment of Companies')
     # df_positive = pd.read_json('test_positive_rate.json')
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     df_sentiment_news = pd.read_json('data/data_entities_news.json')
-    df_news = pd.read_json('data/data_summary.json')
-    # sort df_positive data by total news count 
-    df_positive_sorted = df_positive.sort_values(by = 'sum', ascending = False).reset_index(drop = True)
-    # display top 10 entities
-    for i in range(10):
-        ent = df_positive_sorted.loc[i, 'entities']
-        display_rate(entity = ent, 
-                    news = df_news,
-                    sentiment = df_sentiment_news,
-                    # rate_list = df_positive_sorted.loc[i, ['positive_rate', 'neutral_rate', 'negative_rate']].tolist())
-                    rate_list = df_positive_sorted.loc[i, ['1', '0', '-1']].tolist())
-        df_sentiment_news[df_sentiment_news.entities == ent]
-
+    df_news = pd.read_json('data/data_sentiment.json')
+    # sort df_positive data by total news count (50 companies which have most news)
+    df_positive_top50_sum = df_positive.sort_values(by = 'sum', ascending = False).reset_index(drop = True)[:50]
+    # top5 positive companies
+    top5_positive = df_positive_top50_sum.sort_values(by = 'positive_rate', ascending=False)[:5].reset_index(drop = True)
+    # top5 negative companies
+    df_else = df_positive_top50_sum.sort_values(by = 'positive_rate', ascending=False)[5:]
+    top5_negative = df_else.sort_values(by = 'negative_rate', ascending=False)[:5].reset_index(drop = True)
     
+    # display selected company
+    sp500 = pd.read_csv('data/constituents_csv.csv')
+    sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
+    selected_company = st.selectbox('Select a company...', ['All'] + sp500.name_clean.tolist())
+    
+    if selected_company == 'All':
+        # display top 10 entities
+        # top5 positive 
+        st.markdown('---')
+        st.markdown(f'<p class = "header-positive">5 Companies with Highest Positive Rate</p>', unsafe_allow_html=True)
+        for i in range(5):
+            ent = top5_positive.loc[i, 'entities']
+            display_rate(entity = ent, 
+                        news = df_news,
+                        sentiment = df_sentiment_news,
+                        # rate_list = df_positive_sorted.loc[i, ['positive_rate', 'neutral_rate', 'negative_rate']].tolist())
+                        rate_list = top5_positive.loc[i, ['1', '0', '-1']].tolist())
+        
+        # top5 negative 
+        st.markdown('---')
+        st.markdown(f'<p class = "header-negative">5 Companies with Highest Negative Rate</p>', unsafe_allow_html=True)
+        for i in range(5):
+            ent = top5_negative.loc[i, 'entities']
+            display_rate(entity = ent, 
+                        news = df_news,
+                        sentiment = df_sentiment_news,
+                        # rate_list = df_positive_sorted.loc[i, ['positive_rate', 'neutral_rate', 'negative_rate']].tolist())
+                        rate_list = top5_negative.loc[i, ['1', '0', '-1']].tolist())
+    elif len(df_sentiment_news[df_sentiment_news.entities == selected_company]) == 0:
+        st.write('Cannot find related news')
+    else:
+        display_rate(entity = selected_company,
+                        news = df_news,
+                        sentiment = df_sentiment_news,
+                        rate_list = df_positive.loc[df_positive.entities == selected_company, ['1', '0', '-1']].values.tolist()[0])
+        selected_news_id = df_sentiment_news.loc[df_sentiment_news.entities == selected_company, 'news_id'].tolist()
+        selected_news = df_news[df_news.id.isin(selected_news_id)]
+        selected_news['time'] = pd.to_datetime(selected_news.time, unit = 'ms')
+        selected_news['score'] = [selected_news.loc[i, 'nltk_compound'] if selected_news.loc[i, 'nltk_sentiment'] == selected_news.loc[i, 'final_sentiment'] else selected_news.loc[i, 'compound'] for i in selected_news.index]
+        selected_news.rename(columns = {'sentiment': 'lm_sentiment', 'final_sentiment': 'sentiment'}, inplace=True)
+        selected_news.sort_values(by = 'sentiment', ascending=False, inplace=True)
+        selected_news['sentiment'] = ['positive' if s == 1 else ('negative' if s == -1 else 'neutral') for s in selected_news.sentiment]
+        # plot
+        fig = px.scatter(selected_news, 
+                        x = 'time', y = 'score',
+                        color = 'sentiment',
+                        hover_name = 'header', log_x = False, #size_max = 50,
+                        color_discrete_sequence=['seagreen', 'sandybrown', 'salmon'])
+        fig.update_traces(marker_size = 10, opacity = 0.7)
+        fig.update_layout(autosize=False, width=800, height=400, 
+                        margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                        showlegend=True
+                        )
+        st.plotly_chart(fig)
+        
+

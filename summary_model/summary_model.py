@@ -8,7 +8,6 @@ import re
 def get_data(date):
     """ Manipulating data as dataframe"""
     df = pd.read_json('../streamlit_summary_web/data/data_sp500.json')
-    df = df[:15000]
     df.drop_duplicates(subset=df.columns.tolist()[1:], ignore_index = True, inplace = True)
     # to lower-cased
     # df['content_lower'] = [text.lower() for text in df['content']]
@@ -36,7 +35,7 @@ def summarize_news(n_sen = 2, previous_summary = pd.DataFrame(columns = ['header
     # if there's old summary data, we only need to summarize new data
     df_new = df[~df.header.isin(previous_summary.header)]
     # selected contents
-    text = df_new['content'].tolist()
+    # text = df_new['content'].tolist()
     # get model
     modelName = "bert-base-uncased" # lower-cased
     custom_config = AutoConfig.from_pretrained(modelName)
@@ -49,6 +48,7 @@ def summarize_news(n_sen = 2, previous_summary = pd.DataFrame(columns = ['header
     df_new.reset_index(drop = True, inplace = True)
     for i in range(len(df_new)):
         df_new.loc[i, 'content_summary'] = model(df_new.loc[i, 'content'], num_sentences = n_sen)
+        # save file every 200 news
         if i % 200 == 0:
             df_new.to_json('../streamlit_summary_web/data/data_summary_temp.json', force_ascii=False)
     all_summary = pd.concat([previous_summary, df_new], axis = 0)
@@ -68,4 +68,5 @@ try:
 except:
     data_summary = summarize_news(n_sen=1)
 # export summarized news
+data_summary.reset_index(drop = True, inplace = True)
 data_summary.to_json('../streamlit_summary_web/data/data_summary.json', force_ascii=False)
