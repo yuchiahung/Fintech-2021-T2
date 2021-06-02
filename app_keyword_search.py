@@ -49,7 +49,7 @@ def app():
         time_selected = time_input
         adj = dt.timedelta(hours = time_selected.hour, minutes = time_selected.minute)
         start_adj = start + adj
-        st.write(str(start_adj))
+        #st.write(start_adj)
         dashboard(company, start_adj, end)
 
 
@@ -58,7 +58,7 @@ def dashboard(company, start, end):
     df['time'] = pd.to_datetime(df['time'], unit='ms')
     display_df = df.loc[(df.company.str.contains(company)) & (df.time.dt.date.between(start, end))]
     display_df = select_news(display_df, n = 15)
-    st.write(display_df)
+    #st.write(display_df)
 
     for i in range(len(display_df)):
         display_news(display_df.loc[i, 'header'], display_df.loc[i, 'content_summary'], 
