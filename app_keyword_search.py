@@ -17,12 +17,7 @@ def app():
     # Sidebar
     st.title('KEYWORD SEARCH')
 
-    # 多選按钮
-    method = st.radio("Which would you choose", ['datetime', 'time','keyword'], key="3")
-
-    
-
-    col1,col2,col3,col4 = st.beta_columns(4)
+    col1,col2,col3 = st.beta_columns(3)
     #search欄位
     with col1:
         def icon(icon_name):
@@ -35,9 +30,6 @@ def app():
     with col3:
         end_date = st.date_input("End date", datetime(2021, 6, 1))
 
-    #時間輸入
-    with col4:
-        time_input = st.time_input("Insert a time")
 
     #按紐
     go = st.button('GO')
@@ -45,19 +37,26 @@ def app():
     if go:
         start = start_date
         end = end_date
-        company = selected
-        time_selected = time_input
-        adj = dt.timedelta(hours = time_selected.hour, minutes = time_selected.minute)
-        start_adj = start + adj
-        #st.write(start_adj)
-        dashboard(company, start_adj, end)
+        search = selected
+        dashboard(search, start, end)
 
 
-def dashboard(company, start, end):
+def dashboard(search, start, end):
     df = pd.read_json('data/data_ner.json')
     df['time'] = pd.to_datetime(df['time'], unit='ms')
-    display_df = df.loc[(df.company.str.contains(company)) & (df.time.dt.date.between(start, end))]
+    company_table = pd.read_csv('data/constituents_csv.csv')
+    company_table.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in company_table.Name]
+    company_table.loc[:, 'name_full'] = ['+'.join(n.split(' ')) for n in company_table.Name]
+    company = company_table.name_clean.tolist()
+    if search in company:
+        display_df = df.loc[(df.company_all.astype(str).str.contains(search)) & (df.time.dt.date.between(start, end))]
+        display_df = display_df.loc[display_df.company_len != 0]
+    else:
+        display_df = df.loc[(df.content.str.contains(search)) & (df.time.dt.date.between(start, end))]
+        display_df = display_df.loc[display_df.company_len != 0]
     display_df = select_news(display_df, n = 15)
+    score = round((1 - (display_df.neg.sum() / len(display_df.neg))), 4) * 100
+    st.subheader('Sentiment Score：' + str(score))
     #st.write(display_df)
 
     for i in range(len(display_df)):
