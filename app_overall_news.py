@@ -1,43 +1,19 @@
 import streamlit as st
 # import plotly.graph_objs as go
-from datetime import datetime, timedelta
+from datetime import datetime
 # from plotly.subplots import make_subplots
-import json
 import pandas as pd
 # from collections import Counter
-
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
-import numpy as np
 from matplotlib import cm
-from matplotlib.colors import ListedColormap, LinearSegmentedColormap
+from matplotlib.colors import ListedColormap
 from PIL import Image
+import word_cloud
 # import webbrowser
 
 
 #利用st.cache()快取沒有改變過的data
 # @st.cache()
-
-def wordcloud(data, n_words=100):
-    """ Wordcloud of news of the week """
-    a_week_ago = datetime.today() - timedelta(days=7)
-    data['time'] = pd.to_datetime(data['time'], unit='ms')  
-    data_week = data[data.time > a_week_ago]
-    text = ' '.join(data_week['header'] + ' ' + data_week['content'])
-    # read stopwords
-    with open('stopwords_en.txt') as f:
-        stopwords = [line.rstrip() for line in f]
-    # Generate color map
-    oceanBig = cm.get_cmap('ocean', 512)
-    newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-    # Generate a word cloud image
-    wordcloud = WordCloud(width=800, height=150, background_color='white', 
-                          colormap=newcmp, stopwords=stopwords, max_words=n_words).generate(text)
-    # Display the generated image
-    fig = plt.figure()
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis("off")
-    return fig
 
 def select_news(data, n):
     """select n most important/latest summarized news  & calculate time"""
@@ -93,9 +69,9 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
                 .company-name {
                     font-size: 16px;
                     font-weight: bold;
-                    line-height: 2.5;
+                    line-height: 2;
                     text-align: center;
-                    border: 3px solid #5791a1;
+                    border: 2px solid #5791a1;
                     color: #5791a1;
                 }
                 </style>
@@ -135,22 +111,22 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
     else: 
         col2.image(img, width=60)
     # add something in expander
-    my_expander = st.beta_expander('Word Cloud')
-    with my_expander:
-        # read stopwords
-        with open('stopwords_en.txt') as f:
-            stopwords = [line.rstrip() for line in f]
-        # Generate color map
-        oceanBig = cm.get_cmap('ocean', 512)
-        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-        # Generate a word cloud image
-        wordcloud = WordCloud(width=800, height=150, background_color='white', 
-                            colormap=newcmp, stopwords=stopwords, max_words=20).generate(content)
-        # Display the generated image
-        fig = plt.figure()
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis("off")
-        st.pyplot(fig)
+    # my_expander = st.beta_expander('Word Cloud')
+    # with my_expander:
+    #     # read stopwords
+    #     with open('stopwords_en.txt') as f:
+    #         stopwords = [line.rstrip() for line in f]
+    #     # Generate color map
+    #     oceanBig = cm.get_cmap('ocean', 512)
+    #     newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
+    #     # Generate a word cloud image
+    #     wordcloud = WordCloud(width=800, height=150, background_color='white', 
+    #                         colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
+    #     # Display the generated image
+    #     fig = plt.figure()
+    #     plt.imshow(wordcloud, interpolation='bilinear')
+    #     plt.axis("off")
+    #     st.pyplot(fig)
 
     # separate bar
     # st.markdown('---')
@@ -158,14 +134,13 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
 def app():
     # st.image('./icon.png')
     st.title('Latest Unbiased News')
-    today = datetime.today().date()
     # read summarized news
     data_news = pd.read_json('data/data_bias_news.json')
     # st.dataframe(df)
     # st.table(data)
 
     # ----------- wordcloud ----------- #
-    st.pyplot(wordcloud(data_news, n_words = 100))
+    st.pyplot(word_cloud.plot_wordcloud(data_news, n_words = 100, date = datetime(2021,5,30)))
 
     # ----------- summary ----------- #
     topn_news_df = select_news(data_news, n = 15)

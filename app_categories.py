@@ -3,34 +3,36 @@ import numpy as np
 from datetime import datetime
 import json
 import streamlit as st
-import SessionState
 import re
 from PIL import Image
 from matplotlib import cm
 from matplotlib.colors import ListedColormap, LinearSegmentedColormap
 from wordcloud import WordCloud
 import matplotlib.pyplot as plt 
+import plotly.express as px
+import word_cloud
+import summarized_news
 
 def app(s):
     st.title('MY FAVORITE')
-    selection = st.beta_expander('Settings', False)
-    selection.subheader("Selections")
-
     company_table = pd.read_csv('data/constituents_csv.csv')
     company_table.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in company_table.Name]
     company_table.loc[:, 'name_full'] = ['+'.join(n.split(' ')) for n in company_table.Name]
     industry = company_table.Sector.unique().tolist()
-    col = selection.beta_container()
-    all = selection.checkbox('Select All')
-    if all:
-        s.multiselect = col.multiselect("Select Your Favorite Categories:", industry, industry)
-    else:
-        s.multiselect = col.multiselect("Select Your Favorite Categories:", industry, s.multiselect)
+    selection = st.beta_expander('Settings', False)
+    with selection:
+        st.subheader("Selections")
+        col1, col2 = st.beta_columns((3, 1))
+        all = st.checkbox('Select All')
+        if all:
+            s.multiselect = col1.multiselect("Select Your Favorite Categories:", industry, industry)
+        else:
+            s.multiselect = col1.multiselect("Select Your Favorite Categories:", industry, s.multiselect)
+        n_news = col2.number_input("Select Number of News:", min_value = 1, max_value = 20, value = 5, step = 1)
     #session.multiselect
+    page_dashboard(s, company_table, n_news)
 
-    page_dashboard(s, company_table)
-
-def page_dashboard(s, company_table):
+def page_dashboard(s, company_table, n_news):
     
     #st.header("Dashboard")
     st.subheader('My Selections')
@@ -43,23 +45,42 @@ def page_dashboard(s, company_table):
     company_table = company_table.rename(columns = {'name_clean': 'company'})
     #st.write(company_table)
     df = pd.merge(df, company_table, how = 'left', on = ['company'])
+    # all selected categories news
     display_df = df.loc[df.Sector.isin(s.multiselect)]
-    display_df = select_news(display_df, n = 15)
-    #st.write(display_df.head(50))
-    for i in range(len(display_df)):
-        display_news(display_df.loc[i, 'header'], display_df.loc[i, 'content_summary'], 
-                    display_df.loc[i, 'source'], display_df.loc[i, 'link'], display_df.loc[i, 'time_ago'],
-                    display_df.loc[i, 'company_all'], display_df.loc[i, 'sentiment'],
-                    display_df.loc[i, 'content'])
+    # plot wordcloud
+    col1, col2 = st.beta_columns((1,4))
+    if len(display_df) == 0:
+        st.write('Please select at least one category...')
+    else:
+        # pie plot: positive rate
+        rate_list = display_df.groupby('sentiment').count()['id'].tolist()
+        fig = px.pie(values = rate_list, names = ['positive', 'neutral', 'negative'],
+            hole = .3, 
+            color = ['positive', 'neutral', 'negative'],
+            color_discrete_map={
+                "positive": "#9AC1AE",
+                "neutral": "#F2CF92",
+                "negative": "#E79C88"
+                }
+            ) 
+        fig.update_layout(autosize=False, width=150, height=150, 
+                margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                showlegend=False
+                ) 
+        fig.update_traces(textposition='inside', textinfo='percent+label', insidetextorientation='radial')
+        col1.plotly_chart(fig)
+        # wordcloud (all companies news)
+        col2.pyplot(word_cloud.plot_wordcloud(display_df, n_words = 100))
     
+        summarized_df = summarized_news.summarized_multiple_news(display_df, n_sen = n_news)
+        summarized_df_time = calculate_time(summarized_df)
+        for i in range(n_news):
+            display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
+                        summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], display_df.loc[i, 'time_ago'],
+                        summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'])
 
-def select_news(data, n):
-    """select n most important/latest summarized news  & calculate time"""
-    # sort by time (display latest news)
-    data.sort_values(by = 'time', ignore_index = True, ascending = False, inplace = True)
-    data.content_summary.replace('', float('NaN'), inplace=True)
-    data.dropna(subset = ['content_summary'], inplace = True)
-    df = data[data.company_len > 0][:n]
+def calculate_time(df):
+    """calculate time"""
     df.reset_index(drop=True, inplace = True)
     # calculate news published time from now
     df['time'] = pd.to_datetime(df['time'], unit='ms')
@@ -83,7 +104,7 @@ def select_news(data, n):
         df.loc[i, 'time_ago'] = time_ago
     return df
 
-def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, content):
+def display_news(header, content_summary, source, url, time_ago, company_list, sentiment):
     # clicked = st.button('Original New')
     # if st.button('Original New'):
         # webbrowser.open_new_tab(url)
@@ -101,11 +122,11 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
                     font-size: 16px;
                 }
                 .company-name {
-                    font-size: 18px;
+                    font-size: 16px;
                     font-weight: bold;
-                    line-height: 2.5;
+                    line-height: 2;
                     text-align: center;
-                    border: 3px solid #5791a1;
+                    border: 2px solid #5791a1;
                     color: #5791a1;
                 }
                 </style>
@@ -134,20 +155,3 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
         img = Image.open('img/negative.png')
     
     col2.image(img, width=70)
-    # add something in expander
-    my_expander = st.beta_expander('Word Cloud')
-    with my_expander:
-        # read stopwords
-        with open('stopwords_en.txt') as f:
-            stopwords = [line.rstrip() for line in f]
-        # Generate color map
-        oceanBig = cm.get_cmap('ocean', 512)
-        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-        # Generate a word cloud image
-        wordcloud = WordCloud(width=800, height=150, background_color='white', 
-                            colormap=newcmp, stopwords=stopwords, max_words=100).generate(content)
-        # Display the generated image
-        fig = plt.figure()
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis("off")
-        st.pyplot(fig)
