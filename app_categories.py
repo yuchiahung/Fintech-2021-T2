@@ -76,7 +76,7 @@ def page_dashboard(s, company_table, n_news):
         summarized_df_time = calculate_time(summarized_df)
         for i in range(n_news):
             display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
-                        summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], display_df.loc[i, 'time_ago'],
+                        summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], summarized_df_time.loc[i, 'time_ago'],
                         summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'])
 
 def calculate_time(df):
