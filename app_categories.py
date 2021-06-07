@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from datetime import datetime
+from datetime import datetime, timedelta
 import json
 import streamlit as st
 import re
@@ -42,15 +42,21 @@ def page_dashboard(s, company_table, n_news):
     st.write(show) if show != '| ' else st.write('Please Select Your Favorite Categories')
 
     df = pd.read_json('data/data_ner.json')
+    # news in this week
+    df['time'] = pd.to_datetime(df.time, unit = 'ms')
+    df_week = df[df.time >= datetime.today() - timedelta(days=7)]
+
     company_table = company_table.rename(columns = {'name_clean': 'company'})
     #st.write(company_table)
-    df = pd.merge(df, company_table, how = 'left', on = ['company'])
+    df_week = pd.merge(df_week, company_table, how = 'left', on = ['company'])
     # all selected categories news
-    display_df = df.loc[df.Sector.isin(s.multiselect)]
+    display_df = df_week.loc[df_week.Sector.isin(s.multiselect)]
+    
     # plot wordcloud
     col1, col2 = st.beta_columns((1,4))
     if len(display_df) == 0:
-        st.write('Please select at least one category...')
+        # st.write('Please select at least one category...')
+        pass
     else:
         # pie plot: positive rate
         rate_list = display_df.groupby('sentiment').count()['id'].tolist()
