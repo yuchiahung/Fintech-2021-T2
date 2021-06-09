@@ -84,7 +84,7 @@ def display_news(header, content_summary, source, url, time_ago, sentiment, comp
 def app():
     st.title('Companies News')
     # read datas
-    data_ner = pd.read_json('data/data_ner.json')
+    data_ner = pd.read_json('data/data_bias_source.json')
     data_ner.sort_values(by = 'time', ascending = False, inplace = True)
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     sp500 = pd.read_csv('data/constituents_csv.csv')

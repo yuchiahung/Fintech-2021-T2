@@ -39,7 +39,7 @@ def page_dashboard(s, company_table, n_news):
         show = show + i + ' | '
     st.write(show) if show != '| ' else st.write('Please Select Your Favorite Categories')
 
-    df = pd.read_json('data/data_ner.json')
+    df = pd.read_json('data/data_bias_source.json')
     # news in this week
     df['time'] = pd.to_datetime(df.time, unit = 'ms')
     df_week = df[df.time >= datetime.today() - timedelta(days=7)]

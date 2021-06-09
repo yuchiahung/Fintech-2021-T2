@@ -42,7 +42,7 @@ def app():
 
 
 def dashboard(search, start, end):
-    df = pd.read_json('data/data_ner.json')
+    df = pd.read_json('data/data_bias_source.json')
     df['time'] = pd.to_datetime(df['time'], unit='ms')
     company_table = pd.read_csv('data/constituents_csv.csv')
     company_table.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in company_table.Name]
