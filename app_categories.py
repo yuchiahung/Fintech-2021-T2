@@ -17,7 +17,6 @@ def app(s):
     st.title('MY FAVORITE')
     company_table = pd.read_csv('data/constituents_csv.csv')
     company_table.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in company_table.Name]
-    company_table.loc[:, 'name_full'] = ['+'.join(n.split(' ')) for n in company_table.Name]
     industry = company_table.Sector.unique().tolist()
     selection = st.beta_expander('Settings', False)
     with selection:
@@ -33,7 +32,6 @@ def app(s):
     page_dashboard(s, company_table, n_news)
 
 def page_dashboard(s, company_table, n_news):
-    
     #st.header("Dashboard")
     st.subheader('My Selections')
     show = '| '
@@ -45,13 +43,19 @@ def page_dashboard(s, company_table, n_news):
     # news in this week
     df['time'] = pd.to_datetime(df.time, unit = 'ms')
     df_week = df[df.time >= datetime.today() - timedelta(days=7)]
-
-    company_table = company_table.rename(columns = {'name_clean': 'company'})
+    # manipulate company name (explode)
+    df_week['company'] = df_week.company_all.copy()
+    df_exploded = df_week.explode('company')
+    df_exploded.dropna(subset = ['company'], inplace = True)
+    # replace Symbol & full name with clean name
+    df_exploded.company_all.replace(company_table.Symbol.tolist(), company_table.name_clean.tolist(), inplace = True)
+    df_exploded.company_all.replace(company_table.Name.tolist(), company_table.name_clean.tolist(), inplace = True)
     #st.write(company_table)
-    df_week = pd.merge(df_week, company_table, how = 'left', on = ['company'])
+    # merge with sector
+    df_exploded = df_exploded.merge(company_table, how = 'left', left_on = 'company', right_on = 'name_clean')
     # all selected categories news
-    display_df = df_week.loc[df_week.Sector.isin(s.multiselect)]
-    
+    display_df = df_exploded.loc[df_exploded.Sector.isin(s.multiselect)]
+    display_df.drop_duplicates(subset = ['header', 'source', 'time', 'content', 'link'], inplace = True)
     # plot wordcloud
     col1, col2 = st.beta_columns((1,4))
     if len(display_df) == 0:
@@ -128,7 +132,7 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
                     font-size: 16px;
                 }
                 .company-name {
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: bold;
                     line-height: 2;
                     text-align: center;
