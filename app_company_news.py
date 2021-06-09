@@ -145,10 +145,15 @@ def app():
             st.plotly_chart(fig)
 
         # summarization
-        result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news, sp500 = sp500, data = data_ner)
+        result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
         result_df_time = calculate_time(result_df)
 
-        for i in range(n_news):
+        if len(result_df_time) >= n_news:
+            r_n_news = n_news
+        else:
+            r_n_news = len(result_df_time)
+    
+        for i in range(r_n_news):
             display_news(header = result_df_time.loc[i, 'header'],
                         content_summary = result_df_time.loc[i, 'content_summary'],
                         source = result_df_time.loc[i, 'source'],
