@@ -5,6 +5,8 @@ import re
 # extract selected company's news header
 def summarized_multiple_news(company_news, n_sen):
     # replace \. with space
+    # sort by time (latest news first)
+    company_news.sort_values(by = 'time', ascending = False)
     company_news.loc[:, 'header_clean'] = [re.sub('\.', ' ', h) for h in company_news.header].copy()
     company_headers = '. '.join(company_news['header_clean'].tolist())
     # summaize headers

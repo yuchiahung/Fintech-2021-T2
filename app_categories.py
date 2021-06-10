@@ -39,7 +39,7 @@ def page_dashboard(s, company_table, n_news):
         show = show + i + ' | '
     st.write(show) if show != '| ' else st.write('Please Select Your Favorite Categories')
 
-    df = pd.read_json('data/data_bias_source.json')
+    df = pd.read_json('data/data_bias_news.json')
     # news in this week
     df['time'] = pd.to_datetime(df.time, unit = 'ms')
     df_week = df[df.time >= datetime.today() - timedelta(days=7)]
@@ -63,7 +63,17 @@ def page_dashboard(s, company_table, n_news):
         pass
     else:
         # pie plot: positive rate
-        rate_list = display_df.groupby('sentiment').count()['id'].tolist()
+        rate_count = display_df.groupby('sentiment').count()['id'].reset_index()
+        if len(rate_count) == 3:
+            rate_count.sort_values(by = 'sentiment', ascending = False, inplace = True)
+            rate_list = rate_count.tolist()
+        else:
+            for s in [-1, 0, 1]:
+                if s not in rate_count.sentiment:
+                    rate_count = rate_count.append({'sentiment': s, 'id': 0}, ignore_index=True)
+            rate_count.sort_values(by = 'sentiment', ascending = False, inplace = True)
+            rate_list = rate_count.id.tolist()
+
         fig = px.pie(values = rate_list, names = ['positive', 'neutral', 'negative'],
             hole = .3, 
             color = ['positive', 'neutral', 'negative'],
@@ -84,7 +94,11 @@ def page_dashboard(s, company_table, n_news):
     
         summarized_df = summarized_news.summarized_multiple_news(display_df, n_sen = n_news)
         summarized_df_time = calculate_time(summarized_df)
-        for i in range(n_news):
+        if len(summarized_df_time) >= n_news:
+            r = n_news
+        else:
+            r = len(summarized_df_time)
+        for i in range(r):
             display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
                         summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], summarized_df_time.loc[i, 'time_ago'],
                         summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'])

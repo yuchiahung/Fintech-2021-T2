@@ -92,7 +92,7 @@ def app():
     # df_positive = pd.read_json('test_positive_rate.json')
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     df_sentiment_news = pd.read_json('data/data_entities_news.json')
-    df_news = pd.read_json('data/data_sentiment.json')
+    df_news = pd.read_json('data/data_bias_news.json')
     # sort df_positive data by total news count (50 companies which have most news)
     df_positive_top50_sum = df_positive.sort_values(by = 'sum', ascending = False).reset_index(drop = True)[:50]
     # top5 positive companies
@@ -176,7 +176,7 @@ def app():
     ### bubble plot: show the sources' sentiment in timeline
     fig = px.scatter(top10_sen_count, 
                     x = 'date', y = 'score',
-                    size = 'sum', color = 'source',
+                    size = 'sum', color = 'source', opacity=0.6, 
                     hover_name = 'source', log_x = False, size_max = 50,
                     color_discrete_sequence=px.colors.qualitative.T10)
     fig.update_layout(autosize=False, width=800, height=400, 

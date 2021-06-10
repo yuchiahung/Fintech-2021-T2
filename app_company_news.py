@@ -84,8 +84,8 @@ def display_news(header, content_summary, source, url, time_ago, sentiment, comp
 def app():
     st.title('Companies News')
     # read datas
-    data_ner = pd.read_json('data/data_bias_source.json')
-    data_ner.sort_values(by = 'time', ascending = False, inplace = True)
+    data_news = pd.read_json('data/data_bias_news.json')
+    data_news.sort_values(by = 'time', ascending = False, inplace = True)
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     sp500 = pd.read_csv('data/constituents_csv.csv')
     sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
@@ -97,7 +97,7 @@ def app():
 
     # selected_company news
     i = sp500[sp500.name_clean == selected_company].index[0]
-    company_news_df = data_ner[data_ner.company_all.apply(lambda x: (selected_company in x) or (sp500.loc[i, 'Symbol'] in x) or (sp500.loc[i, 'Name'] in x))]
+    company_news_df = data_news[data_news.company_all.apply(lambda x: (selected_company in x) or (sp500.loc[i, 'Symbol'] in x) or (sp500.loc[i, 'Name'] in x))]
     if len(company_news_df) == 0:
         st.wirte("Sorry, there's no related news.")
     else:

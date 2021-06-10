@@ -8,6 +8,8 @@ import matplotlib.pyplot as plt
 from matplotlib import cm
 from matplotlib.colors import ListedColormap
 from PIL import Image
+import numpy as np
+from wordcloud import WordCloud
 import word_cloud
 # import webbrowser
 
@@ -49,7 +51,7 @@ def select_news(data, n):
         df.loc[i, 'time_ago'] = time_ago
     return df
 
-def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, content, bias):
+def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, bias, content):
     # clicked = st.button('Original New')
     # if st.button('Original New'):
         # webbrowser.open_new_tab(url)
@@ -67,7 +69,7 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
                     font-size: 16px;
                 }
                 .company-name {
-                    font-size: 16px;
+                    font-size: 14px;
                     font-weight: bold;
                     line-height: 2;
                     text-align: center;
@@ -111,22 +113,22 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
     else: 
         col2.image(img, width=60)
     # add something in expander
-    # my_expander = st.beta_expander('Word Cloud')
-    # with my_expander:
-    #     # read stopwords
-    #     with open('stopwords_en.txt') as f:
-    #         stopwords = [line.rstrip() for line in f]
-    #     # Generate color map
-    #     oceanBig = cm.get_cmap('ocean', 512)
-    #     newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-    #     # Generate a word cloud image
-    #     wordcloud = WordCloud(width=800, height=150, background_color='white', 
-    #                         colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
-    #     # Display the generated image
-    #     fig = plt.figure()
-    #     plt.imshow(wordcloud, interpolation='bilinear')
-    #     plt.axis("off")
-    #     st.pyplot(fig)
+    my_expander = st.beta_expander('Word Cloud')
+    with my_expander:
+        # read stopwords
+        with open('stopwords_en.txt') as f:
+            stopwords = [line.rstrip() for line in f]
+        # Generate color map
+        oceanBig = cm.get_cmap('ocean', 512)
+        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
+        # Generate a word cloud image
+        wordcloud = WordCloud(width=800, height=150, background_color='white', 
+                            colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
+        # Display the generated image
+        fig = plt.figure()
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis("off")
+        st.pyplot(fig)
 
     # separate bar
     # st.markdown('---')
@@ -148,7 +150,7 @@ def app():
         display_news(topn_news_df.loc[i, 'header'], topn_news_df.loc[i, 'content_summary'], 
                     topn_news_df.loc[i, 'source'], topn_news_df.loc[i, 'link'], topn_news_df.loc[i, 'time_ago'],
                     topn_news_df.loc[i, 'company_all'], topn_news_df.loc[i, 'sentiment'],
-                    topn_news_df.loc[i, 'content'], topn_news_df.loc[i, 'bias'])
+                    topn_news_df.loc[i, 'bias'], topn_news_df.loc[i, 'content'])
 
 # # st.beta_container()
 # # st.beta_columns(spec)
