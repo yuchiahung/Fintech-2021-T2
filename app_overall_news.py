@@ -15,9 +15,10 @@ import word_cloud
 from app_ppt import (ppt_insert_first_title, ppt_insert_summarization, ppt_insert_images)
 
 ppt_insert_first_title(ppt_file='summary.pptx', insert_title='Summary', insert_author='Fintech-2021-T2')
-#summarized_text = [('AAA',0.5),('BBB',0.34),('CCC',0.9)]
+summarized_text = [('AAA',0.5),('BBB',0.34),('CCC',0.9)]
 ppt_insert_summarization(ppt_file='summary.pptx', insert_title='RPA - SUMMY_TITLE', summarized_text= summarized_text)
-image_profiles=[('Sentiment Analysis - Company','img/sentiment.jpg'), ('source1', 'img/source1.jpg'), ('source2', 'img/source2.jpg')]
+image_profiles=[('Sentiment Analysis - Company','img/sentiment1.jpg'), ('Sentiment Analysis - Source', 'img/sentiment2.jpg'),
+ ('Sentiment Analysis - Source', 'img/sentiment3.jpg'), ('ESG Media Trend - Environment', 'img/esgenvironment.jpg')]
 ppt_insert_images(ppt_file='summary.pptx', image_profiles=image_profiles, start_ppt=True)
 
 #利用st.cache()快取沒有改變過的data
