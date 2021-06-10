@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 from datetime import datetime, timedelta
-import json
 import streamlit as st
 import re
 from PIL import Image
@@ -66,10 +65,10 @@ def page_dashboard(s, company_table, n_news):
         rate_count = display_df.groupby('sentiment').count()['id'].reset_index()
         if len(rate_count) == 3:
             rate_count.sort_values(by = 'sentiment', ascending = False, inplace = True)
-            rate_list = rate_count.tolist()
+            rate_list = rate_count.id.tolist()
         else:
             for s in [-1, 0, 1]:
-                if s not in rate_count.sentiment:
+                if s not in rate_count.sentiment.tolist():
                     rate_count = rate_count.append({'sentiment': s, 'id': 0}, ignore_index=True)
             rate_count.sort_values(by = 'sentiment', ascending = False, inplace = True)
             rate_list = rate_count.id.tolist()
@@ -101,7 +100,8 @@ def page_dashboard(s, company_table, n_news):
         for i in range(r):
             display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
                         summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], summarized_df_time.loc[i, 'time_ago'],
-                        summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'])
+                        summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'], 
+                        summarized_df_time.loc[i, 'content'])
 
 def calculate_time(df):
     """calculate time"""
@@ -128,7 +128,7 @@ def calculate_time(df):
         df.loc[i, 'time_ago'] = time_ago
     return df
 
-def display_news(header, content_summary, source, url, time_ago, company_list, sentiment):
+def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, content):
     # clicked = st.button('Original New')
     # if st.button('Original New'):
         # webbrowser.open_new_tab(url)
@@ -179,3 +179,19 @@ def display_news(header, content_summary, source, url, time_ago, company_list, s
         img = Image.open('img/negative.png')
     
     col2.image(img, width=70)
+    my_expander = st.beta_expander('Word Cloud')
+    with my_expander:
+        # read stopwords
+        with open('stopwords_en.txt') as f:
+            stopwords = [line.rstrip() for line in f]
+        # Generate color map
+        oceanBig = cm.get_cmap('ocean', 512)
+        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
+        # Generate a word cloud image
+        wordcloud = WordCloud(width=800, height=150, background_color='white', 
+                            colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
+        # Display the generated image
+        fig = plt.figure()
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis("off")
+        st.pyplot(fig)

@@ -4,7 +4,12 @@ import streamlit as st
 import plotly.express as px
 from plotly.subplots import make_subplots
 from PIL import Image
-from datetime import datetime
+from datetime import datetime, timedelta
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from matplotlib.colors import ListedColormap
+from wordcloud import WordCloud
+import numpy as np
 import word_cloud
 import summarized_news
 
@@ -33,7 +38,7 @@ def calculate_time(df):
         df.loc[i, 'time_ago'] = time_ago
     return df
 
-def display_news(header, content_summary, source, url, time_ago, sentiment, company_list):
+def display_news(header, content_summary, source, url, time_ago, sentiment, company_list, content):
     st.markdown("""
                 <style>
                 .small-font {
@@ -81,11 +86,30 @@ def display_news(header, content_summary, source, url, time_ago, sentiment, comp
         img = Image.open('img/negative.png')
     col2.image(img, width=60)
 
+    # add something in expander
+    my_expander = st.beta_expander('Word Cloud')
+    with my_expander:
+        # read stopwords
+        with open('stopwords_en.txt') as f:
+            stopwords = [line.rstrip() for line in f]
+        # Generate color map
+        oceanBig = cm.get_cmap('ocean', 512)
+        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
+        # Generate a word cloud image
+        wordcloud = WordCloud(width=800, height=150, background_color='white', 
+                            colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
+        # Display the generated image
+        fig = plt.figure()
+        plt.imshow(wordcloud, interpolation='bilinear')
+        plt.axis("off")
+        st.pyplot(fig)
+
 def app():
     st.title('Companies News')
     # read datas
     data_news = pd.read_json('data/data_bias_news.json')
     data_news.sort_values(by = 'time', ascending = False, inplace = True)
+
     df_positive = pd.read_json('data/data_entities_pos_rate.json')
     sp500 = pd.read_csv('data/constituents_csv.csv')
     sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
@@ -128,6 +152,7 @@ def app():
         company_news_df.sort_values(by = 'sentiment', ascending=False, inplace=True)
         # convert int to character (to show on plot)
         company_news_df['sentiment'] = ['positive' if s == 1 else ('negative' if s == -1 else 'neutral') for s in company_news_df.sentiment]
+        
         # expander
         sentiment_expander = st.beta_expander('Sentiment by time')
         with sentiment_expander:
@@ -145,6 +170,7 @@ def app():
             st.plotly_chart(fig)
 
         # summarization
+        company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
         result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
         result_df_time = calculate_time(result_df)
 
@@ -160,4 +186,5 @@ def app():
                         url = result_df_time.loc[i, 'link'],
                         time_ago = result_df_time.loc[i, 'time_ago'],
                         sentiment = result_df_time.loc[i, 'sentiment'], 
-                        company_list = result_df_time.loc[i, 'company_all'])
+                        company_list = result_df_time.loc[i, 'company_all'],
+                        content = result_df_time.loc[i, 'content'])
