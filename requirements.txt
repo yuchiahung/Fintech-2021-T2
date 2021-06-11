@@ -6,4 +6,6 @@ matplotlib
 gunicorn
 cachetools
 plotly
-gensim
+gensim==3.8.3
+psutil
+python-pptx
