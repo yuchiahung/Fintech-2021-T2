@@ -3,7 +3,8 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 import os
 import psutil
-import subprocess, sys
+# import subprocess, sys
+import webbrowser
 
 #Ref for slide types: 
 # 0 ->  title and subtitle
@@ -147,8 +148,9 @@ def ppt_insert_images(ppt_file, image_profiles, Layout=1, Placeholder=1, start_p
     prs.save(ppt_file)
     if start_ppt:
         # os.startfile(ppt_file)
-        opener = "open" if sys.platform == "darwin" else "xdg-open"
-        subprocess.call([opener, ppt_file])
+        # opener = "open" if sys.platform == "darwin" else "xdg-open"
+        # subprocess.call([opener, ppt_file])
+        webbrowser.open(ppt_file)
 
 def app():
     st.title('Office Automation - Robot Process Automation - Automated PPT Generation')
