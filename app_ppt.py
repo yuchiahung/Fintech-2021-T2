@@ -3,9 +3,9 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 import os
 import psutil
+#from app_ppt import (ppt_insert_first_title, ppt_insert_summarization, ppt_insert_images)
 
-
-#Ref for slide types: 
+# Ref for slide types: 
 # 0 ->  title and subtitle
 # 1 ->  title and content
 # 2 ->  section header
@@ -17,13 +17,8 @@ import psutil
 # 8 ->  Pic with caption
 
 def ppt_insert_first_title(ppt_file, insert_title, insert_author, Layout=0, Placeholder=1, start_ppt=False):
-    for proc in psutil.process_iter():
-        if proc.name() == 'POWERPNT.EXE':
-            proc.kill()
-
     if os.path.exists(ppt_file):
         os.remove(ppt_file)
-    
     prs=Presentation()
 
     title_slide_layout = prs.slide_layouts[Layout] #建立簡報檔第一張頁面物件
@@ -149,4 +144,37 @@ def ppt_insert_images(ppt_file, image_profiles, Layout=1, Placeholder=1, start_p
         os.startfile(ppt_file)
 
 def app():
-    st.title('Office Automation - Robot Process Automation - Automated PPT Generation')
+    st.title('Automated PPT Generation')
+
+    for proc in psutil.process_iter():
+        if proc.name() == 'POWERPNT.EXE':
+            proc.kill()
+
+    # page 1
+    with open('report/page1/title.txt', mode='r', encoding='utf-8') as f:
+        insert_title = f.read()
+    with open('report/page1/author.txt', mode='r', encoding='utf-8') as f:
+        insert_author = f.read()
+
+    #st.info(insert_title + '\n' +  insert_author)
+    ppt_insert_first_title(ppt_file='Summary.pptx', insert_title=insert_title, insert_author=insert_author, start_ppt=False)
+
+    # page 2
+    with open('report/page2/title.txt', mode='r', encoding='utf-8') as f:
+        insert_title = f.read()
+    with open('report/page2/summary.txt', mode='r', encoding='utf-8') as f:
+        lines = f.readlines()
+
+    summarized_text = [ (S[0],S[1]) for S in [ L.split(',') for L in lines ] ]
+
+    #st.dataframe(summarized_text)
+    ppt_insert_summarization(ppt_file='summary.pptx', insert_title=insert_title, summarized_text= summarized_text, start_ppt=True)
+    #summarized_text = [('AAA',0.5),('BBB',0.34),('CCC',0.9)]
+
+    image_profiles=[(F.split('.')[0],os.path.join('report/page3/img/',F)) for F in os.listdir('report/page3/img')]
+    st.dataframe(image_profiles)
+    #[('Sentiment Analysis - Company','report\page3\img/sentiment1.jpg'), ('Sentiment Analysis - Source', 'report\page3\img/sentiment2.jpg'), ('Sentiment Analysis - Source', 'report\page3\img/sentiment3.jpg'), ('ESG Media Trend - Environment', 
+    # 'report\page3\img/esgenvironment.jpg')]
+    ppt_insert_images(ppt_file='Summary.pptx', image_profiles=image_profiles, start_ppt=True)
+
+
