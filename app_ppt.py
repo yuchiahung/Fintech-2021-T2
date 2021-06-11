@@ -3,9 +3,16 @@ from pptx import Presentation
 from pptx.util import Inches, Pt
 import os
 import psutil
+<<<<<<< HEAD
 #from app_ppt import (ppt_insert_first_title, ppt_insert_summarization, ppt_insert_images)
 
 # Ref for slide types: 
+=======
+# import subprocess, sys
+import webbrowser
+
+#Ref for slide types: 
+>>>>>>> 0e0ebed4f20d755d049f338bedd688e221ec3280
 # 0 ->  title and subtitle
 # 1 ->  title and content
 # 2 ->  section header
@@ -141,7 +148,10 @@ def ppt_insert_images(ppt_file, image_profiles, Layout=1, Placeholder=1, start_p
     #將簡報物件存檔
     prs.save(ppt_file)
     if start_ppt:
-        os.startfile(ppt_file)
+        # os.startfile(ppt_file)
+        # opener = "open" if sys.platform == "darwin" else "xdg-open"
+        # subprocess.call([opener, ppt_file])
+        webbrowser.open(ppt_file)
 
 def app():
     st.title('Automated PPT Generation')
