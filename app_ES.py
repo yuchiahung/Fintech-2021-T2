@@ -4,10 +4,6 @@ import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.express as px
-import nltk
-from nltk.sentiment.vader import SentimentIntensityAnalyzer as SIA
-sia = SIA()
-from sentiment2 import *
 import json
 
 
@@ -30,31 +26,11 @@ def app():
             selection = st.selectbox("please select an issue", option_2)
 
     
-    df_environment = pd.read_json('environment5.json')
-    df_society = pd.read_json('Society.json')
-    df = calculate_score(df_environment)
-    for i, row in df.iterrows():
-        if int (i) <=799:
-            df.loc[i, 'category']='sustainable development'
-        elif int (i) <=1599:
-            df.loc[i, 'category']='climate change'
-        elif int (i) <=2399:
-            df.loc[i, 'category']='marine ecology'
-        elif int (i) <=3199:
-            df.loc[i, 'category']='carbon emission' 
-    df_2 = calculate_score(df_society)
-    for i, row in df_2.iterrows():
-        if int (i) <=799:
-            df_2.loc[i, 'category']='human right'
-        elif int (i) <=1599:
-            df_2.loc[i, 'category']='Racial discrimination'
-        elif int (i) <=2399:
-            df_2.loc[i, 'category']='Social engagement'
-        elif int (i) <=3199:
-            df_2.loc[i, 'category']='gap between rich and poor'
-        elif int (i) <=3999:
-            df_2.loc[i, 'category']='Religious Conflicts' 
-    df3 = df_environment[0:800]
+    
+    df = pd.read_json('df.json')
+    df_2 = pd.read_json('df_2.json')
+   
+    df3 = df[0:800]
     delete = [0,None]
     boolean_series = ~df3['head'].isin(delete)
     df3 = df3[boolean_series]
@@ -77,7 +53,7 @@ def app():
         elif int (i) <=26:
             df10.loc[i, 'organize_name']='JPM'
 
-    df11 = df_environment[800:1600]
+    df11 = df[800:1600]
     delete = [0,None]
     boolean_series = ~df11['head'].isin(delete)
     df11 = df11[boolean_series]
@@ -99,7 +75,7 @@ def app():
             df18.loc[i, 'organize_name']='EPA'
         elif int (i) <=64:
             df18.loc[i, 'organize_name']='Navy'
-    df19 = df_environment[1600:2400]
+    df19 = df[1600:2400]
     delete = [0,None]
     boolean_series = ~df19['head'].isin(delete)
     df19 = df19[boolean_series]
@@ -121,7 +97,7 @@ def app():
             df26.loc[i, 'organize_name']='EU'
         elif int (i) <=35:
             df26.loc[i, 'organize_name']='Reuters'
-    df27 = df_environment[2400:3200]
+    df27 = df[2400:3200]
     delete = [0,None]
     boolean_series = ~df27['head'].isin(delete)
     df27 = df27[boolean_series]
@@ -143,7 +119,7 @@ def app():
             df34.loc[i, 'organize_name']='Hyundai'
         elif int (i) <=58:
             df34.loc[i, 'organize_name']='IEA'   
-    df35 = df_society[0:800]
+    df35 = df_2[0:800]
     delete = [0,None]
     boolean_series = ~df35['head'].isin(delete)
     df35 = df35[boolean_series]
@@ -165,7 +141,7 @@ def app():
             df42.loc[i, 'organize_name']='Reuters'
         elif int (i) <=95:
             df42.loc[i, 'organize_name']='Yale'
-    df43 = df_society[800:1600]
+    df43 = df_2[800:1600]
     delete = [0,None]
     boolean_series = ~df43['head'].isin(delete)
     df43 = df43[boolean_series]
@@ -187,7 +163,7 @@ def app():
             df50.loc[i, 'organize_name']='McDonald'
         elif int (i) <=46:
             df50.loc[i, 'organize_name']='Hawkeyes'
-    df51 = df_society[1600:2400]
+    df51 = df_2[1600:2400]
     delete = [0,None]
     boolean_series = ~df51['head'].isin(delete)
     df51 = df51[boolean_series]
@@ -209,7 +185,7 @@ def app():
             df58.loc[i, 'organize_name']='UN'
         elif int (i) <=38:
             df58.loc[i, 'organize_name']='Social Services'
-    df59 = df_society[2400:3200]
+    df59 = df_2[2400:3200]
     delete = [0,None]
     boolean_series = ~df59['head'].isin(delete)
     df59 = df59[boolean_series]
@@ -231,7 +207,7 @@ def app():
             df66.loc[i, 'organize_name']='UN'
         elif int (i) <=35:
             df66.loc[i, 'organize_name']='Covid-19'
-    df67 = df_society[3200:4000]
+    df67 = df_2[3200:4000]
     delete = [0,None]
     boolean_series = ~df67['head'].isin(delete)
     df67 = df67[boolean_series]
