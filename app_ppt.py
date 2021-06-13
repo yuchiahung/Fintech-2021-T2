@@ -290,21 +290,22 @@ def app():
             display_df = df_exploded.loc[df_exploded.Sector.isin(select_category)]
             display_df.drop_duplicates(subset = ['header'], inplace = True)
             
-            ## wordcloud
-            cat_wc_fig = word_cloud.plot_wordcloud(display_df, n_words = 100, date = None, set_width = 1200, set_height = 800)
-            cat_wc_fig.savefig('report/img/cat_wc_fig.png')
-            ppt_insert_images(ppt_file=file_name+'.pptx', 
-                            img_title = 'Key words of the selected categories', 
-                            img_path = 'report/img/cat_wc_fig.png', 
-                            start_ppt=False)
+            if len(display_df) != 0:
+                ## wordcloud
+                cat_wc_fig = word_cloud.plot_wordcloud(display_df, n_words = 100, date = None, set_width = 1200, set_height = 800)
+                cat_wc_fig.savefig('report/img/cat_wc_fig.png')
+                ppt_insert_images(ppt_file=file_name+'.pptx', 
+                                img_title = 'Key words of the selected categories', 
+                                img_path = 'report/img/cat_wc_fig.png', 
+                                start_ppt=False)
 
-            ## summarization 
-            summarized_df = summarized_news.summarized_multiple_news(display_df, n_sen = category_n_news)
-            summarized_df_time = manipulate_news.calculate_time(summarized_df)
-            ppt_insert_summarization(ppt_file=file_name+'.pptx', 
-                                    df = summarized_df_time,
-                                    title_text = 'Selected Categories News',
-                                    start_ppt=False)
+                ## summarization 
+                summarized_df = summarized_news.summarized_multiple_news(display_df, n_sen = category_n_news)
+                summarized_df_time = manipulate_news.calculate_time(summarized_df)
+                ppt_insert_summarization(ppt_file=file_name+'.pptx', 
+                                        df = summarized_df_time,
+                                        title_text = 'Selected Categories News',
+                                        start_ppt=False)
 
         #### page 10: selected companies ####
         if select_companies:
@@ -312,20 +313,21 @@ def app():
             for i in range(len(select_companies)):
                 company_i = sp500[sp500.name_clean == select_companies[i]].index[0]
                 company_news_df = pd.concat([company_news_df, data_news[data_news.company_all.apply(lambda x: (select_companies[i] in x) or (sp500.loc[company_i, 'Symbol'] in x) or (sp500.loc[company_i, 'Name'] in x))]])
-            ## wordcloud
-            company_wc_fig = word_cloud.plot_wordcloud(company_news_df, n_words = 100, date = None, set_width = 1200, set_height = 800)
-            company_wc_fig.savefig('report/img/company_wc_fig.png')
-            ppt_insert_images(ppt_file=file_name+'.pptx', 
-                            img_title = 'Key words of the selected companies', 
-                            img_path = 'report/img/company_wc_fig.png', 
-                            start_ppt=False)
-            ## summarization 
-            summarized_df_com = summarized_news.summarized_multiple_news(company_news_df, n_sen = companies_n_news)
-            summarized_df_time_com = manipulate_news.calculate_time(summarized_df_com)
-            ppt_insert_summarization(ppt_file=file_name+'.pptx', 
-                                    df = summarized_df_time_com,
-                                    title_text = 'Selected Companies News',
-                                    start_ppt=False)
+            if len(company_news_df) != 0:                
+                ## wordcloud
+                company_wc_fig = word_cloud.plot_wordcloud(company_news_df, n_words = 100, date = None, set_width = 1200, set_height = 800)
+                company_wc_fig.savefig('report/img/company_wc_fig.png')
+                ppt_insert_images(ppt_file=file_name+'.pptx', 
+                                img_title = 'Key words of the selected companies', 
+                                img_path = 'report/img/company_wc_fig.png', 
+                                start_ppt=False)
+                ## summarization 
+                summarized_df_com = summarized_news.summarized_multiple_news(company_news_df, n_sen = companies_n_news)
+                summarized_df_time_com = manipulate_news.calculate_time(summarized_df_com)
+                ppt_insert_summarization(ppt_file=file_name+'.pptx', 
+                                        df = summarized_df_time_com,
+                                        title_text = 'Selected Companies News',
+                                        start_ppt=False)
 
 
         os.system("open "+file_name+'.pptx')
