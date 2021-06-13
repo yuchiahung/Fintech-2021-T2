@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import numpy as np
 
-def plot_wordcloud(data, n_words=100, date = None):
+def plot_wordcloud(data, n_words=100, date = None, set_width=800, set_height=150):
     """ Wordcloud of news of the week """
     if date:
         a_week_ago = date - timedelta(days=7)
@@ -22,7 +22,7 @@ def plot_wordcloud(data, n_words=100, date = None):
     oceanBig = cm.get_cmap('ocean', 512)
     newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
     # Generate a word cloud image
-    wordcloud = WordCloud(width=800, height=150, background_color='white', 
+    wordcloud = WordCloud(width=set_width, height = set_height, background_color='white', 
                           colormap=newcmp, stopwords=stopwords, max_words=n_words).generate(text)
     # Display the generated image
     fig = plt.figure()

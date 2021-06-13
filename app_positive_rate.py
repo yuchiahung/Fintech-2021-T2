@@ -4,7 +4,6 @@ import plotly.express as px
 from plotly.subplots import make_subplots
 import re
 
-
 def display_rate(entity, news, sentiment, rate_list = [0.2, 0.2, 0.6]):
     st.markdown("""
                 <style>

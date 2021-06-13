@@ -1,16 +1,11 @@
 import pandas as pd
-import numpy as np
 from datetime import datetime, timedelta
 import streamlit as st
 import re
-from PIL import Image
-from matplotlib import cm
-from matplotlib.colors import ListedColormap, LinearSegmentedColormap
-from wordcloud import WordCloud
-import matplotlib.pyplot as plt 
 import plotly.express as px
 import word_cloud
 import summarized_news
+import manipulate_news
 
 def app(s):
     st.title('MY FAVORITE')
@@ -54,7 +49,7 @@ def page_dashboard(s, company_table, n_news):
     df_exploded = df_exploded.merge(company_table, how = 'left', left_on = 'company', right_on = 'name_clean')
     # all selected categories news
     display_df = df_exploded.loc[df_exploded.Sector.isin(s.multiselect)]
-    display_df.drop_duplicates(subset = ['header', 'source', 'time', 'content', 'link'], inplace = True)
+    display_df.drop_duplicates(subset = ['header'], inplace = True)
     # plot wordcloud
     col1, col2 = st.beta_columns((1,4))
     if len(display_df) == 0:
@@ -92,106 +87,13 @@ def page_dashboard(s, company_table, n_news):
         col2.pyplot(word_cloud.plot_wordcloud(display_df, n_words = 100))
     
         summarized_df = summarized_news.summarized_multiple_news(display_df, n_sen = n_news)
-        summarized_df_time = calculate_time(summarized_df)
+        summarized_df_time = manipulate_news.calculate_time(summarized_df)
         if len(summarized_df_time) >= n_news:
             r = n_news
         else:
             r = len(summarized_df_time)
         for i in range(r):
-            display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
-                        summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], summarized_df_time.loc[i, 'time_ago'],
-                        summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'], 
-                        summarized_df_time.loc[i, 'content'])
-
-def calculate_time(df):
-    """calculate time"""
-    df.reset_index(drop=True, inplace = True)
-    # calculate news published time from now
-    df['time'] = pd.to_datetime(df['time'], unit='ms')
-    df['seconds_from_now'] = [(datetime.now() - t).total_seconds() for t in df['time']]
-    for i in range(len(df)):
-        seconds = df.loc[i, 'seconds_from_now'] 
-        if seconds < 60:
-            time_ago = f'{int(seconds)} seconds ago'
-        elif seconds < 60*60:
-            time_ago = f'{int(seconds//60)} minutes ago'
-        elif seconds < 60*60*24:
-            time_ago = f'{int(seconds//(60*60))} hours ago'
-        elif seconds < 60*60*24*7:
-            time_ago = f'{int(seconds//(60*60*24))} days ago'
-        elif seconds < 60*60*24*30:
-            time_ago = f'{int(seconds//(60*60*24*7))} weeks ago'
-        elif seconds < 60*60*24*365:
-            time_ago = f'{int(seconds//(60*60*24*30))} months ago'
-        else:
-            time_ago = f'{int(seconds//(60*60*24*365))} years ago'
-        df.loc[i, 'time_ago'] = time_ago
-    return df
-
-def display_news(header, content_summary, source, url, time_ago, company_list, sentiment, content):
-    # clicked = st.button('Original New')
-    # if st.button('Original New'):
-        # webbrowser.open_new_tab(url)
-    st.markdown("""
-                <style>
-                .small-font {
-                    font-size: 10px;
-                    color: #7a7c87;
-                }
-                .news-header {
-                    font-size: 20px;
-                    color: #5791a1;
-                }
-                .news-content {
-                    font-size: 16px;
-                }
-                .company-name {
-                    font-size: 14px;
-                    font-weight: bold;
-                    line-height: 2;
-                    text-align: center;
-                    border: 2px solid #5791a1;
-                    color: #5791a1;
-                }
-                </style>
-                """, unsafe_allow_html=True)
-    # header & link
-    st.markdown(f'<a style="font-size: 20px; color: #5791a1;" href="{url}" target="_blank">{header}</a>', unsafe_allow_html=True)
-
-    # 2 columns
-    col1, col2 = st.beta_columns((4,1))
-    # time & source
-    col1.markdown(f'<p class="small-font">{time_ago} | {source}</p>', unsafe_allow_html=True)
-    # content & link to original new
-    # st.markdown(f'\n{content}[...](url)', unsafe_allow_html=True)  
-    col1.markdown(f'<p class="news-content">{content_summary}</p>', unsafe_allow_html=True)  
-    
-    # S&P500 company name (if there is)
-    for i in range(len(company_list)):
-        col2.markdown(f'<p class="company-name">{"  "+company_list[i]}</p>', unsafe_allow_html=True)  
-        # if col2.button(company_list[i]):
-            # pass
-    if sentiment == 1:
-        img = Image.open('img/positive.png')
-    elif sentiment == 0:
-        img = Image.open('img/neutral.png')
-    else:
-        img = Image.open('img/negative.png')
-    
-    col2.image(img, width=70)
-    my_expander = st.beta_expander('Word Cloud')
-    with my_expander:
-        # read stopwords
-        with open('stopwords_en.txt') as f:
-            stopwords = [line.rstrip() for line in f]
-        # Generate color map
-        oceanBig = cm.get_cmap('ocean', 512)
-        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-        # Generate a word cloud image
-        wordcloud = WordCloud(width=800, height=150, background_color='white', 
-                            colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
-        # Display the generated image
-        fig = plt.figure()
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis("off")
-        st.pyplot(fig)
+            manipulate_news.display_news(summarized_df_time.loc[i, 'header'], summarized_df_time.loc[i, 'content_summary'], 
+                                        summarized_df_time.loc[i, 'source'], summarized_df_time.loc[i, 'link'], summarized_df_time.loc[i, 'time_ago'],
+                                        summarized_df_time.loc[i, 'company_all'], summarized_df_time.loc[i, 'sentiment'], 
+                                        summarized_df_time.loc[i, 'content'])

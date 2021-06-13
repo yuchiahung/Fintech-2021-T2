@@ -3,106 +3,10 @@ import re
 import streamlit as st
 import plotly.express as px
 from plotly.subplots import make_subplots
-from PIL import Image
 from datetime import datetime, timedelta
-import matplotlib.pyplot as plt
-from matplotlib import cm
-from matplotlib.colors import ListedColormap
-from wordcloud import WordCloud
-import numpy as np
 import word_cloud
 import summarized_news
-
-def calculate_time(df):
-    """calculate time"""
-    df.reset_index(drop = True, inplace = True)
-    # calculate news published time from now
-    df['time'] = pd.to_datetime(df['time'], unit='ms')
-    df['seconds_from_now'] = [(datetime.now() - t).total_seconds() for t in df['time']]
-    for i in range(len(df)):
-        seconds = df.loc[i, 'seconds_from_now'] 
-        if seconds < 60:
-            time_ago = f'{int(seconds)} seconds ago'
-        elif seconds < 60*60:
-            time_ago = f'{int(seconds//60)} minutes ago'
-        elif seconds < 60*60*24:
-            time_ago = f'{int(seconds//(60*60))} hours ago'
-        elif seconds < 60*60*24*7:
-            time_ago = f'{int(seconds//(60*60*24))} days ago'
-        elif seconds < 60*60*24*30:
-            time_ago = f'{int(seconds//(60*60*24*7))} weeks ago'
-        elif seconds < 60*60*24*365:
-            time_ago = f'{int(seconds//(60*60*24*30))} months ago'
-        else:
-            time_ago = f'{int(seconds//(60*60*24*365))} years ago'
-        df.loc[i, 'time_ago'] = time_ago
-    return df
-
-def display_news(header, content_summary, source, url, time_ago, sentiment, company_list, content):
-    st.markdown("""
-                <style>
-                .small-font {
-                    font-size: 10px;
-                    color: #7a7c87;
-                }
-                .news-header {
-                    font-size: 20px;
-                    color: #5791a1;
-                }
-                .news-content {
-                    font-size: 16px;
-                }
-                .company-name {
-                    font-size: 14px;
-                    font-weight: bold;
-                    line-height: 2;
-                    text-align: center;
-                    border: 2px solid #5791a1;
-                    color: #5791a1;
-                }
-                </style>
-                """, unsafe_allow_html=True)
-    # header & link
-    st.markdown(f'<a style="font-size: 20px; color: #5791a1;" href="{url}" target="_blank">{header}</a>', unsafe_allow_html=True)
-
-    # 2 columns
-    col1, col2 = st.beta_columns((4,1))
-    # time & source
-    col1.markdown(f'<p class="small-font">{time_ago} | {source}</p>', unsafe_allow_html=True)
-    # content & link to original new
-    # st.markdown(f'\n{content}[...](url)', unsafe_allow_html=True)  
-    col1.markdown(f'<p class="news-content">{content_summary}</p>', unsafe_allow_html=True)  
-    
-    # S&P500 company name (if there is)
-    for i in range(len(company_list)):
-        col2.markdown(f'<p class="company-name">{"  "+company_list[i]}</p>', unsafe_allow_html=True)  
-
-    # image of sentiment
-    if sentiment == 1:
-        img = Image.open('img/positive.png')
-    elif sentiment == 0:
-        img = Image.open('img/neutral.png')
-    else:
-        img = Image.open('img/negative.png')
-    col2.image(img, width=60)
-
-    # add something in expander
-    my_expander = st.beta_expander('Word Cloud')
-    with my_expander:
-        # read stopwords
-        with open('stopwords_en.txt') as f:
-            stopwords = [line.rstrip() for line in f]
-        # Generate color map
-        oceanBig = cm.get_cmap('ocean', 512)
-        newcmp = ListedColormap(oceanBig(np.linspace(0, 0.85, 256)))
-        # Generate a word cloud image
-        wordcloud = WordCloud(width=800, height=150, background_color='white', 
-                            colormap=newcmp, stopwords=stopwords, max_words=70).generate(content)
-        # Display the generated image
-        fig = plt.figure()
-        plt.imshow(wordcloud, interpolation='bilinear')
-        plt.axis("off")
-        st.pyplot(fig)
+import manipulate_news
 
 def app():
     st.title('Companies News')
@@ -172,7 +76,7 @@ def app():
         # summarization
         company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
         result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
-        result_df_time = calculate_time(result_df)
+        result_df_time = manipulate_news.calculate_time(result_df)
 
         if len(result_df_time) >= n_news:
             r_n_news = n_news
@@ -180,11 +84,11 @@ def app():
             r_n_news = len(result_df_time)
     
         for i in range(r_n_news):
-            display_news(header = result_df_time.loc[i, 'header'],
-                        content_summary = result_df_time.loc[i, 'content_summary'],
-                        source = result_df_time.loc[i, 'source'],
-                        url = result_df_time.loc[i, 'link'],
-                        time_ago = result_df_time.loc[i, 'time_ago'],
-                        sentiment = result_df_time.loc[i, 'sentiment'], 
-                        company_list = result_df_time.loc[i, 'company_all'],
-                        content = result_df_time.loc[i, 'content'])
+            manipulate_news.display_news(header = result_df_time.loc[i, 'header'],
+                                        content_summary = result_df_time.loc[i, 'content_summary'],
+                                        source = result_df_time.loc[i, 'source'],
+                                        url = result_df_time.loc[i, 'link'],
+                                        time_ago = result_df_time.loc[i, 'time_ago'],
+                                        sentiment = result_df_time.loc[i, 'sentiment'], 
+                                        company_list = result_df_time.loc[i, 'company_all'],
+                                        content = result_df_time.loc[i, 'content'])
