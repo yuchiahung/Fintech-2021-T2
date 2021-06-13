@@ -26,7 +26,6 @@ def app():
             selection = st.selectbox("please select an issue", option_2)
 
     
-    
     df = pd.read_json('df.json')
     df_2 = pd.read_json('df_2.json')
    
@@ -238,7 +237,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig)
 
     fig2 = px.box(df_2,
                     x = 'category', y = 'nltk_compound',
@@ -248,7 +246,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig2)
 
     fig3 = px.box(df10,
                     x = 'organize_name', y = 'nltk_compound',
@@ -258,7 +255,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig3)
 
     fig4 = px.box(df18,
                     x = 'organize_name', y = 'nltk_compound',
@@ -268,7 +264,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig4)
 
     fig5 = px.box(df26,
                     x = 'organize_name', y = 'nltk_compound',
@@ -278,7 +273,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig5)
 
     fig6 = px.box(df34,
                     x = 'organize_name', y = 'nltk_compound',
@@ -288,7 +282,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig6)
 
     fig7 = px.box(df42,
                     x = 'organize_name', y = 'nltk_compound',
@@ -298,7 +291,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig7)
 
     fig8 = px.box(df50,
                     x = 'organize_name', y = 'nltk_compound',
@@ -308,7 +300,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig8)
 
     fig9 = px.box(df58,
                     x = 'organize_name', y = 'nltk_compound',
@@ -318,7 +309,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig9)
 
     fig10 = px.box(df66,
                     x = 'organize_name', y = 'nltk_compound',
@@ -328,7 +318,6 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig10)
 
     fig11 = px.box(df74,
                     x = 'organize_name', y = 'nltk_compound',
@@ -338,7 +327,29 @@ def app():
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
-    st.plotly_chart(fig11)
+    
+    if selection == "Environment":
+        st.plotly_chart(fig)
+    elif selection == "Society":
+        st.plotly_chart(fig2)
+    elif selection == "Sustainable development":
+        st.plotly_chart(fig3)
+    elif selection == "climate change":
+        st.plotly_chart(fig4)
+    elif selection == "marine ecology":
+        st.plotly_chart(fig5)
+    elif selection == "carbon emission":
+        st.plotly_chart(fig6)
+    elif selection == "human right":
+        st.plotly_chart(fig7)
+    elif selection == "Racial discrimination":
+        st.plotly_chart(fig8)
+    elif selection == "Social engagement":
+        st.plotly_chart(fig9)
+    elif selection == "gap between rich and poor":
+        st.plotly_chart(fig10)
+    elif selection == "Religious Conflicts":
+        st.plotly_chart(fig11) 
 
     
 
