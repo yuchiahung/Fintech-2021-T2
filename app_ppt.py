@@ -175,7 +175,6 @@ def ppt_insert_sentiment(ppt_file, title_text, postive5, negative5, start_ppt=Fa
 
 def app():
     st.title('Automated PPT Generation')
-
     for proc in psutil.process_iter():
         if proc.name() == 'POWERPNT.EXE':
             proc.kill()
@@ -185,6 +184,11 @@ def app():
     col1, _ = st.beta_columns((2,1))
     title = col1.text_input("Title: (optional)", "S&P500 News Summary")
     file_name = col1.text_input("File Name: (optional)", "news_summary_t2")
+    
+    st.markdown('---')
+    st.markdown('Select information you want to insert in PPT: ')
+    
+    col1, _ = st.beta_columns((2,1))
     latest_news = col1.checkbox("Latest Unbiased News")
     sentiment_analysis = col1.checkbox("Sentiment Analysis")
     esg = col1.checkbox("ESG Analysis")
