@@ -4,31 +4,28 @@ import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.express as px
-import json
-
-
+import re
 
 def app():
     st.title('ESG Media Trend')
-    search = st.beta_expander('Search', False)
-    col1,col2 = search.beta_columns(2)
-    
+    # search = st.beta_expander('Search', False)
+
+    col1,col2,_ = st.beta_columns((1,1,1))
+    topic_option = ["Environment", "Society"]
+    environment_option = ["All", "sustainable development", "climate change", "marine ecology", "carbon emission"]
+    society_option = ["All", "human right","Racial discrimination","Social engagement","gap between rich and poor","Religious Conflicts"]
     with col1:
-        options = ["Sentiment of title", "Issue"]
-        option = ["Environment","Society"]
-        option_2 = ["Sustainable development","climate change","marine ecology","carbon emission","human right","Racial discrimination","Social engagement","gap between rich and poor","Religious Conflicts"]
-        page = st.selectbox("please select an option", options=options)
+        selected_topic = st.selectbox("Please select a topic", options=topic_option)
     
     with col2:
-        if page == "Sentiment of title":
-            selection = st.selectbox("please select a topic", option)
-        if page == "Issue":
-            selection = st.selectbox("please select an issue", option_2)
+        if selected_topic == "Environment":
+            selected_issue = st.selectbox("Please select an issue", environment_option)
+        if selected_topic == "Society":
+            selected_issue = st.selectbox("Please select an issue", society_option)
 
-    
     df = pd.read_json('df.json')
     df_2 = pd.read_json('df_2.json')
-   
+
     df3 = df[0:800]
     delete = [0,None]
     boolean_series = ~df3['head'].isin(delete)
@@ -328,36 +325,158 @@ def app():
                     showlegend=True
                     ) 
     
-    if selection == "Environment":
+    if (selected_topic == "Environment") & (selected_issue == "All"):
+        st.subheader('Overall sentiment score distribution')
         st.plotly_chart(fig)
-    elif selection == "Society":
+    elif (selected_topic == "Society") & (selected_issue == "All"):
+        st.subheader('Overall sentiment score distribution')
         st.plotly_chart(fig2)
-    elif selection == "Sustainable development":
-        st.plotly_chart(fig3)
-    elif selection == "climate change":
-        st.plotly_chart(fig4)
-    elif selection == "marine ecology":
-        st.plotly_chart(fig5)
-    elif selection == "carbon emission":
-        st.plotly_chart(fig6)
-    elif selection == "human right":
-        st.plotly_chart(fig7)
-    elif selection == "Racial discrimination":
-        st.plotly_chart(fig8)
-    elif selection == "Social engagement":
-        st.plotly_chart(fig9)
-    elif selection == "gap between rich and poor":
-        st.plotly_chart(fig10)
-    elif selection == "Religious Conflicts":
-        st.plotly_chart(fig11) 
+    else:
+        st.subheader(f'Sentiment score distribution in {selected_issue}')
+        st.write(f'Top5 organizations')
+        if selected_issue == "Sustainable development":
+            st.plotly_chart(fig3)
+        elif selected_issue == "climate change":
+            st.plotly_chart(fig4)
+        elif selected_issue == "marine ecology":
+            st.plotly_chart(fig5)
+        elif selected_issue == "carbon emission":
+            st.plotly_chart(fig6)
+        elif selected_issue == "human right":
+            st.plotly_chart(fig7)
+        elif selected_issue == "Racial discrimination":
+            st.plotly_chart(fig8)
+        elif selected_issue == "Social engagement":
+            st.plotly_chart(fig9)
+        elif selected_issue == "gap between rich and poor":
+            st.plotly_chart(fig10)
+        elif selected_issue == "Religious Conflicts":
+            st.plotly_chart(fig11) 
 
     
 
 
-    
+    # S&P500 company
+    st.subheader('Performance of S&P500 companies')
+    # data    
+    df_environment = pd.read_json('data/df_environment_ner.json')
+    df_society = pd.read_json('data/df_society_ner.json')
+    data_entities_pos_rate_environment = pd.read_json('data/data_entities_pos_rate_environment.json')
+    data_entities_pos_rate_society = pd.read_json('data/data_entities_pos_rate_society.json')
+    sp500 = pd.read_csv('data/constituents_csv.csv')
+    sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
 
-    
-    
 
+    data_entities_pos_rate_environment.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+    data_entities_pos_rate_society.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
 
+    # first topic choice
+    if selected_topic == "Environment":
+        entities_pos_rate = data_entities_pos_rate_environment.copy()
+        topic_df = df_environment.copy()
+    else:
+        entities_pos_rate = data_entities_pos_rate_society.copy()
+        topic_df = df_society.copy()
+
+    # explode company_all
+    topic_df['company'] = topic_df['company_all']
+    topic_df_e = topic_df.explode('company')
+    topic_df_e.reset_index(drop = True, inplace = True)
+    # replace symbol/name by clean name
+    for i in range(len(topic_df_e)):
+        if topic_df_e.loc[i, 'company'] in sp500.Symbol.tolist():
+            topic_df_e.loc[i, 'company'] = sp500.loc[sp500.Symbol == topic_df_e.loc[i, 'company'], 'name_clean'].values[0]
+        elif topic_df_e.loc[i, 'company'] in sp500.Name.tolist():
+            topic_df_e.loc[i, 'company'] = sp500.loc[sp500.Name == topic_df_e.loc[i, 'company'], 'name_clean'].values[0]
+    topic_df_e.drop_duplicates(subset = ['head', 'company'], inplace=True, ignore_index=True)
+
+    # overall:
+    if selected_issue == 'All':  
+        # calculate again
+        entities_pos_rate_group = entities_pos_rate.groupby(by = 'entities').sum().reset_index()[['entities', '-1', '0', '1', 'sum']]
+        entities_pos_rate_group['positive_rate'] = entities_pos_rate_group['1']/entities_pos_rate_group['sum']
+        entities_pos_rate_group['neutral_rate'] = entities_pos_rate_group['0']/entities_pos_rate_group['sum']
+        entities_pos_rate_group['negative_rate'] = entities_pos_rate_group['-1']/entities_pos_rate_group['sum']
+        entities_pos_rate_group['score'] = ((entities_pos_rate_group['1']+(entities_pos_rate_group['0']*0.5))*100/entities_pos_rate_group['sum']).round(2)
+        entities_pos_rate_group.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+        # list top 5 company (by frequency)
+        st.subheader('Top5 companies (by frequency)')
+        st.markdown('Sort by number of news: ')
+        topic_display = entities_pos_rate_group.rename(columns = {'entities': 'company', 'sum': 'total_news'})
+        st.table(topic_display.loc[:5, ['company', 'total_news', 'score']])
         
+        ### bubble plot ### 
+        # only plot top5 company (by frequency)
+        topic_top5_news = topic_df_e[topic_df_e.company.isin(topic_display.company.tolist()[:5])]
+        topic_top5_news['time'] = pd.to_datetime(topic_top5_news['time'], format = '%Y-%m-%dT%H:%M:%SZ')  
+        topic_top5_news['date'] = topic_top5_news['time'].dt.date
+        # bubble plot: show the news' sentiment in timeline
+        st.subheader('News distribution of top5 companies by the time')
+        fig_topic_scatter = px.scatter(topic_top5_news, 
+                                        x = 'date', y = 'nltk_compound',
+                                        color = 'company', opacity=0.6, #size = 'sum', 
+                                        hover_name = 'head', hover_data = ['source', 'category'],
+                                        log_x = False, size_max = 50,
+                                        color_discrete_sequence=px.colors.qualitative.T10)
+        fig_topic_scatter.update_traces(marker_size = 12, opacity = 0.8)
+        fig_topic_scatter.update_layout(autosize=False, width=800, height=400, 
+                        margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                        showlegend=True
+                        ) 
+        st.plotly_chart(fig_topic_scatter)
+
+        # box plot
+        st.subheader('Sentiment score distribution of top5 companies')
+        fig_topic_box = px.box(topic_top5_news,
+                                x = 'company', y = 'nltk_compound',
+                                color = 'company',
+                                color_discrete_sequence=px.colors.qualitative.T10)
+        fig_topic_box.update_layout(autosize=False, width=800, height=400, 
+                        margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                        showlegend=True
+                        ) 
+        st.plotly_chart(fig_topic_box)
+
+
+    # each issue:
+    else:
+        entities_pos_rate_issue = entities_pos_rate[entities_pos_rate.category == selected_issue]
+        entities_pos_rate_issue['score'] = ((entities_pos_rate_issue['1']+(entities_pos_rate_issue['0']*0.5))*100/entities_pos_rate_issue['sum']).round(2)
+        entities_pos_rate_issue.sort_values(by = 'sum', ascending=False, inplace=True, ignore_index=True)
+        # list top 5 company (by frequency)
+        st.markdown('Sort by number of news: ')
+        issue_display = entities_pos_rate_issue.rename(columns = {'entities': 'company', 'sum': 'total_news'})
+        st.table(issue_display.loc[:5, ['company', 'total_news', 'score']])
+        
+        ### bubble plot ### 
+        # only plot top5 company (by frequency)
+        issue_df = topic_df_e[topic_df_e.category == selected_issue]
+        issue_top5_news = issue_df[issue_df.company.isin(issue_display.company.tolist()[:5])]
+        issue_top5_news['time'] = pd.to_datetime(issue_top5_news['time'], format = '%Y-%m-%dT%H:%M:%SZ')  
+        issue_top5_news['date'] = issue_top5_news['time'].dt.date
+        # bubble plot: show the news' sentiment in timeline
+        st.subheader('News distribution of top5 companies by the time')
+        fig_issue_scatter = px.scatter(issue_top5_news, 
+                                        x = 'date', y = 'nltk_compound',
+                                        color = 'company', opacity=0.6, #size = 'sum', 
+                                        hover_name = 'head', hover_data = ['source', 'category'],
+                                        log_x = False, size_max = 50,
+                                        color_discrete_sequence=px.colors.qualitative.T10)
+        fig_issue_scatter.update_traces(marker_size = 12, opacity = 0.8)
+        fig_issue_scatter.update_layout(autosize=False, width=800, height=400, 
+                        margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                        showlegend=True
+                        ) 
+        st.plotly_chart(fig_issue_scatter)
+
+        # box plot
+        st.subheader('Sentiment score distribution of top5 companies')
+        fig_issue_box = px.box(issue_top5_news,
+                                x = 'company', y = 'nltk_compound',
+                                color = 'company',
+                                color_discrete_sequence=px.colors.qualitative.T10)
+        fig_issue_box.update_layout(autosize=False, width=800, height=400, 
+                        margin=dict(l=5, r=5, b=5, t=5, pad=0),
+                        showlegend=True
+                        ) 
+        st.plotly_chart(fig_issue_box)
