@@ -1,8 +1,5 @@
-from typing import KeysView
 import pandas as pd
-import numpy as np
 import streamlit as st
-import matplotlib.pyplot as plt
 import plotly.express as px
 import re
 
@@ -248,7 +245,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig3.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -257,7 +254,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig4.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -266,7 +263,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig5.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -275,7 +272,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig6.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -284,7 +281,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig7.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -293,7 +290,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig8.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -302,7 +299,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig9.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -311,7 +308,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig10.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -320,7 +317,7 @@ def app():
                     x = 'organize_name', y = 'nltk_compound',
                     color = 'organize_name',
                     color_discrete_sequence=px.colors.qualitative.T10)
-    fig2.update_layout(autosize=False, width=800, height=400, 
+    fig11.update_layout(autosize=False, width=800, height=400, 
                     margin=dict(l=5, r=5, b=5, t=5, pad=0),
                     showlegend=True
                     ) 
@@ -357,26 +354,20 @@ def app():
 
 
     # S&P500 company
-    st.subheader('Performance of S&P500 companies')
+    st.markdown('---')
+    st.header('Performance of S&P500 companies')
     # data    
-    df_environment = pd.read_json('data/df_environment_ner.json')
-    df_society = pd.read_json('data/df_society_ner.json')
-    data_entities_pos_rate_environment = pd.read_json('data/data_entities_pos_rate_environment.json')
-    data_entities_pos_rate_society = pd.read_json('data/data_entities_pos_rate_society.json')
     sp500 = pd.read_csv('data/constituents_csv.csv')
     sp500.loc[:, 'name_clean'] = [re.sub('\s((Brands\s)?Inc\.?|Company|Corp\.?|Bancorp|Technologies|\&?\s?Co\.|Entertainment|Corporation|Svc\.Gp\.)$', '', n) for n in sp500.Name]
 
-
-    data_entities_pos_rate_environment.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
-    data_entities_pos_rate_society.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
-
     # first topic choice
     if selected_topic == "Environment":
-        entities_pos_rate = data_entities_pos_rate_environment.copy()
-        topic_df = df_environment.copy()
+        entities_pos_rate = pd.read_json('data/data_entities_pos_rate_environment.json')
+        topic_df = pd.read_json('data/df_environment_ner.json')
     else:
-        entities_pos_rate = data_entities_pos_rate_society.copy()
-        topic_df = df_society.copy()
+        entities_pos_rate = pd.read_json('data/data_entities_pos_rate_society.json')
+        topic_df = pd.read_json('data/df_society_ner.json')
+    entities_pos_rate.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
 
     # explode company_all
     topic_df['company'] = topic_df['company_all']
@@ -444,6 +435,7 @@ def app():
         entities_pos_rate_issue['score'] = ((entities_pos_rate_issue['1']+(entities_pos_rate_issue['0']*0.5))*100/entities_pos_rate_issue['sum']).round(2)
         entities_pos_rate_issue.sort_values(by = 'sum', ascending=False, inplace=True, ignore_index=True)
         # list top 5 company (by frequency)
+        st.subheader('Top5 companies (by frequency)')
         st.markdown('Sort by number of news: ')
         issue_display = entities_pos_rate_issue.rename(columns = {'entities': 'company', 'sum': 'total_news'})
         st.table(issue_display.loc[:5, ['company', 'total_news', 'score']])

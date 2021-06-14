@@ -4,6 +4,7 @@ datetime
 pandas
 matplotlib
 summarizer
+bert-extractive-summarizer
 transformers
 AutoModel
 gunicorn

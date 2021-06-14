@@ -9,3 +9,4 @@ plotly
 gensim==3.8.3
 psutil
 python-pptx
+seaborn

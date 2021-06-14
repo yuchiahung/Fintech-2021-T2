@@ -4,7 +4,6 @@ from pptx.util import Inches, Pt
 import os
 import psutil
 # import subprocess, sys
-import webbrowser
 import pandas as pd
 import manipulate_news
 import word_cloud
@@ -173,6 +172,34 @@ def ppt_insert_sentiment(ppt_file, title_text, postive5, negative5, start_ppt=Fa
         # subprocess.call([opener, ppt_file])
         os.system("open "+ppt_file)
 
+def ppt_insert_table(ppt_file, title_text, df, start_ppt = False):
+    if os.path.exists(ppt_file):
+        prs=Presentation(ppt_file)
+    else:
+        prs=Presentation()
+
+    slide = prs.slides.add_slide(prs.slide_layouts[5]) # title 
+    shapes = slide.shapes
+    #投影片標題
+    title_shape = shapes.title
+    title_shape.text = title_text 
+    title_shape.text_frame.paragraphs[0].font.size = Pt(40)
+    # -- add table to slide --
+    x, y, cx, cy = Inches(1), Inches(2), Inches(8), Inches(4)
+    shape = slide.shapes.add_table(df.shape[0]+1, df.shape[1], x, y, cx, cy)
+    table = shape.table
+    for col in range(df.shape[1]):
+        table.cell(0, col).text = str(df.columns[col])
+    for row in range(df.shape[0]):
+        for col in range(df.shape[1]):
+            table.cell(row+1, col).text = str(df.iloc[row, col])
+    # cell = table.cell(0, 0)
+    # cell.text = 'test'
+    #將簡報物件存檔
+    prs.save(ppt_file)
+    if start_ppt:
+        os.system("open "+ppt_file)
+
 def app():
     st.title('Automated PPT Generation')
     for proc in psutil.process_iter():
@@ -269,11 +296,70 @@ def app():
                             left = Inches(1.25),
                             top = Inches(1.5))
 
-
         #### page 8: ESG ####
         if esg:
-            pass
-        
+            ### Environment
+            # box plot
+            df = pd.read_json('df.json')
+            plt.figure(figsize=(8,6))
+            sns.boxplot(data = df, x = 'category', y = 'nltk_compound', palette='Set3')
+            plt.xticks(rotation = -45)
+            plt.tight_layout()
+            plt.savefig('report/img/environment_boxplot.png')           
+            ppt_insert_images(ppt_file=file_name+'.pptx', 
+                            img_title = 'ESG Analysis -- Environment', 
+                            img_path = 'report/img/environment_boxplot.png', 
+                            start_ppt=False, 
+                            height = Inches(5.5),
+                            left = Inches(1.25),
+                            top = Inches(1.5))            
+            # top5 companies
+            entities_pos_rate = pd.read_json('data/data_entities_pos_rate_environment.json')
+            entities_pos_rate.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+            entities_pos_rate_group = entities_pos_rate.groupby(by = 'entities').sum().reset_index()[['entities', '-1', '0', '1', 'sum']]
+            entities_pos_rate_group['positive_rate'] = entities_pos_rate_group['1']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['neutral_rate'] = entities_pos_rate_group['0']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['negative_rate'] = entities_pos_rate_group['-1']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['score'] = ((entities_pos_rate_group['1']+(entities_pos_rate_group['0']*0.5))*100/entities_pos_rate_group['sum']).round(2)
+            entities_pos_rate_group.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+            topic_display = entities_pos_rate_group.rename(columns = {'entities': 'company', 'sum': 'total_news'})
+            # display
+            ppt_insert_table(ppt_file = file_name + '.pptx', 
+                            title_text= 'ESG: Top5 Environment companies',
+                            df = topic_display.loc[:4, ['company', 'total_news', 'score']], 
+                            start_ppt=False)
+
+            ### Society
+            # box plot 
+            df_2 = pd.read_json('df_2.json')
+            plt.figure(figsize=(8,6))
+            sns.boxplot(data = df_2, x = 'category', y = 'nltk_compound', palette='Set3')
+            plt.xticks(rotation = -45)
+            plt.tight_layout()
+            plt.savefig('report/img/society_boxplot.png')           
+            ppt_insert_images(ppt_file=file_name+'.pptx', 
+                            img_title = 'ESG Analysis -- Environment', 
+                            img_path = 'report/img/society_boxplot.png', 
+                            start_ppt=False, 
+                            height = Inches(5.5),
+                            left = Inches(1.25),
+                            top = Inches(1.5))  
+            # top5 companies          
+            entities_pos_rate = pd.read_json('data/data_entities_pos_rate_society.json')
+            entities_pos_rate.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+            entities_pos_rate_group = entities_pos_rate.groupby(by = 'entities').sum().reset_index()[['entities', '-1', '0', '1', 'sum']]
+            entities_pos_rate_group['positive_rate'] = entities_pos_rate_group['1']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['neutral_rate'] = entities_pos_rate_group['0']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['negative_rate'] = entities_pos_rate_group['-1']/entities_pos_rate_group['sum']
+            entities_pos_rate_group['score'] = ((entities_pos_rate_group['1']+(entities_pos_rate_group['0']*0.5))*100/entities_pos_rate_group['sum']).round(2)
+            entities_pos_rate_group.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
+            topic_display = entities_pos_rate_group.rename(columns = {'entities': 'company', 'sum': 'total_news'})
+            # display
+            ppt_insert_table(ppt_file = file_name + '.pptx', 
+                            title_text= 'ESG: Top5 Society companies',
+                            df = topic_display.loc[:4, ['company', 'total_news', 'score']], 
+                            start_ppt=False)
+
         #### page 9: selected sectors ####
         if select_category:            
             df_week = data_news[data_news.time >= datetime.today() - timedelta(days=7)]
@@ -329,5 +415,5 @@ def app():
                                         title_text = 'Selected Companies News',
                                         start_ppt=False)
 
-
+        st.write('Done!')
         os.system("open "+file_name+'.pptx')
