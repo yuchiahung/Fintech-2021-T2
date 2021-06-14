@@ -36,7 +36,8 @@ def page_dashboard(s, company_table, n_news):
     df = pd.read_json('data/data_bias_news.json')
     # news in this week
     df['time'] = pd.to_datetime(df.time, unit = 'ms')
-    df_week = df[df.time >= datetime.today() - timedelta(days=7)]
+    # df_week = df[df.time >= datetime.today() - timedelta(days=7)]
+    df_week = df[df.time >= df.time.max() - timedelta(days=7)]
     # manipulate company name (explode)
     df_week['company'] = df_week.company_all.copy()
     df_exploded = df_week.explode('company')

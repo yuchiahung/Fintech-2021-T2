@@ -362,7 +362,9 @@ def app():
 
         #### page 9: selected sectors ####
         if select_category:            
-            df_week = data_news[data_news.time >= datetime.today() - timedelta(days=7)]
+            #df_week = data_news[data_news.time >= datetime.today() - timedelta(days=7)]
+            df_week = data_news[data_news.time >= data_news.time.max() - timedelta(days=7)]
+
             # manipulate company name (explode)
             df_week['company'] = df_week.company_all.copy()
             df_exploded = df_week.explode('company')

@@ -74,7 +74,8 @@ def app():
             st.plotly_chart(fig)
 
         # summarization
-        company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
+        # company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
+        company_news_df = company_news_df[company_news_df.time >= company_news_df.time.max() - timedelta(days=7)]
         result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
         result_df_time = manipulate_news.calculate_time(result_df)
 
