@@ -12,6 +12,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import re
 import summarized_news
+import base64
 
 #Ref for slide types: 
 # 0 ->  title and subtitle
@@ -27,7 +28,7 @@ import summarized_news
 def ppt_insert_first_title(ppt_file, insert_title, insert_author, Layout=0, Placeholder=1, start_ppt=False):
     if os.path.exists(ppt_file):
         os.remove(ppt_file)
-    prs=Presentation()
+    prs=Presentation('template.pptx')
 
     title_slide_layout = prs.slide_layouts[Layout] #建立簡報檔第一張頁面物件
     #使用簡報物件中的方法將上一行建立的第一張頁面物件放進簡報
@@ -45,11 +46,31 @@ def ppt_insert_first_title(ppt_file, insert_title, insert_author, Layout=0, Plac
         # os.startfile(ppt_file)
         os.system("open "+ppt_file)
 
+def ppt_insert_chapter_title(ppt_file, insert_title, insert_subtitle = '', start_ppt=False):
+    if os.path.exists(ppt_file):
+        prs=Presentation(ppt_file)
+    else:
+        prs=Presentation('template.pptx')
+
+    title_slide_layout = prs.slide_layouts[2]
+    slide = prs.slides.add_slide(title_slide_layout)
+    #設定第一張頁面的標題 
+    title = slide.shapes.title
+    title.text = insert_title
+    subtitle = slide.placeholders[1] #設定副標題物件，副標題通常為第2個佔位圖
+    subtitle.text = insert_subtitle       
+
+    #將簡報物件存檔
+    prs.save(ppt_file)
+    if start_ppt:
+        # os.startfile(ppt_file)
+        os.system("open "+ppt_file)
+
 def ppt_insert_summarization(ppt_file, df, title_text, start_ppt=False):
     if os.path.exists(ppt_file):
         prs=Presentation(ppt_file)
     else:
-        prs=Presentation()
+        prs=Presentation('template.pptx')
 
     # title_slide_layout = prs.slide_layouts[Layout] #建立簡報檔第一張頁面物件
     #使用簡報物件中的方法將上一行建立的第一張頁面物件放進簡報
@@ -58,7 +79,7 @@ def ppt_insert_summarization(ppt_file, df, title_text, start_ppt=False):
 
     # To create blank slide layout We have to use 6 as an argument of slide_layouts  
     for i in range(len(df)):
-        if i % 3 == 0:
+        if i % 2 == 0:
             # create one slide
             std_slide_layout = prs.slide_layouts[1] # title & content
             slide = prs.slides.add_slide(std_slide_layout)
@@ -104,11 +125,11 @@ def ppt_insert_summarization(ppt_file, df, title_text, start_ppt=False):
         # os.startfile(ppt_file)
         os.system("open "+ppt_file)
 
-def ppt_insert_images(ppt_file, img_title, img_path, start_ppt=False, height = Inches(6.5), left = Inches(0.73), top = Inches(1.2)):
+def ppt_insert_images(ppt_file, img_title, img_path, start_ppt=False, height = Inches(5), left = Inches(3.3), top = Inches(2.5)):
     if os.path.exists(ppt_file):
         prs=Presentation(ppt_file)
     else:
-        prs=Presentation()
+        prs=Presentation('template.pptx')
 
     slide = prs.slides.add_slide(prs.slide_layouts[5]) # title only
     shapes = slide.shapes
@@ -132,8 +153,7 @@ def ppt_insert_sentiment(ppt_file, title_text, postive5, negative5, start_ppt=Fa
     if os.path.exists(ppt_file):
         prs=Presentation(ppt_file)
     else:
-        prs=Presentation()
-
+        prs=Presentation('template.pptx')
 
     slide = prs.slides.add_slide(prs.slide_layouts[3]) # 2 contents
     #投影片標題
@@ -176,7 +196,7 @@ def ppt_insert_table(ppt_file, title_text, df, start_ppt = False):
     if os.path.exists(ppt_file):
         prs=Presentation(ppt_file)
     else:
-        prs=Presentation()
+        prs=Presentation('template.pptx')
 
     slide = prs.slides.add_slide(prs.slide_layouts[5]) # title 
     shapes = slide.shapes
@@ -185,7 +205,7 @@ def ppt_insert_table(ppt_file, title_text, df, start_ppt = False):
     title_shape.text = title_text 
     title_shape.text_frame.paragraphs[0].font.size = Pt(40)
     # -- add table to slide --
-    x, y, cx, cy = Inches(1), Inches(2), Inches(8), Inches(4)
+    x, y, cx, cy = Inches(2.6), Inches(2.5), Inches(8), Inches(4)
     shape = slide.shapes.add_table(df.shape[0]+1, df.shape[1], x, y, cx, cy)
     table = shape.table
     for col in range(df.shape[1]):
@@ -226,6 +246,7 @@ def app():
     select_companies = col1.multiselect('Select companies: (optional)', sp500.name_clean.tolist(), [])
     companies_n_news = col2.number_input('# news', min_value = 0, max_value = 12, value = 0, step = 1, key = 'comp')
     
+    # st.write(latest_news, sentiment_analysis, esg, select_category, category_n_news, select_companies, companies_n_news)
 
     go = st.button('Generate')
 
@@ -240,8 +261,11 @@ def app():
         ppt_insert_first_title(ppt_file=file_name+'.pptx', insert_title=title, insert_author='Team 2', start_ppt=False)
         
         if latest_news:
+            ppt_insert_chapter_title(ppt_file = file_name + '.pptx',
+                                     insert_title = 'Latest Unbiased News',
+                                     start_ppt=False)
             #### page 2: wordcloud ####
-            wc_fig = word_cloud.plot_wordcloud(data_news, n_words = 100, date = datetime.today(), set_width = 1200, set_height = 800)
+            wc_fig = word_cloud.plot_wordcloud(data_news, n_words = 100, date = data_news.time.max(), set_width = 1200, set_height = 800)
             wc_fig.savefig('report/img/wc_fig.png')
             ppt_insert_images(ppt_file=file_name+'.pptx', 
                             img_title = 'Key words of this week', 
@@ -254,6 +278,9 @@ def app():
                                     title_text = 'Latest Unbiased News',
                                     start_ppt=False)
         if sentiment_analysis:
+            ppt_insert_chapter_title(ppt_file = file_name + '.pptx',
+                                     insert_title = 'Sentiment Analysis',
+                                     start_ppt=False)            
             #### page 6: sentiment -- company ####
             df_positive = pd.read_json('data/data_entities_pos_rate.json')
             # sort df_positive data by total news count (50 companies which have most news)
@@ -291,13 +318,13 @@ def app():
             ppt_insert_images(ppt_file=file_name+'.pptx', 
                             img_title = 'Sentiment Analysis -- Source', 
                             img_path = 'report/img/source_sentiment_score.png', 
-                            start_ppt=False, 
-                            height = Inches(5.5),
-                            left = Inches(1.25),
-                            top = Inches(1.5))
+                            start_ppt=False)
 
         #### page 8: ESG ####
         if esg:
+            ppt_insert_chapter_title(ppt_file = file_name + '.pptx',
+                                     insert_title = 'ESG Analysis',
+                                     start_ppt=False)            
             ### Environment
             # box plot
             df = pd.read_json('df.json')
@@ -309,10 +336,7 @@ def app():
             ppt_insert_images(ppt_file=file_name+'.pptx', 
                             img_title = 'ESG Analysis -- Environment', 
                             img_path = 'report/img/environment_boxplot.png', 
-                            start_ppt=False, 
-                            height = Inches(5.5),
-                            left = Inches(1.25),
-                            top = Inches(1.5))            
+                            start_ppt=False)
             # top5 companies
             entities_pos_rate = pd.read_json('data/data_entities_pos_rate_environment.json')
             entities_pos_rate.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
@@ -340,10 +364,7 @@ def app():
             ppt_insert_images(ppt_file=file_name+'.pptx', 
                             img_title = 'ESG Analysis -- Environment', 
                             img_path = 'report/img/society_boxplot.png', 
-                            start_ppt=False, 
-                            height = Inches(5.5),
-                            left = Inches(1.25),
-                            top = Inches(1.5))  
+                            start_ppt=False)
             # top5 companies          
             entities_pos_rate = pd.read_json('data/data_entities_pos_rate_society.json')
             entities_pos_rate.sort_values(by = 'sum', ascending = False, inplace = True, ignore_index= True)
@@ -362,6 +383,10 @@ def app():
 
         #### page 9: selected sectors ####
         if select_category:            
+            ppt_insert_chapter_title(ppt_file = file_name + '.pptx',
+                                     insert_title = 'Selected Categories',
+                                     insert_subtitle=' | '.join(select_category),
+                                     start_ppt=False)
             #df_week = data_news[data_news.time >= datetime.today() - timedelta(days=7)]
             df_week = data_news[data_news.time >= data_news.time.max() - timedelta(days=7)]
 
@@ -397,6 +422,10 @@ def app():
 
         #### page 10: selected companies ####
         if select_companies:
+            ppt_insert_chapter_title(ppt_file = file_name + '.pptx',
+                                     insert_title = 'Selected Companies',
+                                     insert_subtitle=' | '.join(select_companies),
+                                     start_ppt=False)
             company_news_df = pd.DataFrame()
             for i in range(len(select_companies)):
                 company_i = sp500[sp500.name_clean == select_companies[i]].index[0]
@@ -419,3 +448,12 @@ def app():
 
         st.write('Done!')
         os.system("open "+file_name+'.pptx')
+
+        def get_binary_file_downloader_html(bin_file, file_label='File'):
+            with open(bin_file, 'rb') as f:
+                data = f.read()
+            bin_str = base64.b64encode(data).decode()
+            href = f'<a href="data:application/octet-stream;base64,{bin_str}" download="{os.path.basename(bin_file)}">Download {file_label}</a>'
+            return href
+        
+        st.markdown(get_binary_file_downloader_html(file_name+'.pptx', 'File'), unsafe_allow_html=True)

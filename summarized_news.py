@@ -15,7 +15,7 @@ def summarized_multiple_news(company_news, n_sen):
     summarized_headers = summarize(company_headers_all, ratio = rt, split = True)
     
     if len(summarized_headers) == 0:
-        summarized_headers = company_headers_all.copy()
+        summarized_headers = company_headers_all
     summarized_news_df = company_news[company_news.header_clean.isin(summarized_headers)]
     summarized_news_df.drop_duplicates(subset = ['header', 'header_clean'],inplace = True)
     return summarized_news_df

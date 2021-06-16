@@ -1,6 +1,6 @@
 import streamlit as st
 # import plotly.graph_objs as go
-from datetime import datetime
+from datetime import datetime, timedelta
 # from plotly.subplots import make_subplots
 import pandas as pd
 # from collections import Counter
@@ -19,11 +19,16 @@ def app():
     # st.dataframe(df)
     # st.table(data)
 
+    
+    data_news['time_dt'] = pd.to_datetime(data_news['time'], unit='ms')  
+    a_week_ago = data_news['time_dt'].max() - timedelta(days=7)
+    data_week = data_news[data_news.time_dt > a_week_ago]
+
     # ----------- wordcloud ----------- #
-    st.pyplot(word_cloud.plot_wordcloud(data_news, n_words = 100, date = datetime(2021,5,30)))
+    st.pyplot(word_cloud.plot_wordcloud(data_week, n_words = 100, date = datetime(2021,6,10)))
 
     # ----------- summary ----------- #
-    topn_news_df = manipulate_news.select_news(data_news, n = 15)
+    topn_news_df = manipulate_news.select_news(data_week, n = 15)
     for i in range(len(topn_news_df)):
         manipulate_news.display_news(topn_news_df.loc[i, 'header'], topn_news_df.loc[i, 'content_summary'], 
                             topn_news_df.loc[i, 'source'], topn_news_df.loc[i, 'link'], topn_news_df.loc[i, 'time_ago'],

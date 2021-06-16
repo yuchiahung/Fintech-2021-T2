@@ -26,8 +26,14 @@ def app():
     # selected_company news
     i = sp500[sp500.name_clean == selected_company].index[0]
     company_news_df = data_news[data_news.company_all.apply(lambda x: (selected_company in x) or (sp500.loc[i, 'Symbol'] in x) or (sp500.loc[i, 'Name'] in x))]
+    
+    # limit in one week
+    company_news_df['time'] = pd.to_datetime(company_news_df.time, unit = 'ms')
+    # company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
+    # company_news_df = company_news_df[company_news_df.time >= company_news_df.time.max() - timedelta(days=7)]
+    
     if len(company_news_df) == 0:
-        st.wirte("Sorry, there's no related news.")
+        st.write("Sorry, there's no related news.")
     else:
         col1, col2 = st.beta_columns((1,4))
         # pie plot: positive rate
@@ -50,7 +56,6 @@ def app():
         # wordcloud (all companies news)
         col2.pyplot(word_cloud.plot_wordcloud(data = company_news_df, n_words = 100))
 
-        company_news_df['time'] = pd.to_datetime(company_news_df.time, unit = 'ms')
         # if nltk_sentiment = sentiment, use nltk_compound to count score 
         company_news_df['score'] = [company_news_df.loc[i, 'nltk_compound'] if company_news_df.loc[i, 'nltk_sentiment'] == company_news_df.loc[i, 'sentiment'] else company_news_df.loc[i, 'compound'] for i in company_news_df.index]
         company_news_df.sort_values(by = 'sentiment', ascending=False, inplace=True)
@@ -72,24 +77,55 @@ def app():
                             showlegend=True
                             )
             st.plotly_chart(fig)
+        
+        #### summarization
+        
+        # gensim summarizer expected to hace at least 10 sentences
 
-        # summarization
-        # company_news_df = company_news_df[company_news_df.time >= datetime.today() - timedelta(days=14)]
-        company_news_df = company_news_df[company_news_df.time >= company_news_df.time.max() - timedelta(days=7)]
-        result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
-        result_df_time = manipulate_news.calculate_time(result_df)
+        if len(company_news_df) >= 10:
+            result_df = summarized_news.summarized_multiple_news(company_news = company_news_df, n_sen = n_news)
+            result_df_time = manipulate_news.calculate_time(result_df)
 
-        if len(result_df_time) >= n_news:
-            r_n_news = n_news
+            if len(result_df_time) >= n_news:
+                r_n_news = n_news
+            else:
+                r_n_news = len(result_df_time)
+        
+            for i in range(r_n_news):
+                manipulate_news.display_news(header = result_df_time.loc[i, 'header'],
+                                            content_summary = result_df_time.loc[i, 'content_summary'],
+                                            source = result_df_time.loc[i, 'source'],
+                                            url = result_df_time.loc[i, 'link'],
+                                            time_ago = result_df_time.loc[i, 'time_ago'],
+                                            sentiment = result_df_time.loc[i, 'sentiment'], 
+                                            company_list = result_df_time.loc[i, 'company_all'],
+                                            content = result_df_time.loc[i, 'content'])
+        
+        elif len(company_news_df) > n_news:
+            # choose latest news
+            company_news_df.sort_values(by = 'time', ignore_index = True, ascending = False, inplace = True)
+            result_df_time = manipulate_news.calculate_time(company_news_df)
+            for i in range(n_news):
+                manipulate_news.display_news(header = result_df_time.loc[i, 'header'],
+                                    content_summary = result_df_time.loc[i, 'content_summary'],
+                                    source = result_df_time.loc[i, 'source'],
+                                    url = result_df_time.loc[i, 'link'],
+                                    time_ago = result_df_time.loc[i, 'time_ago'],
+                                    sentiment = result_df_time.loc[i, 'sentiment'], 
+                                    company_list = result_df_time.loc[i, 'company_all'],
+                                    content = result_df_time.loc[i, 'content'])
+        # display all (by the publish time)
         else:
-            r_n_news = len(result_df_time)
-    
-        for i in range(r_n_news):
-            manipulate_news.display_news(header = result_df_time.loc[i, 'header'],
-                                        content_summary = result_df_time.loc[i, 'content_summary'],
-                                        source = result_df_time.loc[i, 'source'],
-                                        url = result_df_time.loc[i, 'link'],
-                                        time_ago = result_df_time.loc[i, 'time_ago'],
-                                        sentiment = result_df_time.loc[i, 'sentiment'], 
-                                        company_list = result_df_time.loc[i, 'company_all'],
-                                        content = result_df_time.loc[i, 'content'])
+            if len(company_news_df) < n_news:
+                st.write(f"Sorry, we only have {len(company_news_df)} related news.")            
+            company_news_df.sort_values(by = 'time', ignore_index = True, ascending = False, inplace = True)
+            result_df_time = manipulate_news.calculate_time(company_news_df)
+            for i in range(len(result_df_time)):
+                manipulate_news.display_news(header = result_df_time.loc[i, 'header'],
+                                    content_summary = result_df_time.loc[i, 'content_summary'],
+                                    source = result_df_time.loc[i, 'source'],
+                                    url = result_df_time.loc[i, 'link'],
+                                    time_ago = result_df_time.loc[i, 'time_ago'],
+                                    sentiment = result_df_time.loc[i, 'sentiment'], 
+                                    company_list = result_df_time.loc[i, 'company_all'],
+                                    content = result_df_time.loc[i, 'content'])
